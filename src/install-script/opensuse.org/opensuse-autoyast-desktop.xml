@@ -142,6 +142,7 @@
               <ask-list config:type="list"/>
               <mode>
                 <confirm config:type="boolean">false</confirm>
+                <second_stage config:type="boolean">false</second_stage>
                 <final_reboot config:type="boolean">true</final_reboot>
               </mode>
               <proposals config:type="list"/>
@@ -260,7 +261,6 @@ zypper ar -f <xsl:call-template name="repo-update-oss"/> repo-update-oss
                 <pattern>apparmor</pattern>
                 <pattern>apparmor_opt</pattern>
                 <pattern>console</pattern>
-                <pattern>devel_basis</pattern>
                 <pattern>enhanced_base</pattern>
                 <pattern>enhanced_base_opt</pattern>
                 <pattern>fonts</pattern>
@@ -269,7 +269,11 @@ zypper ar -f <xsl:call-template name="repo-update-oss"/> repo-update-oss
                 <pattern>print_server</pattern>
                 <pattern>sw_management</pattern>
                 <pattern>yast2_basis</pattern>
-                <pattern>yast2_install_wf</pattern>
+                
+                <xsl:if test="contains(os/version, '42')">
+                  <pattern>devel_basis</pattern>
+                  <pattern>yast2_install_wf</pattern>
+                </xsl:if>
               </patterns>
             </software>
             <sysconfig config:type="list">

@@ -11,6 +11,7 @@
     <vendor xml:lang="de">Canonical Ltd</vendor>
     <vendor xml:lang="es">Canonical Ltd</vendor>
     <vendor xml:lang="fr">Canonical Ltd</vendor>
+    <vendor xml:lang="id">Canonical Ltd</vendor>
     <vendor xml:lang="ja">Canonical Ltd</vendor>
     <vendor xml:lang="pl">Canonical Ltd</vendor>
     <vendor xml:lang="pt_BR">Canonical Ltd</vendor>
@@ -38,7 +39,7 @@
     </resources>
 
     <media arch="i686">
-      <url>http://releases.ubuntu.com/releases/zesty/ubuntu-17.04-server-i386.iso</url>
+      <url>http://old-releases.ubuntu.com/releases/zesty/ubuntu-17.04-server-i386.iso</url>
       <iso>
         <volume-id>Ubuntu-Server 17.04(.\d)? i386</volume-id>
       </iso>
@@ -46,7 +47,7 @@
       <initrd>install/initrd.gz</initrd>
     </media>
     <media arch="x86_64">
-      <url>http://releases.ubuntu.com/releases/zesty/ubuntu-17.04-server-amd64.iso</url>
+      <url>http://old-releases.ubuntu.com/releases/zesty/ubuntu-17.04-server-amd64.iso</url>
       <iso>
         <volume-id>Ubuntu-Server 17.04(.\d)? amd64</volume-id>
       </iso>
@@ -54,7 +55,7 @@
       <initrd>install/initrd.gz</initrd>
     </media>
     <media live="true" arch="i686">
-      <url>http://releases.ubuntu.com/releases/zesty/ubuntu-17.04-desktop-i386.iso</url>
+      <url>http://old-releases.ubuntu.com/releases/zesty/ubuntu-17.04-desktop-i386.iso</url>
       <iso>
         <volume-id>Ubuntu 17.04(.\d)? i386</volume-id>
       </iso>
@@ -62,7 +63,7 @@
       <initrd>casper/initrd.lz</initrd>
     </media>
     <media live="true" arch="x86_64">
-      <url>http://releases.ubuntu.com/releases/zesty/ubuntu-17.04-desktop-amd64.iso</url>
+      <url>http://old-releases.ubuntu.com/releases/zesty/ubuntu-17.04-desktop-amd64.iso</url>
       <iso>
         <volume-id>Ubuntu 17.04(.\d)? amd64</volume-id>
       </iso>
@@ -70,19 +71,19 @@
       <initrd>casper/initrd.lz</initrd>
     </media>
     <media arch="aarch64">
-      <url>http://cdimage.ubuntu.com/releases/zesty/release/ubuntu-17.04-server-arm64.iso</url>
+      <url>http://old-releases.ubuntu.com/releases/zesty/ubuntu-17.04-server-arm64.iso</url>
       <iso>
         <volume-id>Ubuntu-Server 17.04(.\d)? arm64</volume-id>
       </iso>
     </media>
     <media arch="ppc64le">
-      <url>http://cdimage.ubuntu.com/releases/zesty/release/ubuntu-17.04-server-ppc64el.iso</url>
+      <url>http://old-releases.ubuntu.com/releases/zesty/ubuntu-17.04-server-ppc64el.iso</url>
       <iso>
         <volume-id>Ubuntu-Server 17.04(.\d)? ppc64</volume-id>
       </iso>
     </media>
     <media arch="s390x">
-      <url>http://cdimage.ubuntu.com/releases/zesty/release/ubuntu-17.04-server-s390x.iso</url>
+      <url>http://old-releases.ubuntu.com/releases/zesty/ubuntu-17.04-server-s390x.iso</url>
       <iso>
         <volume-id>Ubuntu-Server 17.04(.\d)? s390x</volume-id>
       </iso>

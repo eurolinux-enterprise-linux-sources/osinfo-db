@@ -4,11 +4,18 @@
   <os id="http://altlinux.org/altlinux/5.0">
     <short-id>altlinux5.0</short-id>
     <name>ALT Linux 5.0</name>
+    <name xml:lang="ca">ALT Linux 5.0</name>
+    <name xml:lang="es">ALT Linux 5.0</name>
     <name xml:lang="fr">ALT Linux 5.0</name>
+    <name xml:lang="id">ALT Linux 5.0</name>
+    <name xml:lang="pl">ALT Linux 5.0</name>
+    <name xml:lang="uk">ALT Linux 5.0</name>
     <version>5.0</version>
     <vendor>ALTLinux</vendor>
     <vendor xml:lang="ca">ALTLinux</vendor>
+    <vendor xml:lang="es">ALTLinux</vendor>
     <vendor xml:lang="fr">ALTLinux</vendor>
+    <vendor xml:lang="id">ALTLinux</vendor>
     <vendor xml:lang="pl">ALT Linux</vendor>
     <vendor xml:lang="pt_BR">ALTLinux</vendor>
     <vendor xml:lang="uk">ALTLinux</vendor>

@@ -5,7 +5,9 @@
     <short-id>opensuse12.3</short-id>
     <name>openSUSE 12.3</name>
     <name xml:lang="ca">openSUSE 12.3</name>
+    <name xml:lang="es">openSUSE 12.3</name>
     <name xml:lang="fr">openSUSE 12.3</name>
+    <name xml:lang="id">openSUSE 12.3</name>
     <name xml:lang="pl">openSUSE 12.3</name>
     <name xml:lang="pt_BR">openSUSE 12.3</name>
     <name xml:lang="uk">openSUSE 12.3</name>
@@ -15,6 +17,7 @@
     <vendor xml:lang="de">openSUSE</vendor>
     <vendor xml:lang="es">openSUSE</vendor>
     <vendor xml:lang="fr">openSUSE</vendor>
+    <vendor xml:lang="id">openSUSE</vendor>
     <vendor xml:lang="ja">openSUSE</vendor>
     <vendor xml:lang="pl">openSUSE</vendor>
     <vendor xml:lang="pt_BR">openSUSE</vendor>

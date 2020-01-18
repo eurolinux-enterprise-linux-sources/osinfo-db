@@ -4,9 +4,20 @@
   <os id="http://suse.com/sles/12.1">
     <short-id>sles12sp1</short-id>
     <name>SUSE Linux Enterprise Server 12 SP1</name>
+    <name xml:lang="ca">SUSE Linux Enterprise Server 12 SP1</name>
+    <name xml:lang="es">SUSE Linux Enterprise Server 12 SP1</name>
+    <name xml:lang="fr">SUSE Linux Enterprise Server 12 SP1</name>
+    <name xml:lang="id">SUSE Linux Enterprise Server 12 SP1</name>
+    <name xml:lang="pl">SUSE Linux Enterprise Server 12 SP1</name>
+    <name xml:lang="uk">SUSE Linux Enterprise Server 12 SP1</name>
     <version>12.1</version>
     <vendor>SUSE</vendor>
+    <vendor xml:lang="ca">SUSE</vendor>
+    <vendor xml:lang="es">SUSE</vendor>
     <vendor xml:lang="fr">SUSE</vendor>
+    <vendor xml:lang="id">SUSE</vendor>
+    <vendor xml:lang="pl">SUSE</vendor>
+    <vendor xml:lang="uk">SUSE</vendor>
     <family>linux</family>
     <distro>sles</distro>
     <upgrades id="http://suse.com/sles/12"/>

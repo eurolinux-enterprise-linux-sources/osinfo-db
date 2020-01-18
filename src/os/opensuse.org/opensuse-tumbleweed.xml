@@ -4,18 +4,37 @@
   <os id="http://opensuse.org/opensuse/tumbleweed">
     <short-id>opensusetumbleweed</short-id>
     <name>openSUSE Tumbleweed</name>
+    <name xml:lang="ca">openSUSE Tumbleweed</name>
+    <name xml:lang="es">openSUSE Tumbleweed</name>
+    <name xml:lang="fr">openSUSE Tumbleweed</name>
+    <name xml:lang="id">openSUSE Tumbleweed</name>
+    <name xml:lang="pl">openSUSE Tumbleweed</name>
+    <name xml:lang="uk">openSUSE Tumbleweed</name>
     <version>tumbleweed</version>
     <vendor>openSUSE</vendor>
     <vendor xml:lang="ca">openSUSE</vendor>
     <vendor xml:lang="de">openSUSE</vendor>
     <vendor xml:lang="es">openSUSE</vendor>
     <vendor xml:lang="fr">openSUSE</vendor>
+    <vendor xml:lang="id">openSUSE</vendor>
     <vendor xml:lang="ja">openSUSE</vendor>
     <vendor xml:lang="pl">openSUSE</vendor>
     <vendor xml:lang="pt_BR">openSUSE</vendor>
     <vendor xml:lang="uk">openSUSE</vendor>
     <family>linux</family>
     <distro>opensuse</distro>
+    <upgrades id="http://opensuse.org/opensuse/42.3"/>
+    <derives-from id="http://opensuse.org/opensuse/42.3"/>
+
+    <variant id="dvd">
+      <name>openSUSE Tumbleweed (DVD Image)</name>
+    </variant>
+    <variant id="network">
+      <name>openSUSE Tumbleweed (Network Image)</name>
+    </variant>
+    <variant id="kubic">
+      <name>openSUSE Tumbleweed (Kubic DVD/USB Stick)</name>
+    </variant>
 
     <devices>
       <device id="http://usb.org/usb/80ee/0021"/> 
@@ -39,7 +58,9 @@
       <device id="http://pcisig.com/pci/1af4/1050"/>
     </devices>
 
+    
     <media arch="i686">
+      <variant id="dvd"/>
       <url>http://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-i586-Current.iso</url>
       <iso>
         <volume-id>openSUSE-Tumbleweed-DVD-i586*</volume-id>
@@ -50,9 +71,47 @@
       <initrd>boot/i386/loader/initrd</initrd>
     </media>
     <media arch="x86_64">
+      <variant id="dvd"/>
       <url>http://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-x86_64-Current.iso</url>
       <iso>
         <volume-id>openSUSE-Tumbleweed-DVD-x86_64*</volume-id>
+        <system-id>LINUX</system-id>
+        <publisher-id>SUSE LINUX GmbH</publisher-id>
+      </iso>
+      <kernel>boot/x86_64/loader/linux</kernel>
+      <initrd>boot/x86_64/loader/initrd</initrd>
+    </media>
+
+    
+    <media arch="i686">
+      <variant id="network"/>
+      <url>http://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-NET-i586-Current.iso</url>
+      <iso>
+        <volume-id>openSUSE-Tumbleweed-NET-i586*</volume-id>
+        <system-id>LINUX</system-id>
+        <publisher-id>SUSE LINUX GmbH</publisher-id>
+      </iso>
+      <kernel>boot/i386/loader/linux</kernel>
+      <initrd>boot/i386/loader/initrd</initrd>
+    </media>
+    <media arch="x86_64">
+      <variant id="network"/>
+      <url>http://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-NET-x86_64-Current.iso</url>
+      <iso>
+        <volume-id>openSUSE-Tumbleweed-NET-x86_64*</volume-id>
+        <system-id>LINUX</system-id>
+        <publisher-id>SUSE LINUX GmbH</publisher-id>
+      </iso>
+      <kernel>boot/x86_64/loader/linux</kernel>
+      <initrd>boot/x86_64/loader/initrd</initrd>
+    </media>
+
+    
+    <media arch="x86_64">
+      <variant id="kubic"/>
+      <url>http://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Kubic-DVD-x86_64-Current.iso</url>
+      <iso>
+        <volume-id>openSUSE-Tumbleweed-Kubic-*</volume-id>
         <system-id>LINUX</system-id>
         <publisher-id>SUSE LINUX GmbH</publisher-id>
       </iso>

@@ -4,12 +4,19 @@
   <os id="http://centos.org/centos/6.7">
     <short-id>centos6.7</short-id>
     <name>CentOS 6.7</name>
+    <name xml:lang="ca">CentOS 6.7</name>
+    <name xml:lang="es">CentOS 6.7</name>
+    <name xml:lang="fr">CentOS 6.7</name>
+    <name xml:lang="id">CentOS 6.7</name>
+    <name xml:lang="pl">CentOS 6.7</name>
+    <name xml:lang="uk">CentOS 6.7</name>
     <version>6.7</version>
     <vendor>CentOS</vendor>
     <vendor xml:lang="ca">CentOS</vendor>
     <vendor xml:lang="de">CentOS</vendor>
     <vendor xml:lang="es">CentOS</vendor>
     <vendor xml:lang="fr">CentOS</vendor>
+    <vendor xml:lang="id">CentOS</vendor>
     <vendor xml:lang="ja">CentOS</vendor>
     <vendor xml:lang="pl">CentOS</vendor>
     <vendor xml:lang="pt_BR">CentOS</vendor>

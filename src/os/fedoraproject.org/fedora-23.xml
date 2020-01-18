@@ -4,14 +4,23 @@
   <os id="http://fedoraproject.org/fedora/23">
     <short-id>fedora23</short-id>
     <name>Fedora 23</name>
+    <name xml:lang="ca">Fedora 23</name>
+    <name xml:lang="es">Fedora 23</name>
+    <name xml:lang="fr">Fedora 23</name>
+    <name xml:lang="id">Fedora 23</name>
+    <name xml:lang="pl">Fedora 23</name>
+    <name xml:lang="pt">Fedora 23 </name>
+    <name xml:lang="uk">Fedora 23</name>
     <version>23</version>
     <vendor>Fedora Project</vendor>
     <vendor xml:lang="ca">Projecte Fedora</vendor>
     <vendor xml:lang="de">Fedora-Projekt</vendor>
     <vendor xml:lang="es">Fedora Project</vendor>
     <vendor xml:lang="fr">Fedora Project</vendor>
+    <vendor xml:lang="id">Proyek Fedora</vendor>
     <vendor xml:lang="ja">Fedora Project</vendor>
     <vendor xml:lang="pl">Projekt Fedora</vendor>
+    <vendor xml:lang="pt">Projecto Fedora </vendor>
     <vendor xml:lang="pt_BR">Projeto Fedora</vendor>
     <vendor xml:lang="uk">Проект Fedora</vendor>
     <family>linux</family>
@@ -24,15 +33,43 @@
 
     <variant id="workstation">
       <name>Fedora 23 Workstation</name>
+      <name xml:lang="ca">Fedora Workstation 23</name>
+      <name xml:lang="es">Fedora 23 Workstation</name>
+      <name xml:lang="fr">Fedora 23 Workstation</name>
+      <name xml:lang="id">Fedora 23 Workstation</name>
+      <name xml:lang="pl">Fedora 23 Workstation</name>
+      <name xml:lang="pt">Fedora 23 Workstation </name>
+      <name xml:lang="uk">Fedora 23 Workstation</name>
     </variant>
     <variant id="workstation-netinst">
       <name>Fedora 23 Workstation</name>
+      <name xml:lang="ca">Fedora Workstation 23</name>
+      <name xml:lang="es">Fedora 23 Workstation</name>
+      <name xml:lang="fr">Fedora 23 Workstation</name>
+      <name xml:lang="id">Fedora 23 Workstation</name>
+      <name xml:lang="pl">Fedora 23 Workstation</name>
+      <name xml:lang="pt">Fedora 23 Workstation </name>
+      <name xml:lang="uk">Fedora 23 Workstation</name>
     </variant>
     <variant id="server">
       <name>Fedora 23 Server</name>
+      <name xml:lang="ca">Fedora Server 23</name>
+      <name xml:lang="es">Fedora 23 Server</name>
+      <name xml:lang="fr">Fedora 23 Server</name>
+      <name xml:lang="id">Fedora 23 Server</name>
+      <name xml:lang="pl">Fedora 23 Server</name>
+      <name xml:lang="pt">Fedora 23 Server </name>
+      <name xml:lang="uk">Fedora 23 Server</name>
     </variant>
     <variant id="server-netinst">
       <name>Fedora 23 Server</name>
+      <name xml:lang="ca">Fedora Server 23</name>
+      <name xml:lang="es">Fedora 23 Server</name>
+      <name xml:lang="fr">Fedora 23 Server</name>
+      <name xml:lang="id">Fedora 23 Server</name>
+      <name xml:lang="pl">Fedora 23 Server</name>
+      <name xml:lang="pt">Fedora 23 Server </name>
+      <name xml:lang="uk">Fedora 23 Server</name>
     </variant>
 
     <devices>
@@ -52,7 +89,7 @@
     
     <media live="true" arch="i686">
       <variant id="workstation"/>
-      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/23/Workstation/i386/iso/Fedora-Live-Workstation-i686-23-10.iso</url>
+      <url>https://archives.fedoraproject.org/pub/archive/fedora/linux/releases/23/Workstation/i386/iso/Fedora-Live-Workstation-i686-23-10.iso</url>
       <iso>
         <volume-id>Fedora-Live-WS-i686-23.*</volume-id>
         <system-id>LINUX</system-id>
@@ -62,7 +99,7 @@
     </media>
     <media live="true" arch="x86_64">
       <variant id="workstation"/>
-      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/23/Workstation/x86_64/iso/Fedora-Live-Workstation-x86_64-23-10.iso</url>
+      <url>https://archives.fedoraproject.org/pub/archive/fedora/linux/releases/23/Workstation/x86_64/iso/Fedora-Live-Workstation-x86_64-23-10.iso</url>
       <iso>
         <volume-id>Fedora-Live-WS-x86_64-23.*</volume-id>
         <system-id>LINUX</system-id>
@@ -74,7 +111,7 @@
     
     <media arch="i686">
       <variant id="workstation-netinst"/>
-      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/23/Workstation/i386/iso/Fedora-Workstation-netinst-i386-23.iso</url>
+      <url>https://archives.fedoraproject.org/pub/archive/fedora/linux/releases/23/Workstation/i386/iso/Fedora-Workstation-netinst-i386-23.iso</url>
       <iso>
         <volume-id>Fedora-WS-23(_[[:alpha:]]*)*-i386</volume-id>
         <system-id>LINUX</system-id>
@@ -84,7 +121,7 @@
     </media>
     <media arch="x86_64">
       <variant id="workstation-netinst"/>
-      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/23/Workstation/x86_64/iso/Fedora-Workstation-netinst-x86_64-23.iso</url>
+      <url>https://archives.fedoraproject.org/pub/archive/fedora/linux/releases/23/Workstation/x86_64/iso/Fedora-Workstation-netinst-x86_64-23.iso</url>
       <iso>
         <volume-id>Fedora-WS-23(_[[:alpha:]]*)*-x86_64</volume-id>
         <system-id>LINUX</system-id>
@@ -98,7 +135,7 @@
     
     <media arch="i686">
       <variant id="server"/>
-      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/23/Server/i386/iso/Fedora-Server-DVD-i386-23.iso</url>
+      <url>https://archives.fedoraproject.org/pub/archive/fedora/linux/releases/23/Server/i386/iso/Fedora-Server-DVD-i386-23.iso</url>
       <iso>
         <volume-id>Fedora-S-23(_[[:alpha:]]*)*-i386</volume-id>
         <system-id>LINUX</system-id>
@@ -110,7 +147,7 @@
     </media>
     <media arch="x86_64">
       <variant id="server"/>
-      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/23/Server/x86_64/iso/Fedora-Server-DVD-x86_64-23.iso</url>
+      <url>https://archives.fedoraproject.org/pub/archive/fedora/linux/releases/23/Server/x86_64/iso/Fedora-Server-DVD-x86_64-23.iso</url>
       <iso>
         <volume-id>Fedora-S-23(_[[:alpha:]]*)*-x86_64</volume-id>
         <system-id>LINUX</system-id>
@@ -123,7 +160,7 @@
     
     <media arch="i686">
       <variant id="server-netinst"/>
-      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/23/Server/i386/iso/Fedora-Server-netinst-i386-23.iso</url>
+      <url>https://archives.fedoraproject.org/pub/archive/fedora/linux/releases/23/Server/i386/iso/Fedora-Server-netinst-i386-23.iso</url>
       <iso>
         <volume-id>Fedora-S-23(_[[:alpha:]]*)*-i386</volume-id>
         <system-id>LINUX</system-id>
@@ -134,7 +171,7 @@
     </media>
     <media arch="x86_64">
       <variant id="server-netinst"/>
-      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/23/Server/x86_64/iso/Fedora-Server-netinst-x86_64-23.iso</url>
+      <url>https://archives.fedoraproject.org/pub/archive/fedora/linux/releases/23/Server/x86_64/iso/Fedora-Server-netinst-x86_64-23.iso</url>
       <iso>
         <volume-id>Fedora-S-23(_[[:alpha:]]*)*-x86_64</volume-id>
         <system-id>LINUX</system-id>
@@ -146,7 +183,7 @@
 
     <tree arch="i686">
       <variant id="server"/>
-      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/23/Server/i386/os/</url>
+      <url>https://archives.fedoraproject.org/pub/archive/fedora/linux/releases/23/Server/i386/os/</url>
       <treeinfo>
         <family>Fedora</family>
         <version>23</version>
@@ -154,7 +191,7 @@
       </treeinfo>
     </tree>
     <tree arch="x86_64">
-      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/23/Server/x86_64/os/</url>
+      <url>https://archives.fedoraproject.org/pub/archive/fedora/linux/releases/23/Server/x86_64/os/</url>
       <variant id="server"/>
       <treeinfo>
         <family>Fedora</family>

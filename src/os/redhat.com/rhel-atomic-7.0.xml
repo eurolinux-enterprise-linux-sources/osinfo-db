@@ -5,7 +5,9 @@
     <short-id>rhel-atomic-7.0</short-id>
     <name>Red Hat Enterprise Linux Atomic Host 7.0</name>
     <name xml:lang="ca">Red Hat Enterprise Linux Atomic Host 7.0</name>
+    <name xml:lang="es">Red Hat Enterprise Linux Atomic Host 7.0</name>
     <name xml:lang="fr">Red Hat Enterprise Linux Atomic Host 7.0</name>
+    <name xml:lang="id">Red Hat Enterprise Linux Atomic Host 7.0</name>
     <name xml:lang="pl">Red Hat Enterprise Linux Atomic Host 7.0</name>
     <name xml:lang="pt_BR">Red Hat Enterprise Linux Atomic Host 7.0</name>
     <name xml:lang="uk">Red Hat Enterprise Linux Atomic Host 7.0</name>
@@ -15,6 +17,7 @@
     <vendor xml:lang="de">Red Hat, Inc</vendor>
     <vendor xml:lang="es">Red Hat, Inc</vendor>
     <vendor xml:lang="fr">Red Hat, Inc</vendor>
+    <vendor xml:lang="id">Red Hat, Inc</vendor>
     <vendor xml:lang="ja">Red Hat, Inc</vendor>
     <vendor xml:lang="pl">Red Hat, Inc</vendor>
     <vendor xml:lang="pt_BR">Red Hat, Inc</vendor>
@@ -22,6 +25,8 @@
     <family>linux</family>
     <distro>rhel</distro>
     <derives-from id="http://redhat.com/rhel/7.0"/>
+
+    <release-date>2014-06-10</release-date>
 
     <devices>
       <device id="http://pcisig.com/pci/1b36/0100"/> 
@@ -35,6 +40,7 @@
       <iso>
         <system-id>LINUX</system-id>
         <volume-id>RHEL.*Atomic.*7 x86_64.*</volume-id>
+        <volume-size>750313472</volume-size>
       </iso>
       <kernel>isolinux/vmlinuz</kernel>
       <initrd>isolinux/initrd.img</initrd>
@@ -49,9 +55,9 @@
       </minimum>
 
       <recommended>
-        <cpu>400000000</cpu>
+        <cpu>1000000000</cpu>
         <ram>1073741824</ram>
-        <storage>9663676416</storage>
+        <storage>10737418240</storage>
       </recommended>
     </resources>
   </os>

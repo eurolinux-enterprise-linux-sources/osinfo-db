@@ -5,8 +5,11 @@
     <short-id>fedora19</short-id>
     <name>Fedora 19</name>
     <name xml:lang="ca">Fedora 19</name>
+    <name xml:lang="es">Fedora 19</name>
     <name xml:lang="fr">Fedora 19</name>
+    <name xml:lang="id">Fedora 19</name>
     <name xml:lang="pl">Fedora 19</name>
+    <name xml:lang="pt">Fedora 19 </name>
     <name xml:lang="pt_BR">Fedora 19</name>
     <name xml:lang="uk">Fedora 19</name>
     <version>19</version>
@@ -15,8 +18,10 @@
     <vendor xml:lang="de">Fedora-Projekt</vendor>
     <vendor xml:lang="es">Fedora Project</vendor>
     <vendor xml:lang="fr">Fedora Project</vendor>
+    <vendor xml:lang="id">Proyek Fedora</vendor>
     <vendor xml:lang="ja">Fedora Project</vendor>
     <vendor xml:lang="pl">Projekt Fedora</vendor>
+    <vendor xml:lang="pt">Projecto Fedora </vendor>
     <vendor xml:lang="pt_BR">Projeto Fedora</vendor>
     <vendor xml:lang="uk">Проект Fedora</vendor>
     <family>linux</family>

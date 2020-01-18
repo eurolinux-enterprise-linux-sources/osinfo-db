@@ -10,8 +10,10 @@
     <vendor xml:lang="de">QEMU</vendor>
     <vendor xml:lang="es">QEMU</vendor>
     <vendor xml:lang="fr">QEMU</vendor>
+    <vendor xml:lang="id">QEMU</vendor>
     <vendor xml:lang="ja">QEMU</vendor>
     <vendor xml:lang="pl">QEMU</vendor>
+    <vendor xml:lang="pt">QEMU</vendor>
     <vendor xml:lang="pt_BR">QEMU</vendor>
     <vendor xml:lang="uk">QEMU</vendor>
     <vendor-id>1234</vendor-id>

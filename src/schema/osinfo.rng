@@ -1,5 +1,5 @@
 <grammar xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-  <!-- Schema distributed with osinfo-db-20170813 -->
+  <!-- Schema distributed with osinfo-db-20180531 -->
 
   <start>
     <ref name='libosinfo'/>

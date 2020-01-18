@@ -5,7 +5,9 @@
     <short-id>win8.1</short-id>
     <name>Microsoft Windows 8.1</name>
     <name xml:lang="ca">Microsoft Windows 8.1</name>
+    <name xml:lang="es">Microsoft Windows 8.1</name>
     <name xml:lang="fr">Microsoft Windows 8.1</name>
+    <name xml:lang="id">Microsoft Windows 8.1</name>
     <name xml:lang="pl">Microsoft Windows 8.1</name>
     <name xml:lang="pt_BR">Microsoft Windows 8.1</name>
     <name xml:lang="uk">Microsoft Windows 8.1</name>
@@ -15,6 +17,7 @@
     <vendor xml:lang="de">Microsoft Corporation</vendor>
     <vendor xml:lang="es">Microsoft Corporation</vendor>
     <vendor xml:lang="fr">Microsoft Corporation</vendor>
+    <vendor xml:lang="id">Microsoft Corporation</vendor>
     <vendor xml:lang="ja">Microsoft Corporation</vendor>
     <vendor xml:lang="pl">Microsoft Corporation</vendor>
     <vendor xml:lang="pt_BR">Microsoft Corporation</vendor>
@@ -24,23 +27,43 @@
     <derives-from id="http://microsoft.com/win/8"/>
     <upgrades id="http://microsoft.com/win/8"/>
 
-
+    <release-date>2013-10-17</release-date>
 
     <variant id="debug">
       <name>Microsoft Windows 8.1 Debug Checked Build</name>
+      <name xml:lang="ca">Construcció de depuració i comprovació de Microsoft Windows 8.1</name>
+      <name xml:lang="es">Microsoft Windows 8.1 Debug Checked Build</name>
       <name xml:lang="fr">Microsoft Windows 8.1 Debug Checked Build</name>
+      <name xml:lang="id">Microsoft Windows 8.1 Debug Checked Build</name>
+      <name xml:lang="pl">Microsoft Windows 8.1 Debug Checked Build</name>
+      <name xml:lang="uk">Microsoft Windows 8.1 Debug Checked Build</name>
     </variant>
     <variant id="enterprise-debug">
       <name>Microsoft Windows 8.1 Enterprise Debug Checked Build</name>
+      <name xml:lang="ca">Construcció de depuració i comprovació de Microsoft Windows 8.1 Enterprise</name>
+      <name xml:lang="es">Microsoft Windows 8.1 Enterprise Debug Checked Build</name>
       <name xml:lang="fr">Microsoft Windows 8.1 Enterprise Debug Checked Build</name>
+      <name xml:lang="id">Microsoft Windows 8.1 Enterprise Debug Checked Build</name>
+      <name xml:lang="pl">Microsoft Windows 8.1 Enterprise Debug Checked Build</name>
+      <name xml:lang="uk">Microsoft Windows 8.1 Enterprise Debug Checked Build</name>
     </variant>
     <variant id="professional">
       <name>Microsoft Windows 8.1 Professional</name>
+      <name xml:lang="ca">Microsoft Windows 8.1 Professional</name>
+      <name xml:lang="es">Microsoft Windows 8.1 Professional</name>
       <name xml:lang="fr">Microsoft Windows 8.1 Professionnel</name>
+      <name xml:lang="id">Microsoft Windows 8.1 Professional</name>
+      <name xml:lang="pl">Microsoft Windows 8.1 Professional</name>
+      <name xml:lang="uk">Microsoft Windows 8.1 Professional</name>
     </variant>
     <variant id="enterprise">
       <name>Microsoft Windows 8.1 Enterprise</name>
+      <name xml:lang="ca">Microsoft Windows 8.1 Enterprise</name>
+      <name xml:lang="es">Microsoft Windows 8.1 Enterprise</name>
       <name xml:lang="fr">Microsoft Windows 8.1 Entreprise</name>
+      <name xml:lang="id">Microsoft Windows 8.1 Enterprise</name>
+      <name xml:lang="pl">Microsoft Windows 8.1 Enterprise</name>
+      <name xml:lang="uk">Microsoft Windows 8.1 Enterprise</name>
     </variant>
 
     

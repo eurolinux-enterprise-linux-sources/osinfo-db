@@ -8,6 +8,7 @@
     <name xml:lang="de">MacOS X Cheetah</name>
     <name xml:lang="es">MacOS X Cheetah</name>
     <name xml:lang="fr">MacOS X Cheetah</name>
+    <name xml:lang="id">MacOS X Cheetah</name>
     <name xml:lang="ja">MacOS X Cheetah</name>
     <name xml:lang="pl">MacOS X Cheetah</name>
     <name xml:lang="pt_BR">MacOS X Cheetah</name>
@@ -18,11 +19,14 @@
     <vendor xml:lang="de">Apple Inc.</vendor>
     <vendor xml:lang="es">Apple Inc.</vendor>
     <vendor xml:lang="fr">Apple Inc.</vendor>
+    <vendor xml:lang="id">Apple Inc.</vendor>
     <vendor xml:lang="ja">Apple Inc.</vendor>
     <vendor xml:lang="pl">Apple Inc.</vendor>
     <vendor xml:lang="pt_BR">Apple Inc.</vendor>
     <vendor xml:lang="uk">Apple Inc.</vendor>
     <family>darwin</family>
     <distro>osx</distro>
+
+    <release-date>2001-03-24</release-date>
   </os>
 </libosinfo>

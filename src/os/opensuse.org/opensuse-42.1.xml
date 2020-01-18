@@ -4,12 +4,19 @@
   <os id="http://opensuse.org/opensuse/42.1">
     <short-id>opensuse42.1</short-id>
     <name>openSUSE Leap 42.1</name>
+    <name xml:lang="ca">openSUSE Leap 42.1</name>
+    <name xml:lang="es">openSUSE Leap 42.1</name>
+    <name xml:lang="fr">openSUSE Leap 42.1</name>
+    <name xml:lang="id">openSUSE Leap 42.1</name>
+    <name xml:lang="pl">openSUSE Leap 42.1</name>
+    <name xml:lang="uk">openSUSE Leap 42.1</name>
     <version>42.1</version>
     <vendor>openSUSE</vendor>
     <vendor xml:lang="ca">openSUSE</vendor>
     <vendor xml:lang="de">openSUSE</vendor>
     <vendor xml:lang="es">openSUSE</vendor>
     <vendor xml:lang="fr">openSUSE</vendor>
+    <vendor xml:lang="id">openSUSE</vendor>
     <vendor xml:lang="ja">openSUSE</vendor>
     <vendor xml:lang="pl">openSUSE</vendor>
     <vendor xml:lang="pt_BR">openSUSE</vendor>

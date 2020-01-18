@@ -8,8 +8,10 @@
     <name xml:lang="de">Fedora 10</name>
     <name xml:lang="es">Fedora 10</name>
     <name xml:lang="fr">Fedora 10</name>
+    <name xml:lang="id">Fedora 10</name>
     <name xml:lang="ja">Fedora 10</name>
     <name xml:lang="pl">Fedora 10</name>
+    <name xml:lang="pt">Fedora 10 </name>
     <name xml:lang="pt_BR">Fedora 10</name>
     <name xml:lang="uk">Fedora 10</name>
     <version>10</version>
@@ -18,8 +20,10 @@
     <vendor xml:lang="de">Fedora-Projekt</vendor>
     <vendor xml:lang="es">Fedora Project</vendor>
     <vendor xml:lang="fr">Fedora Project</vendor>
+    <vendor xml:lang="id">Proyek Fedora</vendor>
     <vendor xml:lang="ja">Fedora Project</vendor>
     <vendor xml:lang="pl">Projekt Fedora</vendor>
+    <vendor xml:lang="pt">Projecto Fedora </vendor>
     <vendor xml:lang="pt_BR">Projeto Fedora</vendor>
     <vendor xml:lang="uk">Проект Fedora</vendor>
     <family>linux</family>

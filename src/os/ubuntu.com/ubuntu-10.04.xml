@@ -5,13 +5,19 @@
     <short-id>ubuntu10.04</short-id>
     <short-id>ubuntulucid</short-id>
     <name>Ubuntu 10.04 LTS</name>
+    <name xml:lang="ca">Ubuntu 10.04 LTS</name>
+    <name xml:lang="es">Ubuntu 10.04 LTS</name>
     <name xml:lang="fr">Ubuntu 10.04 LTS</name>
+    <name xml:lang="id">Ubuntu 10.04 LTS</name>
+    <name xml:lang="pl">Ubuntu 10.04 LTS</name>
+    <name xml:lang="uk">Ubuntu 10.04 LTS</name>
     <version>10.04</version>
     <vendor>Canonical Ltd</vendor>
     <vendor xml:lang="ca">Canonical Ltd</vendor>
     <vendor xml:lang="de">Canonical Ltd</vendor>
     <vendor xml:lang="es">Canonical Ltd</vendor>
     <vendor xml:lang="fr">Canonical Ltd</vendor>
+    <vendor xml:lang="id">Canonical Ltd</vendor>
     <vendor xml:lang="ja">Canonical Ltd</vendor>
     <vendor xml:lang="pl">Canonical Ltd</vendor>
     <vendor xml:lang="pt_BR">Canonical Ltd</vendor>

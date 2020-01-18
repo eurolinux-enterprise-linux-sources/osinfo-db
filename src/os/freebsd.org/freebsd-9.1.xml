@@ -5,7 +5,9 @@
     <short-id>freebsd9.1</short-id>
     <name>FreeBSD 9.1</name>
     <name xml:lang="ca">FreeBSD 9.1</name>
+    <name xml:lang="es">FreeBSD 9.1</name>
     <name xml:lang="fr">FreeBSD 9.1</name>
+    <name xml:lang="id">FreeBSD 9.1</name>
     <name xml:lang="pl">FreeBSD 9.1</name>
     <name xml:lang="pt_BR">FreeBSD 9.1</name>
     <name xml:lang="uk">FreeBSD 9.1</name>
@@ -15,6 +17,7 @@
     <vendor xml:lang="de">FreeBSD-Projekt</vendor>
     <vendor xml:lang="es">FreeBSD Project</vendor>
     <vendor xml:lang="fr">FreeBSD Project</vendor>
+    <vendor xml:lang="id">Proyek FreeBSD</vendor>
     <vendor xml:lang="ja">FreeBSD プロジェクト</vendor>
     <vendor xml:lang="pl">Projekt FreeBSD</vendor>
     <vendor xml:lang="pt_BR">Projeto FreeBSD</vendor>

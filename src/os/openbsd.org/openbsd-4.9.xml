@@ -8,6 +8,7 @@
     <name xml:lang="de">OpenBSD 4.9</name>
     <name xml:lang="es">OpenBSD 4.9</name>
     <name xml:lang="fr">OpenBSD 4.9</name>
+    <name xml:lang="id">OpenBSD 4.9</name>
     <name xml:lang="ja">OpenBSD 4.9</name>
     <name xml:lang="pl">OpenBSD 4.9</name>
     <name xml:lang="pt_BR">OpenBSD 4.9</name>
@@ -20,12 +21,16 @@
     <vendor xml:lang="de">OpenBSD-Projekt</vendor>
     <vendor xml:lang="es">OpenBSD Project</vendor>
     <vendor xml:lang="fr">OpenBSD Project</vendor>
+    <vendor xml:lang="id">Proyek OpenBSD</vendor>
     <vendor xml:lang="ja">OpenBSD プロジェクト</vendor>
     <vendor xml:lang="pl">Projekt OpenBSD</vendor>
     <vendor xml:lang="pt_BR">OpenBSD Project</vendor>
     <vendor xml:lang="uk">Проект OpenBSD</vendor>
     <upgrades id='http://openbsd.org/openbsd/4.8'/>
     <derives-from id='http://openbsd.org/openbsd/4.8'/>
+
+    <release-date>2011-05-01</release-date>
+    <eol-date>2012-05-01</eol-date>
 
     <devices>
       <device id="http://pcisig.com/pci/1022/2000"/>

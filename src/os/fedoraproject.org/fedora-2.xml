@@ -8,8 +8,10 @@
     <name xml:lang="de">Fedora Core 2</name>
     <name xml:lang="es">Fedora Core 2</name>
     <name xml:lang="fr">Fedora Core 2</name>
+    <name xml:lang="id">Fedora Core 2</name>
     <name xml:lang="ja">Fedora Core 2</name>
     <name xml:lang="pl">Fedora Core 2</name>
+    <name xml:lang="pt">Fedora Core 2 </name>
     <name xml:lang="pt_BR">Fedora Core 2</name>
     <name xml:lang="uk">Fedora Core 2</name>
     <version>2</version>
@@ -18,8 +20,10 @@
     <vendor xml:lang="de">Fedora-Projekt</vendor>
     <vendor xml:lang="es">Fedora Project</vendor>
     <vendor xml:lang="fr">Fedora Project</vendor>
+    <vendor xml:lang="id">Proyek Fedora</vendor>
     <vendor xml:lang="ja">Fedora Project</vendor>
     <vendor xml:lang="pl">Projekt Fedora</vendor>
+    <vendor xml:lang="pt">Projecto Fedora </vendor>
     <vendor xml:lang="pt_BR">Projeto Fedora</vendor>
     <vendor xml:lang="uk">Проект Fedora</vendor>
     <family>linux</family>

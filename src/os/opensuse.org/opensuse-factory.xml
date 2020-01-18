@@ -8,6 +8,7 @@
     <name xml:lang="de">openSUSE</name>
     <name xml:lang="es">openSUSE</name>
     <name xml:lang="fr">openSUSE</name>
+    <name xml:lang="id">openSUSE</name>
     <name xml:lang="ja">openSUSE</name>
     <name xml:lang="pl">openSUSE</name>
     <name xml:lang="pt_BR">openSUSE</name>
@@ -18,6 +19,7 @@
     <vendor xml:lang="de">openSUSE</vendor>
     <vendor xml:lang="es">openSUSE</vendor>
     <vendor xml:lang="fr">openSUSE</vendor>
+    <vendor xml:lang="id">openSUSE</vendor>
     <vendor xml:lang="ja">openSUSE</vendor>
     <vendor xml:lang="pl">openSUSE</vendor>
     <vendor xml:lang="pt_BR">openSUSE</vendor>

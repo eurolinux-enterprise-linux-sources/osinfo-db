@@ -4,13 +4,19 @@
   <os id="http://microsoft.com/win/10">
     <short-id>win10</short-id>
     <name>Microsoft Windows 10</name>
+    <name xml:lang="ca">Microsoft Windows 10</name>
+    <name xml:lang="es">Microsoft Windows 10</name>
     <name xml:lang="fr">Microsoft Windows 10</name>
+    <name xml:lang="id">Microsoft Windows 10</name>
+    <name xml:lang="pl">Microsoft Windows 10</name>
+    <name xml:lang="uk">Microsoft Windows 10</name>
     <version>10.0</version>
     <vendor>Microsoft Corporation</vendor>
     <vendor xml:lang="ca">Microsoft Corporation</vendor>
     <vendor xml:lang="de">Microsoft Corporation</vendor>
     <vendor xml:lang="es">Microsoft Corporation</vendor>
     <vendor xml:lang="fr">Microsoft Corporation</vendor>
+    <vendor xml:lang="id">Microsoft Corporation</vendor>
     <vendor xml:lang="ja">Microsoft Corporation</vendor>
     <vendor xml:lang="pl">Microsoft Corporation</vendor>
     <vendor xml:lang="pt_BR">Microsoft Corporation</vendor>
@@ -24,14 +30,30 @@
 
     <variant id="education">
       <name>Microsoft Windows 10 Education</name>
+      <name xml:lang="ca">Microsoft Windows 10 Education</name>
+      <name xml:lang="es">Microsoft Windows 10 Education</name>
       <name xml:lang="fr">Microsoft Windows 10 Éducation</name>
+      <name xml:lang="id">Microsoft Windows 10 Education</name>
+      <name xml:lang="pl">Microsoft Windows 10 Education</name>
+      <name xml:lang="uk">Microsoft Windows 10 Education</name>
     </variant>
     <variant id="enterprise">
       <name>Microsoft Windows 10 Enterprise</name>
+      <name xml:lang="ca">Microsoft Windows 10 Enterprise</name>
+      <name xml:lang="es">Microsoft Windows 10 Enterprise</name>
       <name xml:lang="fr">Microsoft Windows 10 Entreprise</name>
+      <name xml:lang="id">Microsoft Windows 10 Enterprise</name>
+      <name xml:lang="pl">Microsoft Windows 10 Enterprise</name>
+      <name xml:lang="uk">Microsoft Windows 10 Enterprise</name>
     </variant>
     <variant id="enterprise-ltsb">
       <name>Microsoft Windows 10 Enterprise (Long Term Servicing Branch)</name>
+      <name xml:lang="ca">Microsoft Windows 10 Enterprise (LTSB)</name>
+      <name xml:lang="es">Microsoft Windows 10 Enterprise (Long Term Servicing Branch)</name>
+      <name xml:lang="fr">Microsoft Windows 10 Enterprise (Long Term Servicing Branch)</name>
+      <name xml:lang="id">Microsoft Windows 10 Enterprise (Long Term Servicing Branch)</name>
+      <name xml:lang="pl">Microsoft Windows 10 Enterprise (Long Term Servicing Branch)</name>
+      <name xml:lang="uk">Microsoft Windows 10 Enterprise (Long Term Servicing Branch)</name>
     </variant>
 
     
@@ -98,7 +120,7 @@
     </media>
     <media arch="x86_64">
       <iso>
-        <volume-id>(J_)?CCSN?A_X64FRE_</volume-id>
+        <volume-id>(J_)?(CCSN?A|CCOMA)_X64FRE_</volume-id>
         <publisher-id>MICROSOFT CORPORATION</publisher-id>
         <l10n-language regex="true" l10n-language-map="http://microsoft.com/win/8/l10n-language">[[:upper:][:digit:]_]*_([[:upper:]]*-[[:upper:]]*)</l10n-language>
       </iso>

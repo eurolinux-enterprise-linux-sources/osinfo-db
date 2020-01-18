@@ -4,12 +4,24 @@
   <os id="http://oracle.com/solaris/11">
     <short-id>solaris11</short-id>
     <name>Oracle Solaris 11</name>
+    <name xml:lang="ca">Oracle Solaris 11</name>
+    <name xml:lang="es">Oracle Solaris 11</name>
     <name xml:lang="fr">Oracle Solaris 11</name>
+    <name xml:lang="id">Oracle Solaris 11</name>
+    <name xml:lang="pl">Oracle Solaris 11</name>
+    <name xml:lang="uk">Oracle Solaris 11</name>
     <version>11</version>
     <vendor>Oracle</vendor>
+    <vendor xml:lang="ca">Oracle</vendor>
+    <vendor xml:lang="es">Oracle</vendor>
     <vendor xml:lang="fr">Oracle</vendor>
+    <vendor xml:lang="id">Oracle</vendor>
+    <vendor xml:lang="pl">Oracle</vendor>
+    <vendor xml:lang="uk">Oracle</vendor>
     <family>solaris</family>
     <distro>solaris</distro>
     <upgrades id="http://sun.com/solaris/10"/>
+
+    <release-date>2011-11-09</release-date>
   </os>
 </libosinfo>

@@ -9,6 +9,7 @@
     <name xml:lang="de">Debian Squeeze</name>
     <name xml:lang="es">Debian Squeeze</name>
     <name xml:lang="fr">Debian Squeeze</name>
+    <name xml:lang="id">Debian Squeeze</name>
     <name xml:lang="ja">Debian Squeeze</name>
     <name xml:lang="pl">Debian Squeeze</name>
     <name xml:lang="pt_BR">Debian Squeeze</name>
@@ -19,6 +20,7 @@
     <vendor xml:lang="de">Debian-Projekt</vendor>
     <vendor xml:lang="es">Debian Project</vendor>
     <vendor xml:lang="fr">Debian Project</vendor>
+    <vendor xml:lang="id">Proyek Debian</vendor>
     <vendor xml:lang="ja">Debian プロジェクト</vendor>
     <vendor xml:lang="pl">Projekt Debian</vendor>
     <vendor xml:lang="pt_BR">Projeto Debian</vendor>

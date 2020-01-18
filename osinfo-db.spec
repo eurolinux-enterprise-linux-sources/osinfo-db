@@ -4,8 +4,8 @@
 
 Summary: osinfo database files
 Name: osinfo-db
-Version: 20170813
-Release: 6%{?dist}
+Version: 20180531
+Release: 1%{?dist}
 License: LGPLv2+
 Source0: https://releases.pagure.org/libosinfo/%{name}-%{version}.tar.xz
 Source1: /https://releases.pagure.org/libosinfo/%{name}-%{version}.tar.xz.asc
@@ -15,9 +15,7 @@ BuildRequires: osinfo-db-tools
 BuildArch: noarch
 Requires: hwdata
 
-Patch0: add-rhel7.5-data.patch
-Patch1: add-fedora-27-data.patch
-Patch2: add-opensuse-42.3-and-win2k16.patch
+Patch0: add-rhel7.6-data.patch
 
 %description
 The osinfo database provides information about operating systems and
@@ -26,9 +24,7 @@ provisioning of new virtual machines
 
 %prep
 %setup -q
-%patch0 -p1 -b .add-rhel7.5-data
-%patch1 -p1 -b .add-fedora-27-data
-%patch2 -p1 -b .add-opensuse-42.3-and-win2k16
+%patch0 -p1 -b .add-rhel7.6-data
 
 # For us to be able to apply patches on top of a rebase,
 # we:
@@ -54,6 +50,11 @@ osinfo-db-import  --root %{buildroot} --dir %{_datadir}/osinfo %{PatchedSource}
 %{_datadir}/osinfo/schema
 
 %changelog
+* Mon Jun 11 2018 Felipe Borges <feborges@redhat.com> - 20180531-1
+- Rebase to 20180531
+- Add RHEL 7.6
+- Resolves: rhbz#1559001, rhbz#1576376
+
 * Fri Feb 02 2018 Felipe Borges <feborges@redhat.com> - 20170813-6
 - Both files inserted in the previous release were not processed.
 

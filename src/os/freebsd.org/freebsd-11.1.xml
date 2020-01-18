@@ -10,6 +10,7 @@
     <vendor xml:lang="de">FreeBSD-Projekt</vendor>
     <vendor xml:lang="es">FreeBSD Project</vendor>
     <vendor xml:lang="fr">FreeBSD Project</vendor>
+    <vendor xml:lang="id">Proyek FreeBSD</vendor>
     <vendor xml:lang="ja">FreeBSD プロジェクト</vendor>
     <vendor xml:lang="pl">Projekt FreeBSD</vendor>
     <vendor xml:lang="pt_BR">Projeto FreeBSD</vendor>
@@ -27,28 +28,28 @@
     </devices>
 
     <media arch="x86_64">
-      <url>ftp://ftp.freebsd.org/pub/FreeBSD/releases/ISO-IMAGES/11.1/FreeBSD-11.1-RELEASE-amd64-dvd1.iso</url>
+      <url>https://download.freebsd.org/ftp/releases/ISO-IMAGES/11.1/FreeBSD-11.1-RELEASE-amd64-dvd1.iso</url>
       <iso>
         <system-id>FreeBSD</system-id>
         <volume-id>11_1_RELEASE_AMD64_DVD</volume-id>
       </iso>
     </media>
     <media arch="x86_64">
-      <url>ftp://ftp.freebsd.org/pub/FreeBSD/releases/ISO-IMAGES/11.1/FreeBSD-11.1-RELEASE-amd64-disc1.iso</url>
+      <url>https://download.freebsd.org/ftp/releases/ISO-IMAGES/11.1/FreeBSD-11.1-RELEASE-amd64-disc1.iso</url>
       <iso>
         <system-id>FreeBSD</system-id>
         <volume-id>11_1_RELEASE_AMD64_CD</volume-id>
       </iso>
     </media>
     <media arch="i686">
-      <url>ftp://ftp.freebsd.org/pub/FreeBSD/releases/ISO-IMAGES/11.0/FreeBSD-11.0-RELEASE-i386-dvd1.iso</url>
+      <url>https://download.freebsd.org/ftp/releases/ISO-IMAGES/11.1/FreeBSD-11.1-RELEASE-i386-dvd1.iso</url>
       <iso>
         <system-id>FreeBSD</system-id>
         <volume-id>11_1_RELEASE_I386_DVD</volume-id>
       </iso>
     </media>
     <media arch="i686">
-      <url>ftp://ftp.freebsd.org/pub/FreeBSD/releases/ISO-IMAGES/11.1/FreeBSD-11.1-RELEASE-i386-disc1.iso</url>
+      <url>https://download.freebsd.org/ftp/releases/ISO-IMAGES/11.1/FreeBSD-11.1-RELEASE-i386-disc1.iso</url>
       <iso>
         <system-id>FreeBSD</system-id>
         <volume-id>11_1_RELEASE_I386_CD</volume-id>

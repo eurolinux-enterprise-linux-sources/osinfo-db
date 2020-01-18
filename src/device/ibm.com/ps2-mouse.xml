@@ -10,8 +10,10 @@
     <vendor xml:lang="de">Qemu/KVM</vendor>
     <vendor xml:lang="es">Qemu/KVM</vendor>
     <vendor xml:lang="fr">Qemu/KVM</vendor>
+    <vendor xml:lang="id">Qemu/KVM</vendor>
     <vendor xml:lang="ja">QEMU/KVM</vendor>
     <vendor xml:lang="pl">QEMU/KVM</vendor>
+    <vendor xml:lang="pt">Qemu/KVM</vendor>
     <vendor xml:lang="pt_BR">Qemu/KVM</vendor>
     <vendor xml:lang="uk">Qemu/KVM</vendor>
     <product>Mouse</product>

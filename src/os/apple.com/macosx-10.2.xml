@@ -5,7 +5,9 @@
     <short-id>macosx10.2</short-id>
     <name>MacOS X Jaguar</name>
     <name xml:lang="ca">MacOS X Jaguar</name>
+    <name xml:lang="es">MacOS X Jaguar</name>
     <name xml:lang="fr">MacOS X Jaguar</name>
+    <name xml:lang="id">MacOS X Jaguar</name>
     <name xml:lang="pl">Mac OS X Jaguar</name>
     <name xml:lang="pt_BR">MacOS X Jaguar</name>
     <name xml:lang="uk">MacOS X Jaguar</name>
@@ -15,6 +17,7 @@
     <vendor xml:lang="de">Apple Inc.</vendor>
     <vendor xml:lang="es">Apple Inc.</vendor>
     <vendor xml:lang="fr">Apple Inc.</vendor>
+    <vendor xml:lang="id">Apple Inc.</vendor>
     <vendor xml:lang="ja">Apple Inc.</vendor>
     <vendor xml:lang="pl">Apple Inc.</vendor>
     <vendor xml:lang="pt_BR">Apple Inc.</vendor>
@@ -22,5 +25,7 @@
     <family>darwin</family>
     <distro>osx</distro>
     <upgrades id="http://apple.com/macosx/10.1"/>
+
+    <release-date>2002-09-24</release-date>
   </os>
 </libosinfo>

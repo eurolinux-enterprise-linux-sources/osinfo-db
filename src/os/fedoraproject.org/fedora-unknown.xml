@@ -5,8 +5,11 @@
     <short-id>fedora-unknown</short-id>
     <name>Fedora</name>
     <name xml:lang="ca">Fedora</name>
+    <name xml:lang="es">Fedora</name>
     <name xml:lang="fr">Fedora</name>
+    <name xml:lang="id">Fedora</name>
     <name xml:lang="pl">Fedora</name>
+    <name xml:lang="pt">Fedora </name>
     <name xml:lang="pt_BR">Fedora</name>
     <name xml:lang="uk">Fedora</name>
     <version>unknown</version>
@@ -15,40 +18,30 @@
     <vendor xml:lang="de">Fedora-Projekt</vendor>
     <vendor xml:lang="es">Fedora Project</vendor>
     <vendor xml:lang="fr">Fedora Project</vendor>
+    <vendor xml:lang="id">Proyek Fedora</vendor>
     <vendor xml:lang="ja">Fedora Project</vendor>
     <vendor xml:lang="pl">Projekt Fedora</vendor>
+    <vendor xml:lang="pt">Projecto Fedora </vendor>
     <vendor xml:lang="pt_BR">Projeto Fedora</vendor>
     <vendor xml:lang="uk">Проект Fedora</vendor>
     <family>linux</family>
     <distro>fedora</distro>
-    <upgrades id="http://fedoraproject.org/fedora/24"/>
-    <derives-from id="http://fedoraproject.org/fedora/24"/>
+    <upgrades id="http://fedoraproject.org/fedora/28"/>
+    <derives-from id="http://fedoraproject.org/fedora/28"/>
     <release-status>prerelease</release-status>
 
-    <media arch="i686">
-      <iso>
-        <volume-id>Fedora.*-([2-9][5-9]|[0-9]{3,}).*-i386</volume-id>
-        <system-id>LINUX</system-id>
-      </iso>
-    </media>
     <media arch="x86_64">
       <iso>
-        <volume-id>Fedora.*-([2-9][5-9]|[0-9]{3,}).*-x86_64</volume-id>
+        <volume-id>Fedora-.*-dvd-x86_64-(29|[3-9][0-9]|rawh)</volume-id>
         <system-id>LINUX</system-id>
       </iso>
       <kernel>isolinux/vmlinuz</kernel>
       <initrd>isolinux/initrd.img</initrd>
     </media>
 
-    <media live="true" arch="i686">
-      <iso>
-        <volume-id>Fedora-Live-.*-i686-([2-9][5-9]|[0-9]{3,})</volume-id>
-        <system-id>LINUX</system-id>
-      </iso>
-    </media>
     <media live="true" arch="x86_64">
       <iso>
-        <volume-id>Fedora-Live-.*-x86_64-([2-9][5-9]|[0-9]{3,})</volume-id>
+        <volume-id>Fedora-.*-Live-(29|[3-9][0-9]|Rawhide).*</volume-id>
         <system-id>LINUX</system-id>
       </iso>
     </media>

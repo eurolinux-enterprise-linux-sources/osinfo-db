@@ -4,10 +4,20 @@
   <os id="http://suse.com/sled/11.4">
     <short-id>sled11sp4</short-id>
     <name>SUSE Linux Enterprise Desktop 11 SP4</name>
+    <name xml:lang="ca">SUSE Linux Enterprise Desktop 11 SP4</name>
+    <name xml:lang="es">SUSE Linux Enterprise Desktop 11 SP4</name>
     <name xml:lang="fr">SUSE Linux Enterprise Desktop 11 SP4</name>
+    <name xml:lang="id">SUSE Linux Enterprise Desktop 11 SP4</name>
+    <name xml:lang="pl">SUSE Linux Enterprise Desktop 11 SP4</name>
+    <name xml:lang="uk">SUSE Linux Enterprise Desktop 11 SP4</name>
     <version>11.4</version>
     <vendor>SUSE</vendor>
+    <vendor xml:lang="ca">SUSE</vendor>
+    <vendor xml:lang="es">SUSE</vendor>
     <vendor xml:lang="fr">SUSE</vendor>
+    <vendor xml:lang="id">SUSE</vendor>
+    <vendor xml:lang="pl">SUSE</vendor>
+    <vendor xml:lang="uk">SUSE</vendor>
     <family>linux</family>
     <distro>sled</distro>
     <upgrades id="http://suse.com/sled/11.3"/>

@@ -8,6 +8,7 @@
     <name xml:lang="de">Red Hat Linux 3.0.3</name>
     <name xml:lang="es">Red Hat Linux 3.0.3</name>
     <name xml:lang="fr">Red Hat Linux 3.0.3</name>
+    <name xml:lang="id">Red Hat Linux 3.0.3</name>
     <name xml:lang="ja">Red Hat Linux 3.0.3</name>
     <name xml:lang="pl">Red Hat Linux 3.0.3</name>
     <name xml:lang="pt_BR">Red Hat Linux 3.0.3</name>
@@ -18,6 +19,7 @@
     <vendor xml:lang="de">Red Hat, Inc</vendor>
     <vendor xml:lang="es">Red Hat, Inc</vendor>
     <vendor xml:lang="fr">Red Hat, Inc</vendor>
+    <vendor xml:lang="id">Red Hat, Inc</vendor>
     <vendor xml:lang="ja">Red Hat, Inc</vendor>
     <vendor xml:lang="pl">Red Hat, Inc</vendor>
     <vendor xml:lang="pt_BR">Red Hat, Inc</vendor>
@@ -29,5 +31,6 @@
     <derives-from id="http://redhat.com/rhl/2.1"/>
 
     <release-date>1996-05-01</release-date>
+    <eol-date>1996-10-03</eol-date>
   </os>
 </libosinfo>

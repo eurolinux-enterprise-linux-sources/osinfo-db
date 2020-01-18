@@ -8,6 +8,7 @@
     <name xml:lang="de">Mandrake Linux 7.0</name>
     <name xml:lang="es">Mandrake Linux 7.0</name>
     <name xml:lang="fr">Mandrake Linux 7.0</name>
+    <name xml:lang="id">Mandrake Linux 7.0</name>
     <name xml:lang="ja">Mandrake Linux 7.0</name>
     <name xml:lang="pl">Mandrake Linux 7.0</name>
     <name xml:lang="pt_BR">Mandrake Linux 7.0</name>
@@ -17,6 +18,7 @@
     <vendor xml:lang="de">Mandriva</vendor>
     <vendor xml:lang="es">Mandriva</vendor>
     <vendor xml:lang="fr">Mandriva</vendor>
+    <vendor xml:lang="id">Mandriva</vendor>
     <vendor xml:lang="ja">Mandriva</vendor>
     <vendor xml:lang="pl">Mandriva</vendor>
     <vendor xml:lang="pt_BR">Mandriva</vendor>
@@ -28,5 +30,6 @@
     <upgrades id="http://mandriva.com/mandrake/6.1"/>
     <derives-from id="http://mandriva.com/mandrake/6.1"/>
 
+    <release-date>2000-01-14</release-date>
   </os>
 </libosinfo>

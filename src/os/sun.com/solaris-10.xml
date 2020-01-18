@@ -4,13 +4,19 @@
   <os id="http://sun.com/solaris/10">
     <short-id>solaris10</short-id>
     <name>Solaris 10</name>
+    <name xml:lang="ca">Solaris 10</name>
+    <name xml:lang="es">Solaris 10</name>
     <name xml:lang="fr">Solaris 10</name>
+    <name xml:lang="id">Solaris 10</name>
+    <name xml:lang="pl">Solaris 10</name>
+    <name xml:lang="uk">Solaris 10</name>
     <version>10</version>
     <vendor>Sun</vendor>
     <vendor xml:lang="ca">Sun</vendor>
     <vendor xml:lang="de">Sun</vendor>
     <vendor xml:lang="es">Sun</vendor>
     <vendor xml:lang="fr">Sun</vendor>
+    <vendor xml:lang="id">Sun</vendor>
     <vendor xml:lang="ja">Sun</vendor>
     <vendor xml:lang="pl">Sun</vendor>
     <vendor xml:lang="pt_BR">Sun</vendor>
@@ -18,6 +24,8 @@
     <family>solaris</family>
     <distro>solaris</distro>
     <upgrades id="http://sun.com/solaris/9"/>
+
+    <release-date>2005-01-31</release-date>
 
     <devices>
       <device id="http://usb.org/usb/80ee/0021"/>

@@ -4,12 +4,19 @@
   <os id="http://debian.org/debian/testing">
     <short-id>debiantesting</short-id>
     <name>Debian Testing</name>
+    <name xml:lang="ca">Debian Testing</name>
+    <name xml:lang="es">Debian Testing</name>
+    <name xml:lang="fr">Debian Testing</name>
+    <name xml:lang="id">Debian Testing</name>
+    <name xml:lang="pl">Debian Testing</name>
+    <name xml:lang="uk">Debian Testing</name>
     <version>testing</version>
     <vendor>Debian Project</vendor>
     <vendor xml:lang="ca">Projecte Debian</vendor>
     <vendor xml:lang="de">Debian-Projekt</vendor>
     <vendor xml:lang="es">Debian Project</vendor>
     <vendor xml:lang="fr">Debian Project</vendor>
+    <vendor xml:lang="id">Proyek Debian</vendor>
     <vendor xml:lang="ja">Debian プロジェクト</vendor>
     <vendor xml:lang="pl">Projekt Debian</vendor>
     <vendor xml:lang="pt_BR">Projeto Debian</vendor>

@@ -6,7 +6,12 @@
     <name>SUSE Linux Enterprise Desktop 10 SP1</name>
     <version>10.1</version>
     <vendor>SUSE</vendor>
+    <vendor xml:lang="ca">SUSE</vendor>
+    <vendor xml:lang="es">SUSE</vendor>
     <vendor xml:lang="fr">SUSE</vendor>
+    <vendor xml:lang="id">SUSE</vendor>
+    <vendor xml:lang="pl">SUSE</vendor>
+    <vendor xml:lang="uk">SUSE</vendor>
     <family>linux</family>
     <distro>sled</distro>
     <upgrades id="http://suse.com/sled/10"/>

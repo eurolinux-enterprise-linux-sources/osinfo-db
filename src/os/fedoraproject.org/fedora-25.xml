@@ -10,8 +10,10 @@
     <vendor xml:lang="de">Fedora-Projekt</vendor>
     <vendor xml:lang="es">Fedora Project</vendor>
     <vendor xml:lang="fr">Fedora Project</vendor>
+    <vendor xml:lang="id">Proyek Fedora</vendor>
     <vendor xml:lang="ja">Fedora Project</vendor>
     <vendor xml:lang="pl">Projekt Fedora</vendor>
+    <vendor xml:lang="pt">Projecto Fedora </vendor>
     <vendor xml:lang="pt_BR">Projeto Fedora</vendor>
     <vendor xml:lang="uk">Проект Fedora</vendor>
     <family>linux</family>
@@ -20,6 +22,7 @@
     <derives-from id="http://fedoraproject.org/fedora/24"/>
 
     <release-date>2016-11-22</release-date>
+    <eol-date>2017-12-12</eol-date>
 
     <variant id="workstation">
       <name>Fedora 25 Workstation</name>

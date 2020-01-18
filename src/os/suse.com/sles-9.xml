@@ -4,12 +4,24 @@
   <os id="http://suse.com/sles/9">
     <short-id>sles9</short-id>
     <name>SUSE Linux Enterprise Server 9</name>
+    <name xml:lang="ca">SUSE Linux Enterprise Server 9</name>
+    <name xml:lang="es">SUSE Linux Enterprise Server 9</name>
     <name xml:lang="fr">SUSE Linux Enterprise Server 9</name>
+    <name xml:lang="id">SUSE Linux Enterprise Server 9</name>
+    <name xml:lang="pl">SUSE Linux Enterprise Server 9</name>
+    <name xml:lang="uk">SUSE Linux Enterprise Server 9</name>
     <version>9</version>
     <vendor>SUSE</vendor>
+    <vendor xml:lang="ca">SUSE</vendor>
+    <vendor xml:lang="es">SUSE</vendor>
     <vendor xml:lang="fr">SUSE</vendor>
+    <vendor xml:lang="id">SUSE</vendor>
+    <vendor xml:lang="pl">SUSE</vendor>
+    <vendor xml:lang="uk">SUSE</vendor>
     <family>linux</family>
     <distro>sles</distro>
+
+    <release-date>2004-08-03</release-date>
 
     <resources arch="all">
       <minimum>

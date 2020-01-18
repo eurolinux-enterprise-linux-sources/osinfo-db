@@ -8,6 +8,7 @@
     <name xml:lang="de">Microsoft Windows NT Server 3.1</name>
     <name xml:lang="es">Microsoft Windows NT Server 3.1</name>
     <name xml:lang="fr">Microsoft Windows NT Server 3.1</name>
+    <name xml:lang="id">Microsoft Windows NT Server 3.1</name>
     <name xml:lang="ja">Microsoft Windows NT Server 3.1</name>
     <name xml:lang="pl">Microsoft Windows NT Server 3.1</name>
     <name xml:lang="pt_BR">Microsoft Windows NT Server 3.1</name>
@@ -17,6 +18,7 @@
     <vendor xml:lang="de">Microsoft Corporation</vendor>
     <vendor xml:lang="es">Microsoft Corporation</vendor>
     <vendor xml:lang="fr">Microsoft Corporation</vendor>
+    <vendor xml:lang="id">Microsoft Corporation</vendor>
     <vendor xml:lang="ja">Microsoft Corporation</vendor>
     <vendor xml:lang="pl">Microsoft Corporation</vendor>
     <vendor xml:lang="pt_BR">Microsoft Corporation</vendor>

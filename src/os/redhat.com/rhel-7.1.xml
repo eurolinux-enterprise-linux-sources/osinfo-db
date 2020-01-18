@@ -4,13 +4,19 @@
   <os id="http://redhat.com/rhel/7.1">
     <short-id>rhel7.1</short-id>
     <name>Red Hat Enterprise Linux 7.1</name>
+    <name xml:lang="ca">Red Hat Enterprise Linux 7.1</name>
+    <name xml:lang="es">Red Hat Enterprise Linux 7.1</name>
     <name xml:lang="fr">Red Hat Enterprise Linux 7.1</name>
+    <name xml:lang="id">Red Hat Enterprise Linux 7.1</name>
+    <name xml:lang="pl">Red Hat Enterprise Linux 7.1</name>
+    <name xml:lang="uk">Red Hat Enterprise Linux 7.1</name>
     <version>7.1</version>
     <vendor>Red Hat, Inc</vendor>
     <vendor xml:lang="ca">Red Hat, Inc</vendor>
     <vendor xml:lang="de">Red Hat, Inc</vendor>
     <vendor xml:lang="es">Red Hat, Inc</vendor>
     <vendor xml:lang="fr">Red Hat, Inc</vendor>
+    <vendor xml:lang="id">Red Hat, Inc</vendor>
     <vendor xml:lang="ja">Red Hat, Inc</vendor>
     <vendor xml:lang="pl">Red Hat, Inc</vendor>
     <vendor xml:lang="pt_BR">Red Hat, Inc</vendor>
@@ -50,7 +56,7 @@
       </minimum>
 
       <recommended>
-        <cpu>400000000</cpu>
+        <cpu>1000000000</cpu>
         <ram>2147483648</ram>
         <storage>21474836480</storage>
       </recommended>
@@ -65,9 +71,9 @@
       </minimum>
 
       <recommended>
-        <cpu>400000000</cpu>
+        <cpu>1000000000</cpu>
         <ram>1073741824</ram>
-        <storage>9663676416</storage>
+        <storage>10737418240</storage>
       </recommended>
     </resources>
 

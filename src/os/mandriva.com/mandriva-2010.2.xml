@@ -8,6 +8,7 @@
     <name xml:lang="de">Mandriva Linux 2010.2</name>
     <name xml:lang="es">Mandriva Linux 2010.2</name>
     <name xml:lang="fr">Mandriva Linux 2010.2</name>
+    <name xml:lang="id">Mandriva Linux 2010.2</name>
     <name xml:lang="ja">Mandriva Linux 2010.2</name>
     <name xml:lang="pl">Mandriva Linux 2010.2</name>
     <name xml:lang="pt_BR">Mandriva Linux 2010.2</name>
@@ -17,6 +18,7 @@
     <vendor xml:lang="de">Mandriva</vendor>
     <vendor xml:lang="es">Mandriva</vendor>
     <vendor xml:lang="fr">Mandriva</vendor>
+    <vendor xml:lang="id">Mandriva</vendor>
     <vendor xml:lang="ja">Mandriva</vendor>
     <vendor xml:lang="pl">Mandriva</vendor>
     <vendor xml:lang="pt_BR">Mandriva</vendor>
@@ -27,5 +29,6 @@
     <upgrades id="http://mandriva.com/mandriva/2010.1"/>
     <derives-from id="http://mandriva.com/mandriva/2010.1"/>
 
+    <release-date>2010-12-01</release-date>
   </os>
 </libosinfo>

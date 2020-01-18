@@ -5,13 +5,19 @@
     <short-id>debian8</short-id>
     <short-id>debianjessie</short-id>
     <name>Debian Jessie</name>
+    <name xml:lang="ca">Debian Jessie</name>
+    <name xml:lang="es">Debian Jessie</name>
     <name xml:lang="fr">Debian Jessie</name>
+    <name xml:lang="id">Debian Jessie</name>
+    <name xml:lang="pl">Debian Jessie</name>
+    <name xml:lang="uk">Debian Jessie</name>
     <version>8</version>
     <vendor>Debian Project</vendor>
     <vendor xml:lang="ca">Projecte Debian</vendor>
     <vendor xml:lang="de">Debian-Projekt</vendor>
     <vendor xml:lang="es">Debian Project</vendor>
     <vendor xml:lang="fr">Debian Project</vendor>
+    <vendor xml:lang="id">Proyek Debian</vendor>
     <vendor xml:lang="ja">Debian プロジェクト</vendor>
     <vendor xml:lang="pl">Projekt Debian</vendor>
     <vendor xml:lang="pt_BR">Projeto Debian</vendor>
@@ -42,7 +48,7 @@
     </resources>
 
     <media arch="i686">
-      <url>http://cdimage.debian.org/mirror/cdimage/archive/8.8.0/i386/iso-dvd/debian-8.8.0-i386-DVD-1.iso</url>
+      <url>http://cdimage.debian.org/mirror/cdimage/archive/8.10.0/i386/iso-dvd/debian-8.10.0-i386-DVD-1.iso</url>
       <iso>
         <volume-id>Debian 8.\d.\d i386 1</volume-id>
       </iso>
@@ -50,7 +56,7 @@
       <initrd>install.386/initrd.gz</initrd>
     </media>
     <media arch="x86_64">
-      <url>http://cdimage.debian.org/mirror/cdimage/archive/8.8.0/amd64/iso-dvd/debian-8.8.0-amd64-DVD-1.iso</url>
+      <url>http://cdimage.debian.org/mirror/cdimage/archive/8.10.0/amd64/iso-dvd/debian-8.10.0-amd64-DVD-1.iso</url>
       <iso>
         <volume-id>Debian 8.\d.\d amd64 1</volume-id>
       </iso>

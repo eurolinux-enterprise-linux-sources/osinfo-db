@@ -6,7 +6,12 @@
     <name>SUSE Linux Enterprise Server 12 SP2</name>
     <version>12.2</version>
     <vendor>SUSE</vendor>
+    <vendor xml:lang="ca">SUSE</vendor>
+    <vendor xml:lang="es">SUSE</vendor>
     <vendor xml:lang="fr">SUSE</vendor>
+    <vendor xml:lang="id">SUSE</vendor>
+    <vendor xml:lang="pl">SUSE</vendor>
+    <vendor xml:lang="uk">SUSE</vendor>
     <family>linux</family>
     <distro>sles</distro>
     <upgrades id="http://suse.com/sles/12.1"/>
