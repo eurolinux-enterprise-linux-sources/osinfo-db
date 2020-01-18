@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libosinfo version="0.0.1">
+
+  <install-script id='http://centos.org/centos/kickstart/jeos'>
+    <profile>jeos</profile>
+    <expected-filename>centos.ks</expected-filename>
+    <config>
+      <param policy="required" name="admin-password"/>
+      <param policy="optional" name="l10n-keyboard"/>
+      <param policy="optional" name="l10n-language"/>
+      <param policy="optional" name="l10n-timezone"/>
+      <param policy="optional" name="target-disk"/>
+      <param policy="required" name="script-disk"/>
+    </config>
+    <injection-method>cdrom</injection-method>
+    <injection-method>disk</injection-method>
+    <injection-method>floppy</injection-method>
+    <injection-method>initrd</injection-method>
+    <template>
+      <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+
+        <xsl:output method="text"/>
+
+        <xsl:template name="target-disk">
+          <xsl:choose>
+            <xsl:when test="config/target-disk != ''">
+              <xsl:value-of select="config/target-disk"/>
+            </xsl:when>
+            <xsl:when test="os/version &gt; 4">
+              
+              <xsl:text>/dev/vda</xsl:text>
+            </xsl:when>
+            <xsl:otherwise>
+              
+              <xsl:text>/dev/sda</xsl:text>
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:template>
+
+        <xsl:template name="script-disk">
+          <xsl:variable name="script-disk">
+            <xsl:value-of select="config/script-disk"/>
+          </xsl:variable>
+          <xsl:value-of select="substring-after($script-disk, '/dev/')"/>
+        </xsl:template>
+
+        <xsl:template match="/command-line">
+          <xsl:text>ks=</xsl:text>
+          <xsl:choose>
+            <xsl:when test="script/preferred-injection-method = 'initrd'">
+              <xsl:text>file:/</xsl:text>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:text>hd:</xsl:text>
+              <xsl:call-template name="script-disk"/>
+              <xsl:text>:/</xsl:text>
+            </xsl:otherwise>
+          </xsl:choose>
+          <xsl:value-of select="script/expected-filename"/>
+        </xsl:template>
+
+        <xsl:template name="version">
+          <xsl:choose>
+            <xsl:when test="os/version &lt; 7">
+              <xsl:text>6</xsl:text>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:text>7</xsl:text>
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:template>
+
+        <xsl:template name="arch">
+          <xsl:choose>
+            <xsl:when test="config/hardware-arch = 'x86_64'">
+              <xsl:text>x86_64</xsl:text>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:text>i386</xsl:text>
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:template>
+
+        <xsl:template name="installation-url">
+          <xsl:choose>
+            <xsl:when test="config/installation-url != ''">
+              <xsl:value-of select="config/installation-url"/>
+            </xsl:when>
+            <xsl:when test="treel/url != ''">
+              <xsl:value-of select="tree/url"/>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:text>http://mirror.centos.org/centos/</xsl:text>
+              <xsl:call-template name="version"/>
+              <xsl:text>/os/</xsl:text>
+              <xsl:call-template name="arch"/>
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:template>
+
+        <xsl:template match="/install-script-config">
+# Install script for <xsl:value-of select="os/short-id"/> profile <xsl:value-of select="script/profile"/>
+<xsl:if test="script/installation-source = 'media'">
+install
+cdrom
+</xsl:if>
+text
+keyboard <xsl:value-of select="config/l10n-keyboard"/>
+lang <xsl:value-of select="config/l10n-language"/>
+skipx
+network --bootproto dhcp
+rootpw <xsl:value-of select="config/admin-password"/>
+firewall --disabled
+authconfig --enableshadow --enablemd5
+selinux --enforcing
+timezone --utc <xsl:value-of select="config/l10n-timezone"/>
+bootloader --location=mbr
+zerombr
+
+clearpart --all --drives=<xsl:call-template name="target-disk"/>
+
+autopart
+reboot
+
+<xsl:if test="script/installation-source = 'network'">
+url --url=<xsl:call-template name="installation-url"/>
+</xsl:if>
+
+%packages
+<xsl:choose>
+  <xsl:when test="os/version &lt; 7">
+@base
+  </xsl:when>
+  <xsl:otherwise>
+@^minimal
+  </xsl:otherwise>
+</xsl:choose>
+@core
+
+%end
+        </xsl:template>
+      </xsl:stylesheet>
+    </template>
+  </install-script>
+</libosinfo>

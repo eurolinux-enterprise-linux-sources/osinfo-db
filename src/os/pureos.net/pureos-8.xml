@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libosinfo version="0.0.1">
+
+  <os id="http://pureos.net/pureos/8">
+    <short-id>pureos8</short-id>
+    <name>PureOS</name>
+    <version>8</version>
+    <vendor>Purism, SPC</vendor>
+    <family>linux</family>
+    <distro>pureos</distro>
+
+    <release-status>prerelease</release-status>
+
+    <resources arch="all">
+      <minimum>
+        <cpu>1000000000</cpu>
+        <n-cpus>1</n-cpus>
+        <ram>1073741824</ram>
+        <storage>5368709120</storage>
+      </minimum>
+      <recommended>
+        <cpu>1000000000</cpu>
+        <ram>1073741824</ram>
+        <storage>16106127360</storage>
+      </recommended>
+    </resources>
+
+    <media live="true" arch="x86_64">
+      <iso>
+        <volume-id>PureOS 8.0 GNOME Live</volume-id>
+      </iso>
+      <kernel>casper/vmlinuz</kernel>
+      <initrd>casper/initrd.img</initrd>
+    </media>
+  </os>
+</libosinfo>

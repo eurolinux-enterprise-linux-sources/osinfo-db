@@ -36,7 +36,7 @@
       <iso>
         <system-id>LINUX</system-id>
         <volume-id>CentOS_6.6_Final</volume-id>
-        <volume-size>4029677568</volume-size>
+        <volume-size>4029048832</volume-size>
       </iso>
       <kernel>isolinux/vmlinuz</kernel>
       <initrd>isolinux/initrd.img</initrd>
@@ -45,7 +45,7 @@
       <iso>
         <system-id>LINUX</system-id>
         <volume-id>CentOS_6.6_Final</volume-id>
-        <volume-size>4632608768</volume-size>
+        <volume-size>4631738368</volume-size>
       </iso>
       <kernel>isolinux/vmlinuz</kernel>
       <initrd>isolinux/initrd.img</initrd>
@@ -56,7 +56,7 @@
       <iso>
         <system-id>LINUX</system-id>
         <volume-id>CentOS_6.6_Final</volume-id>
-        <volume-size>355467264</volume-size>
+        <volume-size>355250176</volume-size>
       </iso>
       <kernel>isolinux/vmlinuz</kernel>
       <initrd>isolinux/initrd.img</initrd>
@@ -65,7 +65,7 @@
       <iso>
         <system-id>LINUX</system-id>
         <volume-id>CentOS_6.6_Final</volume-id>
-        <volume-size>401604608</volume-size>
+        <volume-size>400891904</volume-size>
       </iso>
       <kernel>isolinux/vmlinuz</kernel>
       <initrd>isolinux/initrd.img</initrd>
@@ -76,7 +76,7 @@
       <iso>
         <system-id>LINUX</system-id>
         <volume-id>CentOS</volume-id>
-        <volume-size>190840832</volume-size>
+        <volume-size>189818880</volume-size>
       </iso>
       <kernel>isolinux/vmlinuz</kernel>
       <initrd>isolinux/initrd.img</initrd>
@@ -85,11 +85,28 @@
       <iso>
         <system-id>LINUX</system-id>
         <volume-id>CentOS</volume-id>
-        <volume-size>232783872</volume-size>
+        <volume-size>232714240</volume-size>
       </iso>
       <kernel>isolinux/vmlinuz</kernel>
       <initrd>isolinux/initrd.img</initrd>
     </media>
+
+    <tree arch="x86_64">
+      <url>http://vault.centos.org/6.6/os/x86_64/</url>
+      <treeinfo>
+        <family>CentOS</family>
+        <version>6.6</version>
+        <arch>x86_64</arch>
+      </treeinfo>
+    </tree>
+    <tree arch="i686">
+      <url>http://vault.centos.org/6.6/os/i386/</url>
+      <treeinfo>
+        <family>CentOS</family>
+        <version>6.6</version>
+        <arch>i386</arch>
+      </treeinfo>
+    </tree>
 
     <resources arch="all">
       <minimum>
@@ -105,8 +122,8 @@
     </resources>
 
     <installer>
-      <script id='http://redhat.com/rhel/kickstart/jeos'/>
-      <script id='http://redhat.com/rhel/kickstart/desktop'/>
+      <script id='http://centos.org/centos/kickstart/jeos'/>
+      <script id='http://centos.org/centos/kickstart/desktop'/>
     </installer>
   </os>
 </libosinfo>

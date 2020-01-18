@@ -44,30 +44,49 @@
     <media arch="x86_64">
       <url>http://cdimage.ubuntu.com/ubuntu-server/daily/current/disco-server-amd64.iso</url>
       <iso>
-        <volume-id>Ubuntu-Server 19.04(.\d)? amd64</volume-id>
+        <volume-id>Ubuntu-Server 19.04(.\d\+?)? amd64</volume-id>
       </iso>
       <kernel>install/vmlinuz</kernel>
       <initrd>install/initrd.gz</initrd>
+      <installer>
+        <script id='http://ubuntu.com/ubuntu/preseed/desktop'/>
+        <script id='http://ubuntu.com/ubuntu/preseed/jeos'/>
+      </installer>
     </media>
     <media live="true" arch="x86_64">
       <url>http://cdimage.ubuntu.com/daily-live/current/disco-desktop-amd64.iso</url>
       <iso>
-        <volume-id>Ubuntu 19.04(.\d)? amd64</volume-id>
+        <volume-id>Ubuntu 19.04(.\d\+?)? amd64</volume-id>
       </iso>
       <kernel>casper/vmlinuz</kernel>
-      <initrd>casper/initrd.lz</initrd>
+      <initrd>casper/initrd</initrd>
+      <installer>
+        <script id='http://ubuntu.com/ubuntu/preseed/desktop'/>
+      </installer>
     </media>
     <media arch="aarch64">
       <url>http://cdimage.ubuntu.com/ubuntu-server/daily/current/disco-server-arm64.iso</url>
       <iso>
-        <volume-id>Ubuntu-Server 19.04(.\d)? arm64</volume-id>
+        <volume-id>Ubuntu-Server 19.04(.\d\+?)? arm64</volume-id>
       </iso>
+      <kernel>install/vmlinuz</kernel>
+      <initrd>install/initrd.gz</initrd>
+    </media>
+    <media arch="ppc64le">
+      <url>http://cdimage.ubuntu.com/ubuntu-server/daily/current/disco-server-ppc64el.iso</url>
+      <iso>
+        <volume-id>Ubuntu-Server 19.04(.\d\+?)? ppc64</volume-id>
+      </iso>
+       <kernel>install/vmlinux</kernel>
+       <initrd>install/initrd.gz</initrd>
     </media>
     <media arch="s390x">
       <url>http://cdimage.ubuntu.com/ubuntu-server/daily/current/disco-server-s390x.iso</url>
       <iso>
-        <volume-id>Ubuntu-Server 19.04(.\d)? s390x</volume-id>
+        <volume-id>Ubuntu-Server 19.04(.\d\+?)? s390x</volume-id>
       </iso>
+      <kernel>boot/kernel.ubuntu</kernel>
+      <initrd>boot/initrd.ubuntu</initrd>
     </media>
 
     <tree arch="i686">
@@ -82,6 +101,7 @@
     </tree>
 
     <installer>
+      <script id='http://ubuntu.com/ubuntu/preseed/desktop'/>
       <script id='http://ubuntu.com/ubuntu/preseed/jeos'/>
     </installer>
   </os>

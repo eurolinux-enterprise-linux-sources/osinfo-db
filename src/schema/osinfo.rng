@@ -1,5 +1,5 @@
 <grammar xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-  <!-- Schema distributed with osinfo-db-20181214 -->
+  <!-- Schema distributed with osinfo-db-20190319 -->
 
   <start>
     <ref name='libosinfo'/>
@@ -299,6 +299,11 @@
       </optional>
       <interleave>
         <optional>
+          <element name='network-install'>
+            <ref name='resource-attr'/>
+          </element>
+        </optional>
+        <optional>
           <element name='minimum'>
             <ref name='resource-attr'/>
           </element>
@@ -406,6 +411,11 @@
           <element name='kernel'>
             <text/>
           </element>
+        </optional>
+        <optional>
+          <zeroOrMore>
+            <ref name='installer'/>
+          </zeroOrMore>
         </optional>
       </interleave>
     </element>
@@ -874,7 +884,7 @@
   <define name='release-status'>
     <element name='release-status'>
       <data type="string">
-        <param name="pattern">snapshot|prerelease|released</param>
+        <param name="pattern">snapshot|prerelease|released|rolling</param>
       </data>
     </element>
   </define>

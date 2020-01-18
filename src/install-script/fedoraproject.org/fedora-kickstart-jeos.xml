@@ -5,7 +5,7 @@
     <profile>jeos</profile>
     <expected-filename>fedora.ks</expected-filename>
     <config>
-      <param policy="optional" name="admin-password"/>
+      <param policy="required" name="admin-password"/>
       <param value-map="http://x.org/x11-keyboard" policy="optional" name="l10n-keyboard"/>
       <param policy="optional" name="l10n-language"/>
       <param policy="optional" name="l10n-timezone"/>
@@ -15,6 +15,7 @@
     <injection-method>cdrom</injection-method>
     <injection-method>disk</injection-method>
     <injection-method>floppy</injection-method>
+    <injection-method>initrd</injection-method>
     <template>
       <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 
@@ -47,50 +48,58 @@
           <xsl:value-of select="substring-after($script-disk, '/dev/')"/>
         </xsl:template>
 
-	<xsl:template name="rootfs">
-	  <xsl:choose>
-	    <xsl:when test="os/version &gt; 10">
-	      <xsl:text>ext4</xsl:text>
-	    </xsl:when>
-	    <xsl:otherwise>
-	      <xsl:text>ext3</xsl:text>
-	    </xsl:otherwise>
-	  </xsl:choose>
-	</xsl:template>
+        <xsl:template name="rootfs">
+          <xsl:choose>
+            <xsl:when test="os/version &gt; 10">
+              <xsl:text>ext4</xsl:text>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:text>ext3</xsl:text>
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:template>
 
-	<xsl:template name="bootfs">
-	  <xsl:choose>
-	    <xsl:when test="os/version &gt; 11">
-	      <xsl:text>ext4</xsl:text>
-	    </xsl:when>
-	    <xsl:otherwise>
-	      <xsl:text>ext3</xsl:text>
-	    </xsl:otherwise>
-	  </xsl:choose>
-	</xsl:template>
+        <xsl:template name="bootfs">
+          <xsl:choose>
+            <xsl:when test="os/version &gt; 11">
+              <xsl:text>ext4</xsl:text>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:text>ext3</xsl:text>
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:template>
 
-	<xsl:template name="keyboard">
-	  <xsl:choose>
-	    <xsl:when test="os/version &gt; 17">
+        <xsl:template name="keyboard">
+          <xsl:choose>
+            <xsl:when test="os/version &gt; 17">
               <xsl:value-of select="config/l10n-keyboard"/>
-	    </xsl:when>
-	    <xsl:otherwise>
+            </xsl:when>
+            <xsl:otherwise>
               
-	      <xsl:text>us</xsl:text>
-	    </xsl:otherwise>
-	  </xsl:choose>
-	</xsl:template>
+              <xsl:text>us</xsl:text>
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:template>
 
         <xsl:template match="/command-line">
-            <xsl:text>ks=hd:</xsl:text>
-            <xsl:call-template name="script-disk"/>
-            <xsl:text>:/</xsl:text>
+            <xsl:text>ks=</xsl:text>
+            <xsl:choose>
+              <xsl:when test="script/preferred-injection-method = 'initrd'">
+                <xsl:text>file:/</xsl:text>
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:text>hd:</xsl:text>
+                <xsl:call-template name="script-disk"/>
+                <xsl:text>:/</xsl:text>
+              </xsl:otherwise>
+            </xsl:choose>
             <xsl:value-of select="script/expected-filename"/>
         </xsl:template>
 
         <xsl:template match="/install-script-config">
 # Install script for <xsl:value-of select="os/short-id"/> profile <xsl:value-of select="script/profile"/>
-<xsl:if test="count(media/variant) = 0 or not(contains(media/variant, 'netinst'))">
+<xsl:if test="script/installation-source='media' and (count(media/variant) = 0 or not(contains(media/variant, 'netinst')))">
 install
 cdrom
 </xsl:if>
@@ -122,17 +131,21 @@ zerombr <xsl:if test="os/version &lt; 14">yes</xsl:if>
 
 clearpart --all --drives=<xsl:call-template name="target-disk"/>
 
-<xsl:if test="os/version &gt; 15">
-part biosboot --fstype=biosboot --size=1
-</xsl:if>
+<xsl:choose>
+  <xsl:when test="os/version &lt; 3">
 part /boot --fstype <xsl:call-template name="bootfs"/> --recommended --ondisk=<xsl:call-template name="target-disk"/>
 part pv.2 --size=1 --grow --ondisk=<xsl:call-template name="target-disk"/>
 volgroup VolGroup00 --pesize=32768 pv.2
 logvol swap --fstype swap --name=LogVol01 --vgname=VolGroup00 --size=768 --grow --maxsize=1536
 logvol / --fstype <xsl:call-template name="rootfs"/> --name=LogVol00 --vgname=VolGroup00 --size=1024 --grow
+  </xsl:when>
+  <xsl:otherwise>
+autopart
+  </xsl:otherwise>
+</xsl:choose>
 reboot
 
-<xsl:if test="contains(media/variant, 'netinst')">
+<xsl:if test="script/installation-source='network' or contains(media/variant, 'netinst')">
 repo --name=fedora --mirrorlist=https://mirrors.fedoraproject.org/metalink?repo=fedora-$releasever&amp;arch=$basearch
 repo --name=updates --mirrorlist=https://mirrors.fedoraproject.org/metalink?repo=updates-released-f$releasever&amp;arch=$basearch
 url --mirrorlist=https://mirrors.fedoraproject.org/metalink?repo=fedora-$releasever&amp;arch=$basearch
@@ -153,7 +166,7 @@ url --mirrorlist=https://mirrors.fedoraproject.org/metalink?repo=fedora-$release
 </xsl:if>
 
 %end
-	</xsl:template>
+        </xsl:template>
       </xsl:stylesheet>
     </template>
   </install-script>

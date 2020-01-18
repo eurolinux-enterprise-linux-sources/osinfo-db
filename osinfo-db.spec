@@ -4,8 +4,8 @@
 
 Summary: osinfo database files
 Name: osinfo-db
-Version: 20181214
-Release: 1%{?dist}
+Version: 20190319
+Release: 2%{?dist}
 License: LGPLv2+
 Source0: https://releases.pagure.org/libosinfo/%{name}-%{version}.tar.xz
 Source1: /https://releases.pagure.org/libosinfo/%{name}-%{version}.tar.xz.asc
@@ -15,6 +15,10 @@ BuildRequires: osinfo-db-tools
 BuildArch: noarch
 Requires: hwdata
 
+### Downstream Patches ###
+Patch0001: 0001-rhel-Add-rhel-7.7-info.patch
+Patch0002: 0002-rhel-Adjust-8.0-8-unknown-regex.patch
+
 %description
 The osinfo database provides information about operating systems and
 hypervisor platforms to facilitate the automated configuration and
@@ -22,6 +26,9 @@ provisioning of new virtual machines
 
 %prep
 %setup -q
+for p in %patches ; do
+    %__patch -p1 -i $p
+done
 
 # For us to be able to apply patches on top of a rebase,
 # we:
@@ -47,11 +54,23 @@ osinfo-db-import  --root %{buildroot} --dir %{_datadir}/osinfo %{PatchedSource}
 %{_datadir}/osinfo/schema
 
 %changelog
-* Thu Dec 14 2018 Fabiano Fidêncio <fidencio@redhat.com> - 20181214-1
-- Resolves: rhbz#1652088 - Rebase to the latest upstream release
+* Tue Mar 19 2019 Fabiano Fidêncio <fidencio@redhat.com> - 20190319-2
+- Related: rhbz#1647782 - Rebase osinfo-db to the latest version
+
+* Tue Mar 19 2019 Fabiano Fidêncio <fidencio@redhat.com> - 20190319-1
+- Resolves: rhbz#1647782 - Rebase osinfo-db to the latest version
+
+* Mon Dec 17 2018 Fabiano Fidêncio <fidencio@redhat.com> - 20181214-1
+- Resolves: rhbz#1647782 - Rebase osinfo-db to the latest version
+
+* Fri Dec 07 2018 Fabiano Fidêncio <fidencio@redhat.com> - 20181203-2
+- Resolves: rhbz#1656914 - backport change to support Fedora 29 Silverblue
 
 * Thu Dec 06 2018 Fabiano Fidêncio <fidencio@redhat.com> - 20181203-1
-- Resolves: rhbz#1652088 - Rebase to the latest upstream release
+- Resolves: rhbz#1647782 - Rebase osinfo-db to the latest version
+
+* Fri Nov 16 2018 Fabiano Fidêncio <fidencio@redhat.com> - 20181011-1
+- Resolves: rhbz#1647782 - Rebase osinfo-db to the latest version
 
 * Mon Jun 11 2018 Felipe Borges <feborges@redhat.com> - 20180531-1
 - Rebase to 20180531

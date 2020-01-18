@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libosinfo version="0.0.1">
+
+  <os id="http://archlinux.org/archlinux/rolling">
+    <short-id>archlinux</short-id>
+    <name>Arch Linux</name>
+    <vendor>Arch Linux</vendor>
+    <family>linux</family>
+    <distro>archlinux</distro>
+
+    <release-status>rolling</release-status>
+
+    <devices>
+      <device id="http://pcisig.com/pci/1033/0194"/> 
+      <device id="http://pcisig.com/pci/1af4/1000"/> 
+      <device id="http://pcisig.com/pci/1af4/1001"/> 
+      <device id="http://pcisig.com/pci/1af4/1002"/> 
+      <device id="http://pcisig.com/pci/1af4/1003"/> 
+      <device id="http://pcisig.com/pci/1af4/1004"/> 
+      <device id="http://pcisig.com/pci/1af4/1005"/> 
+      <device id="http://pcisig.com/pci/1af4/1009"/> 
+      <device id="http://pcisig.com/pci/1af4/1041"/> 
+      <device id="http://pcisig.com/pci/1af4/1042"/> 
+      <device id="http://pcisig.com/pci/1af4/1043"/> 
+      <device id="http://pcisig.com/pci/1af4/1044"/> 
+      <device id="http://pcisig.com/pci/1af4/1045"/> 
+      <device id="http://pcisig.com/pci/1af4/1048"/> 
+      <device id="http://pcisig.com/pci/1af4/1049"/> 
+      <device id="http://pcisig.com/pci/1af4/1052"/> 
+      <device id="http://pcisig.com/pci/1b36/0004"/> 
+      <device id="http://pcisig.com/pci/1b36/0100"/> 
+      <device id="http://pcisig.com/pci/8086/10d3"/> 
+      <device id="http://pcisig.com/pci/8086/2415"/> 
+      <device id="http://pcisig.com/pci/8086/2668"/> 
+      <device id="http://pcisig.com/pci/8086/293e"/> 
+      <device id="http://qemu.org/chipset/x86/q35"/> 
+      <device id="http://usb.org/usb/80ee/0021"/> 
+    </devices>
+
+    <resources arch="all">
+      <minimum>
+        <ram>536870912</ram>
+      </minimum>
+    </resources>
+
+    <media live="true" arch="x86_64">
+      <iso>
+        <volume-id>ARCH_\d{6}</volume-id>
+        <publisher-id>ARCH LINUX &lt;HTTP://WWW.ARCHLINUX.ORG&gt;</publisher-id>
+        <application-id>ARCH LINUX LIVE/RESCUE CD</application-id>
+      </iso>
+    </media>
+  </os>
+</libosinfo>

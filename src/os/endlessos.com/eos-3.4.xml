@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libosinfo version="0.0.1">
+
+  <os id="http://endlessos.com/eos/3.4">
+    <short-id>eos3.4</short-id>
+    <name>Endless OS 3.4</name>
+    <version>3.4</version>
+    <vendor>Endless Mobile, Inc</vendor>
+    <family>linux</family>
+    <distro>eos</distro>
+
+    <release-date>2018-05-15</release-date>
+
+    <variant id="basic">
+      <name>Endless OS Basic</name>
+    </variant>
+    <variant id="ar">
+      <name>Endless OS Arabic</name>
+    </variant>
+    <variant id="bn">
+      <name>Endless OS Bengali</name>
+    </variant>
+    <variant id="en">
+      <name>Endless OS English</name>
+    </variant>
+    <variant id="es">
+      <name>Endless OS Spanish</name>
+    </variant>
+    <variant id="es_GT">
+      <name>Endless OS Spanish (Guatemala)</name>
+    </variant>
+    <variant id="es_MX">
+      <name>Endless OS Spanish (Mexico)</name>
+    </variant>
+    <variant id="fr">
+      <name>Endless OS French</name>
+    </variant>
+    <variant id="id">
+      <name>Endless OS Indonesian</name>
+    </variant>
+    <variant id="pt_BR">
+      <name>Endless OS Portuguese (Brazil)</name>
+    </variant>
+    <variant id="th">
+      <name>Endless OS Thai</name>
+    </variant>
+    <variant id="vi">
+      <name>Endless OS Vietnamese</name>
+    </variant>
+    <variant id="zh_CN">
+      <name>Endless OS Chinese (China)</name>
+    </variant>
+
+    
+    <media live="true" arch="x86_64">
+      <variant id="basic"/>
+      <url>https://d1anzknqnc1kmb.cloudfront.net/release/3.4.0/eos-amd64-amd64/base/eos-eos3.4-amd64-amd64.180515-041823.base.iso</url>
+      <iso>
+        <volume-id>Endless-OS-3-4-0-base</volume-id>
+        <volume-size>1867401216</volume-size>
+      </iso>
+    </media>
+
+    
+    <media live="true" arch="x86_64">
+      <variant id="ar"/>
+      <url>https://d1anzknqnc1kmb.cloudfront.net/release/3.4.0/eos-amd64-amd64/ar/eos-eos3.4-amd64-amd64.180515-054338.ar.iso</url>
+      <iso>
+        <volume-id>Endless-OS-3-4-0-ar</volume-id>
+        <volume-size>9225773056</volume-size>
+      </iso>
+    </media>
+
+    
+    <media live="true" arch="x86_64">
+      <variant id="bn"/>
+      <url>https://d1anzknqnc1kmb.cloudfront.net/release/3.4.0/eos-amd64-amd64/bn/eos-eos3.4-amd64-amd64.180515-044248.bn.iso</url>
+      <iso>
+        <volume-id>Endless-OS-3-4-0-bn</volume-id>
+        <volume-size>12961771520</volume-size>
+      </iso>
+    </media>
+
+    
+    <media live="true" arch="x86_64">
+      <variant id="en"/>
+      <url>https://d1anzknqnc1kmb.cloudfront.net/release/3.4.0/eos-amd64-amd64/en/eos-eos3.4-amd64-amd64.180515-050141.en.iso</url>
+      <iso>
+        <volume-id>Endless-OS-3-4-0-en</volume-id>
+        <volume-size>16022677504</volume-size>
+      </iso>
+    </media>
+
+    
+    <media live="true" arch="x86_64">
+      <variant id="es"/>
+      <url>https://d1anzknqnc1kmb.cloudfront.net/release/3.4.0/eos-amd64-amd64/es/eos-eos3.4-amd64-amd64.180515-044004.es.iso</url>
+      <iso>
+        <volume-id>Endless-OS-3-4-0-es</volume-id>
+        <volume-size>14674853888</volume-size>
+      </iso>
+    </media>
+
+    
+    <media live="true" arch="x86_64">
+      <variant id="es_GT"/>
+      <url>https://d1anzknqnc1kmb.cloudfront.net/release/3.4.0/eos-amd64-amd64/es_GT/eos-eos3.4-amd64-amd64.180515-044927.es_GT.iso</url>
+      <iso>
+        <volume-id>Endless-OS-3-4-0-es_GT</volume-id>
+        <volume-size>15636629504</volume-size>
+      </iso>
+    </media>
+
+    
+    <media live="true" arch="x86_64">
+      <variant id="es_MX"/>
+      <url>https://d1anzknqnc1kmb.cloudfront.net/release/3.4.0/eos-amd64-amd64/es_MX/eos-eos3.4-amd64-amd64.180515-061343.es_MX.iso</url>
+      <iso>
+        <volume-id>Endless-OS-3-4-0-es_MX</volume-id>
+        <volume-size>14698831872</volume-size>
+      </iso>
+    </media>
+
+    
+    <media live="true" arch="x86_64">
+      <variant id="fr"/>
+      <url>https://d1anzknqnc1kmb.cloudfront.net/release/3.4.0/eos-amd64-amd64/fr/eos-eos3.4-amd64-amd64.180515-055726.fr.iso</url>
+      <iso>
+        <volume-id>Endless-OS-3-4-0-fr</volume-id>
+        <volume-size>9824772096</volume-size>
+      </iso>
+    </media>
+
+    
+    <media live="true" arch="x86_64">
+      <variant id="id"/>
+      <url>https://d1anzknqnc1kmb.cloudfront.net/release/3.4.0/eos-amd64-amd64/id/eos-eos3.4-amd64-amd64.180515-062519.id.iso</url>
+      <iso>
+        <volume-id>Endless-OS-3-4-0-id</volume-id>
+        <volume-size>16871383040</volume-size>
+      </iso>
+    </media>
+
+    
+    <media live="true" arch="x86_64">
+      <variant id="pt_BR"/>
+      <url>https://d1anzknqnc1kmb.cloudfront.net/release/3.4.0/eos-amd64-amd64/pt_BR/eos-eos3.4-amd64-amd64.180515-063108.pt_BR.iso</url>
+      <iso>
+        <volume-id>Endless-OS-3-4-0-pt_BR</volume-id>
+        <volume-size>11167918080</volume-size>
+      </iso>
+    </media>
+
+    
+    <media live="true" arch="x86_64">
+      <variant id="th"/>
+      <url>https://d1anzknqnc1kmb.cloudfront.net/release/3.4.0/eos-amd64-amd64/th/eos-eos3.4-amd64-amd64.180515-064146.th.iso</url>
+      <iso>
+        <volume-id>Endless-OS-3-4-0-th</volume-id>
+        <volume-size>7867103232</volume-size>
+      </iso>
+    </media>
+
+    
+    <media live="true" arch="x86_64">
+      <variant id="vi"/>
+      <url>https://d1anzknqnc1kmb.cloudfront.net/release/3.4.0/eos-amd64-amd64/vi/eos-eos3.4-amd64-amd64.180515-070619.vi.iso</url>
+      <iso>
+        <volume-id>Endless-OS-3-4-0-vi</volume-id>
+        <volume-size>8324974592</volume-size>
+      </iso>
+    </media>
+
+    
+    <media live="true" arch="x86_64">
+      <variant id="zh_CN"/>
+      <url>https://d1anzknqnc1kmb.cloudfront.net/release/3.4.0/eos-amd64-amd64/zh_CN/eos-eos3.4-amd64-amd64.180515-071821.zh_CN.iso</url>
+      <iso>
+        <volume-id>Endless-OS-3-4-0-zh_CN</volume-id>
+        <volume-size>6780473344</volume-size>
+      </iso>
+    </media>
+
+    <resources arch="all">
+      <minimum>
+        <n-cpus>1</n-cpus>
+        <cpu>1000000000</cpu>
+        <ram>2147483648</ram>
+        <storage>21474836480</storage>
+      </minimum>
+
+      <recommended>
+        <ram>2147483648</ram>
+        <storage>42949672960</storage>
+      </recommended>
+    </resources>
+
+  </os>
+</libosinfo>

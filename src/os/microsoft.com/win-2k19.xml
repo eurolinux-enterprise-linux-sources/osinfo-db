@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libosinfo version="0.0.1">
+
+  <os id="http://microsoft.com/win/2k19">
+    <short-id>win2k19</short-id>
+    <name>Microsoft Windows Server 2019</name>
+    <version>10.0</version>
+    <vendor>Microsoft Corporation</vendor>
+    <vendor xml:lang="ca">Microsoft Corporation</vendor>
+    <vendor xml:lang="de">Microsoft Corporation</vendor>
+    <vendor xml:lang="es">Microsoft Corporation</vendor>
+    <vendor xml:lang="fr">Microsoft Corporation</vendor>
+    <vendor xml:lang="id">Microsoft Corporation</vendor>
+    <vendor xml:lang="it">Microsoft Corporation</vendor>
+    <vendor xml:lang="ja">Microsoft Corporation</vendor>
+    <vendor xml:lang="pl">Microsoft Corporation</vendor>
+    <vendor xml:lang="pt_BR">Microsoft Corporation</vendor>
+    <vendor xml:lang="uk">Корпорація Microsoft</vendor>
+    <family>winnt</family>
+    <distro>win</distro>
+    <derives-from id="http://microsoft.com/win/2k16"/>
+    <upgrades id="http://microsoft.com/win/2k16"/>
+
+    <release-date>2018-10-02</release-date>
+
+    <resources arch="x86_64">
+      <minimum>
+        <cpu>1400000000</cpu>
+        <n-cpus>1</n-cpus>
+        <ram>536870912</ram>
+        <storage>34359738368</storage>
+      </minimum>
+
+      <recommended>
+        <cpu>2000000000</cpu>
+        <ram>2147483648</ram>
+        <storage>42949672960</storage>
+      </recommended>
+    </resources>
+
+  </os>
+</libosinfo>

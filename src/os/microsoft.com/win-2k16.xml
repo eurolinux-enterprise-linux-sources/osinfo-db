@@ -31,7 +31,7 @@
       <iso>
         <volume-id>^(SSS_X64CHK|SSS_X64FREE?)_</volume-id>
         <publisher-id>MICROSOFT CORPORATION</publisher-id>
-        <l10n-language regex="true" l10n-language-map="http://microsoft.com/win/7/l10n-language">[[:upper:][:digit:]]*_([[:upper:]]*)</l10n-language>
+        <l10n-language regex="true" l10n-language-map="http://microsoft.com/win/7/l10n-language">[A-Z0-9]*_([A-Z]*)</l10n-language>
       </iso>
     </media>
     <media arch="x86_64">
@@ -39,7 +39,7 @@
       <iso>
         <volume-id>^(SESS_X64FREE?)_</volume-id>
         <publisher-id>MICROSOFT CORPORATION</publisher-id>
-        <l10n-language regex="true" l10n-language-map="http://microsoft.com/win/7/l10n-language">[[:upper:][:digit:]]*_([[:upper:]]*)</l10n-language>
+        <l10n-language regex="true" l10n-language-map="http://microsoft.com/win/7/l10n-language">[A-Z0-9]*_([A-Z]*)</l10n-language>
       </iso>
     </media>
     <media arch="x86_64">
@@ -47,7 +47,7 @@
       <iso>
         <volume-id>^(SHV_X64CHK|SHV_X64FREE?)_</volume-id>
         <publisher-id>MICROSOFT CORPORATION</publisher-id>
-        <l10n-language regex="true" l10n-language-map="http://microsoft.com/win/7/l10n-language">[[:upper:][:digit:]]*_([[:upper:]]*)</l10n-language>
+        <l10n-language regex="true" l10n-language-map="http://microsoft.com/win/7/l10n-language">[A-Z0-9]*_([A-Z]*)</l10n-language>
       </iso>
     </media>
 
@@ -56,7 +56,7 @@
         <cpu>1400000000</cpu>
         <n-cpus>1</n-cpus>
         <ram>536870912</ram>
-        <storage>10737418240</storage>
+        <storage>34359738368</storage>
       </minimum>
 
       <recommended>

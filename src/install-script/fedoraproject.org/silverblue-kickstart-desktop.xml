@@ -10,13 +10,14 @@
         <param policy="optional" name="l10n-timezone"/>
         <param policy="optional" name="hostname"/>
         <param policy="required" name="user-login"/>
-        <param policy="required" name="user-password"/>
-        <param policy="required" name="admin-password"/>
+        <param policy="optional" name="user-password"/>
+        <param policy="optional" name="admin-password"/>
         <param policy="required" name="script-disk"/>
     </config>
     <injection-method>cdrom</injection-method>
     <injection-method>disk</injection-method>
     <injection-method>floppy</injection-method>
+    <injection-method>initrd</injection-method>
     <template>
       <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 
@@ -30,16 +31,24 @@
         </xsl:template>
 
         <xsl:template match="/command-line">
-            <xsl:text>ks=hd:</xsl:text>
-            <xsl:call-template name="script-disk"/>
-            <xsl:text>:/</xsl:text>
-            <xsl:value-of select="script/expected-filename"/>
+          <xsl:text>ks=</xsl:text>
+          <xsl:choose>
+            <xsl:when test="script/preferred-injection-method = 'initrd'">
+              <xsl:text>file:/</xsl:text>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:text>hd:</xsl:text>
+              <xsl:call-template name="script-disk"/>
+              <xsl:text>:/</xsl:text>
+            </xsl:otherwise>
+          </xsl:choose>
+          <xsl:value-of select="script/expected-filename"/>
         </xsl:template>
 
         <xsl:template match="/install-script-config">
 # Install script for <xsl:value-of select="os/short-id"/> profile <xsl:value-of select="script/profile"/>
 install
-keyboard <xsl:value-of select="config/l10n-keyboard"/>
+keyboard '<xsl:value-of select="config/l10n-keyboard"/>'
 lang <xsl:value-of select="config/l10n-language"/>
 network --onboot yes --bootproto dhcp --noipv6 --hostname=<xsl:value-of select="config/hostname"/>
 rootpw dummyPa55w0rd # Actual password set (or unset) in %post below
@@ -52,12 +61,7 @@ clearpart --all --drives=/dev/vda
 
 firstboot --disable
 
-part biosboot --fstype=biosboot --size=1
-part /boot --fstype ext4 --recommended --ondisk=/dev/vda
-part pv.2 --size=1 --grow --ondisk=/dev/vda
-volgroup VolGroup00 --pesize=32768 pv.2
-logvol swap --fstype swap --name=LogVol01 --vgname=VolGroup00 --size=768 --grow --maxsize=1536
-logvol / --fstype xfs --name=LogVol00 --vgname=VolGroup00 --size=1024 --grow
+autopart
 
 <xsl:choose>
   <xsl:when test="os/version &lt; 29">
@@ -105,7 +109,7 @@ rm -f /etc/ostree/remotes.d/fedora-'<xsl:value-of select="os/version"/>'.conf
 ostree remote add --if-not-exists --set=gpgkeypath=/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-<xsl:value-of select="os/version"/>-primary fedora-<xsl:value-of select="os/version"/> 'https://dl.fedoraproject.org/atomic/repo/'
 
 %end
-	</xsl:template>
+        </xsl:template>
       </xsl:stylesheet>
     </template>
   </install-script>

@@ -35,6 +35,7 @@
       <device id="http://pcisig.com/pci/1b36/0100"/> 
       <device id="http://pcisig.com/pci/8086/2415"/> 
       <device id="http://usb.org/usb/80ee/0021"/> 
+      <device id="http://pcisig.com/pci/8086/2668"/> 
       <device id="http://pcisig.com/pci/1af4/1001"/> 
       <device id="http://pcisig.com/pci/1af4/1000"/> 
       <device id="http://pcisig.com/pci/1af4/1003"/> 
@@ -60,6 +61,30 @@
        <kernel>isolinux/vmlinuz</kernel>
        <initrd>isolinux/initrd.img</initrd>
      </media>
+
+    <tree arch="ppc64">
+      <treeinfo>
+        <family>Red Hat Enterprise Linux</family>
+        <version>^7.0$</version>
+        <arch>ppc64</arch>
+      </treeinfo>
+    </tree>
+
+    <tree arch="s390x">
+      <treeinfo>
+        <family>Red Hat Enterprise Linux</family>
+        <version>^7.0$</version>
+        <arch>s390x</arch>
+      </treeinfo>
+    </tree>
+
+    <tree arch="x86_64">
+      <treeinfo>
+        <family>Red Hat Enterprise Linux</family>
+        <version>^7.0$</version>
+        <arch>x86_64</arch>
+      </treeinfo>
+    </tree>
 
     <resources arch="ppc64">
       <minimum>

@@ -27,7 +27,7 @@
     <family>linux</family>
     <distro>centos</distro>
     <upgrades id="http://centos.org/centos/6.5"/>
-    <clones id="http://redhat.com/rhel/7.5"/>
+    <clones id="http://redhat.com/rhel/7.6"/>
 
     <release-date>2014-07-07</release-date>
 
@@ -48,18 +48,18 @@
       <initrd>isolinux/initrd.img</initrd>
     </media>
 
-    <media live="true" arch="x86_64">
+    <media live="true" installer-script="false" arch="x86_64">
       <variant id="live-gnome"/>
       <url>https://buildlogs.centos.org/rolling/7/isos/x86_64/CentOS-7-x86_64-LiveGNOME.iso</url>
       <iso>
         <system-id>LINUX</system-id>
-        <volume-id>CentOS-7-x86_64-LiveGNOME*</volume-id>
+        <volume-id>CentOS-7-x86_64-(Live)?GNOME*</volume-id>
       </iso>
       <kernel>isolinux/vmlinuz0</kernel>
       <initrd>isolinux/initrd0.img</initrd>
     </media>
 
-    <media live="true" arch="x86_64">
+    <media live="true" installer-script="false" arch="x86_64">
       <variant id="live-kde"/>
       <url>https://buildlogs.centos.org/rolling/7/isos/x86_64/CentOS-7-x86_64-LiveKDE.iso</url>
       <iso>
@@ -74,7 +74,7 @@
       <url>http://mirror.centos.org/centos-7/7/os/x86_64/</url>
       <treeinfo>
         <family>CentOS</family>
-        <version>7.0</version>
+        <version>^7$</version>
         <arch>x86_64</arch>
       </treeinfo>
     </tree>
@@ -95,8 +95,8 @@
     </resources>
 
     <installer>
-      <script id='http://redhat.com/rhel/kickstart/jeos'/>
-      <script id='http://redhat.com/rhel/kickstart/desktop'/>
+      <script id='http://centos.org/centos/kickstart/jeos'/>
+      <script id='http://centos.org/centos/kickstart/desktop'/>
     </installer>
   </os>
 </libosinfo>

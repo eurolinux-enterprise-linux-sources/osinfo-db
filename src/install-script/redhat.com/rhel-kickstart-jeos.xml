@@ -5,7 +5,7 @@
     <profile>jeos</profile>
     <expected-filename>rhel.ks</expected-filename>
     <config>
-      <param policy="optional" name="admin-password"/>
+      <param policy="required" name="admin-password"/>
       <param policy="optional" name="l10n-keyboard"/>
       <param policy="optional" name="l10n-language"/>
       <param policy="optional" name="l10n-timezone"/>
@@ -15,6 +15,7 @@
     <injection-method>cdrom</injection-method>
     <injection-method>disk</injection-method>
     <injection-method>floppy</injection-method>
+    <injection-method>initrd</injection-method>
     <template>
       <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 
@@ -43,17 +44,38 @@
           <xsl:value-of select="substring-after($script-disk, '/dev/')"/>
         </xsl:template>
 
+        <xsl:template name="installation-url">
+          <xsl:choose>
+            <xsl:when test="config/installation-url != ''">
+              <xsl:value-of select="config/installation-url"/>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:value-of select="tree/url"/>
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:template>
+
         <xsl:template match="/command-line">
-            <xsl:text>ks=hd:</xsl:text>
-            <xsl:call-template name="script-disk"/>
-            <xsl:text>:/</xsl:text>
-            <xsl:value-of select="script/expected-filename"/>
+          <xsl:text>ks=</xsl:text>
+          <xsl:choose>
+            <xsl:when test="script/preferred-injection-method = 'initrd'">
+              <xsl:text>file:/</xsl:text>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:text>hd:</xsl:text>
+              <xsl:call-template name="script-disk"/>
+              <xsl:text>:/</xsl:text>
+            </xsl:otherwise>
+          </xsl:choose>
+          <xsl:value-of select="script/expected-filename"/>
         </xsl:template>
 
         <xsl:template match="/install-script-config">
 # Install script for <xsl:value-of select="os/short-id"/> profile <xsl:value-of select="script/profile"/>
+<xsl:if test="script/installation-source = 'media'">
 install
 cdrom
+</xsl:if>
 text
 
 keyboard us
@@ -70,20 +92,12 @@ zerombr
 
 clearpart --all --drives=<xsl:call-template name="target-disk"/>
 
-
-<xsl:choose>
-  <xsl:when test="os/version &lt; 7">
-part /boot --fstype ext4 --size=1024 --ondisk=<xsl:call-template name="target-disk"/>
-  </xsl:when>
-  <xsl:otherwise>
-part /boot --fstype ext4 --recommended --ondisk=<xsl:call-template name="target-disk"/>
-  </xsl:otherwise>
-</xsl:choose>
-part pv.2 --size=1 --grow --ondisk=<xsl:call-template name="target-disk"/>
-volgroup VolGroup00 --pesize=32768 pv.2
-logvol swap --fstype swap --name=LogVol01 --vgname=VolGroup00 --size=768 --grow --maxsize=1536
-logvol / --fstype ext4 --name=LogVol00 --vgname=VolGroup00 --size=1024 --grow
+autopart
 reboot
+
+<xsl:if test="script/installation-source = 'network'">
+url --url=<xsl:call-template name="installation-url"/>
+</xsl:if>
 
 %packages
 <xsl:choose>
@@ -97,7 +111,7 @@ reboot
 @core
 
 %end
-	</xsl:template>
+        </xsl:template>
       </xsl:stylesheet>
     </template>
   </install-script>

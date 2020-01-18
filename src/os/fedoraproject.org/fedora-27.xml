@@ -23,6 +23,7 @@
     <derives-from id="http://fedoraproject.org/fedora/26"/>
 
     <release-date>2017-11-14</release-date>
+    <eol-date>2019-11-30</eol-date>
 
     <variant id="workstation">
       <name>Fedora 27 Workstation</name>
@@ -43,9 +44,9 @@
     
 
     
-    <media live="true" arch="x86_64">
+    <media live="true" installer-script="false" arch="x86_64">
       <variant id="workstation"/>
-      <url>https://download.fedoraproject.org/pub/fedora/linux/releases/27/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-27-1.6.iso</url>
+      <url>https://archive.fedoraproject.org/pub/fedora/linux/releases/27/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-27-1.6.iso</url>
       <iso>
         <volume-id>Fedora-WS-Live-27.*</volume-id>
         <system-id>LINUX</system-id>
@@ -57,25 +58,31 @@
     
     <media arch="x86_64">
       <variant id="workstation-atomic"/>
-      <url>https://download.fedoraproject.org/pub/fedora/linux/releases/27/WorkstationOstree/x86_64/iso/Fedora-WorkstationOstree-ostree-x86_64-27-1.6.iso</url>
+      <url>https://archive.fedoraproject.org/pub/fedora/linux/releases/27/WorkstationOstree/x86_64/iso/Fedora-WorkstationOstree-ostree-x86_64-27-1.6.iso</url>
       <iso>
         <volume-id>Fedora-WSOstree-ostree-x86_64-27</volume-id>
         <system-id>LINUX</system-id>
       </iso>
       <kernel>isolinux/vmlinuz</kernel>
       <initrd>isolinux/initrd.img</initrd>
+      <installer>
+        <script id='http://fedoraproject.org/silverblue/kickstart/desktop'/>
+      </installer>
     </media>
 
     
     <media arch="x86_64">
       <variant id="workstation-netinst"/>
-      <url>https://download.fedoraproject.org/pub/fedora/linux/releases/27/Workstation/x86_64/iso/Fedora-Workstation-netinst-x86_64-27-1.6.iso</url>
+      <url>https://archive.fedoraproject.org/pub/fedora/linux/releases/27/Workstation/x86_64/iso/Fedora-Workstation-netinst-x86_64-27-1.6.iso</url>
       <iso>
         <volume-id>Fedora-WS-dvd-x86_64-27</volume-id>
         <system-id>LINUX</system-id>
       </iso>
       <kernel>isolinux/vmlinuz</kernel>
       <initrd>isolinux/initrd.img</initrd>
+      <installer>
+        <script id='http://fedoraproject.org/fedora/kickstart/desktop'/>
+      </installer>
     </media>
 
     
@@ -83,7 +90,7 @@
     
     <media arch="x86_64">
       <variant id="server"/>
-      <url>https://download.fedoraproject.org/pub/fedora/linux/releases/27/Server/x86_64/iso/Fedora-Server-dvd-x86_64-27-1.6.iso</url>
+      <url>https://archive.fedoraproject.org/pub/fedora/linux/releases/27/Server/x86_64/iso/Fedora-Server-dvd-x86_64-27-1.6.iso</url>
       <iso>
         <volume-id>Fedora-S-dvd-x86_64-27</volume-id>
         <system-id>LINUX</system-id>
@@ -91,12 +98,15 @@
       </iso>
       <kernel>isolinux/vmlinuz</kernel>
       <initrd>isolinux/initrd.img</initrd>
+      <installer>
+        <script id='http://fedoraproject.org/fedora/kickstart/jeos'/>
+      </installer>
     </media>
 
     
     <media arch="x86_64">
       <variant id="server-netinst"/>
-      <url>https://download.fedoraproject.org/pub/fedora/linux/releases/27/Server/x86_64/iso/Fedora-Server-netinst-x86_64-27-1.6.iso</url>
+      <url>https://archive.fedoraproject.org/pub/fedora/linux/releases/27/Server/x86_64/iso/Fedora-Server-netinst-x86_64-27-1.6.iso</url>
       <iso>
         <volume-id>Fedora-S-dvd-x86_64-27</volume-id>
         <system-id>LINUX</system-id>
@@ -104,10 +114,13 @@
       </iso>
       <kernel>isolinux/vmlinuz</kernel>
       <initrd>isolinux/initrd.img</initrd>
+      <installer>
+        <script id='http://fedoraproject.org/fedora/kickstart/jeos'/>
+      </installer>
     </media>
 
     <tree arch="x86_64">
-      <url>https://download.fedoraproject.org/pub/fedora/linux/releases/27/Server/x86_64/os/</url>
+      <url>https://archive.fedoraproject.org/pub/fedora/linux/releases/27/Server/x86_64/os/</url>
       <variant id="server"/>
       <treeinfo>
         <family>Fedora</family>

@@ -1,0 +1,182 @@
+From dba9bae09f0f04aa00418092d5ae6c4a41f981bc Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Fabiano=20Fid=C3=AAncio?= <fidencio@redhat.com>
+Date: Tue, 19 Mar 2019 11:16:03 +0100
+Subject: [PATCH 2/2] rhel: Adjust 8.0/8-unknown regex
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+By doing this, 8.0.x can also be matched as 8.0.
+
+Signed-off-by: Fabiano Fidêncio <fidencio@redhat.com>
+---
+ os/redhat.com/rhel-8-unknown.xml | 16 ++++++++--------
+ os/redhat.com/rhel-8.0.xml       | 20 ++++++++++----------
+ 2 files changed, 18 insertions(+), 18 deletions(-)
+
+diff --git a/os/redhat.com/rhel-8-unknown.xml b/os/redhat.com/rhel-8-unknown.xml
+index 5026cd2..226a018 100644
+--- a/os/redhat.com/rhel-8-unknown.xml
++++ b/os/redhat.com/rhel-8-unknown.xml
+@@ -25,7 +25,7 @@
+     <media arch="x86_64">
+       <iso>
+         <system-id>LINUX</system-id>
+-        <volume-id>.*RHEL-8-(([1-9]|[1-9][0-9])|(([0-9]|[1-9][0-9])-([0-9]|[1-9][0-9]))).*x86_64.*</volume-id>
++        <volume-id>.*RHEL-8-([1-9]|[1-9][0-9])(-[0-9]|[1-9][0-9])?.*x86_64.*</volume-id>
+       </iso>
+       <kernel>isolinux/vmlinuz</kernel>
+       <initrd>isolinux/initrd.img</initrd>
+@@ -34,28 +34,28 @@
+     <media arch="aarch64">
+        <iso>
+          <system-id>LINUX</system-id>
+-         <volume-id>RHEL-8-(([1-9]|[1-9][0-9])|(([0-9]|[1-9][0-9])-([0-9]|[1-9][0-9]))).*aarch64$</volume-id>
++         <volume-id>RHEL-8-([1-9]|[1-9][0-9])(-[0-9]|[1-9][0-9])?.*aarch64$</volume-id>
+        </iso>
+      </media>
+ 
+     <media arch="ppc64le">
+        <iso>
+          <system-id>PPC</system-id>
+-         <volume-id>RHEL[_-]8[_-](([1-9]|[1-9][0-9])|(([0-9]|[1-9][0-9])[_-]([0-9]|[1-9][0-9]))).*ppc64le$</volume-id>
++         <volume-id>RHEL[_-]8[_-]([1-9]|[1-9][0-9])([_-]([0-9]|[1-9][0-9]))?.*ppc64le$</volume-id>
+        </iso>
+      </media>
+ 
+     <media arch="s390x">
+        <iso>
+          <system-id>LINUX</system-id>
+-         <volume-id>RHEL-8-(([1-9]|[1-9][0-9])|(([0-9]|[1-9][0-9])-([0-9]|[1-9][0-9]))).*s390x$</volume-id>
++         <volume-id>RHEL-8-([1-9]|[1-9][0-9])(-[0-9]|[1-9][0-9])?.*s390x$</volume-id>
+        </iso>
+      </media>
+ 
+     <tree arch="aarch64">
+       <treeinfo>
+         <family>Red Hat Enterprise Linux</family>
+-        <version>^8.(([1-9]|[1-9][0-9])|(([0-9]|[1-9][0-9]).([0-9]|[1-9][0-9])))$</version>
++        <version>^8.([1-9]|[1-9][0-9])(-[0-9]|[1-9][0-9])?$</version>
+         <arch>aarch64</arch>
+       </treeinfo>
+     </tree>
+@@ -63,7 +63,7 @@
+     <tree arch="ppc64le">
+       <treeinfo>
+         <family>Red Hat Enterprise Linux</family>
+-        <version>^8.(([1-9]|[1-9][0-9])|(([0-9]|[1-9][0-9]).([0-9]|[1-9][0-9])))$</version>
++        <version>^8.([1-9]|[1-9][0-9])(.([0-9]|[1-9][0-9]))?$</version>
+         <arch>ppc64le</arch>
+       </treeinfo>
+     </tree>
+@@ -71,7 +71,7 @@
+     <tree arch="s390x">
+       <treeinfo>
+         <family>Red Hat Enterprise Linux</family>
+-        <version>^8.(([1-9]|[1-9][0-9])|(([0-9]|[1-9][0-9]).([0-9]|[1-9][0-9])))$</version>
++        <version>^8.([1-9]|[1-9][0-9])(.([0-9]|[1-9][0-9]))?$</version>
+         <arch>s390x</arch>
+       </treeinfo>
+     </tree>
+@@ -79,7 +79,7 @@
+     <tree arch="x86_64">
+       <treeinfo>
+         <family>Red Hat Enterprise Linux</family>
+-        <version>^8.(([1-9]|[1-9][0-9])|(([0-9]|[1-9][0-9]).([0-9]|[1-9][0-9])))$</version>
++        <version>^8.([1-9]|[1-9][0-9])(.([0-9]|[1-9][0-9]))?$</version>
+         <arch>x86_64</arch>
+       </treeinfo>
+     </tree>
+diff --git a/os/redhat.com/rhel-8.0.xml b/os/redhat.com/rhel-8.0.xml
+index 3db4aff..20e80d0 100644
+--- a/os/redhat.com/rhel-8.0.xml
++++ b/os/redhat.com/rhel-8.0.xml
+@@ -49,7 +49,7 @@
+     <media arch="x86_64">
+       <iso>
+         <system-id>LINUX</system-id>
+-        <volume-id>RHEL-8-0-BaseOS-x86_64</volume-id>
++        <volume-id>RHEL-8-0-(([0-9]|[1-9][0-9])-)?BaseOS-x86_64</volume-id>
+       </iso>
+       <kernel>isolinux/vmlinuz</kernel>
+       <initrd>isolinux/initrd.img</initrd>
+@@ -58,7 +58,7 @@
+     <media arch="ppc64le">
+       <iso>
+         <system-id>PPC</system-id>
+-        <volume-id>RHEL[_-]8[_-]0[_-]BaseOS[_-]ppc64le</volume-id>
++        <volume-id>RHEL[_-]8[_-]0[_-](([0-9]|[1-9][0-9])[_-])?BaseOS[_-]ppc64le</volume-id>
+       </iso>
+       <kernel>ppc/ppc64/vmlinuz</kernel>
+       <initrd>ppc/ppc64/initrd.img</initrd>
+@@ -67,21 +67,21 @@
+     <media arch="aarch64">
+       <iso>
+         <system-id>LINUX</system-id>
+-        <volume-id>RHEL-8-0-BaseOS-aarch64</volume-id>
++        <volume-id>RHEL-8-0-(([0-9]|[1-9][0-9])-)?BaseOS-aarch64</volume-id>
+       </iso>
+     </media>
+ 
+     <media arch="s390x">
+       <iso>
+         <system-id>LINUX</system-id>
+-        <volume-id>RHEL-8-0-BaseOS-s390x</volume-id>
++        <volume-id>RHEL-8-0-(([0-9]|[1-9][0-9])-)?BaseOS-s390x</volume-id>
+       </iso>
+     </media>
+ 
+     <tree arch="aarch64">
+       <treeinfo>
+         <family>Red Hat Enterprise Linux</family>
+-        <version>8.0$</version>
++        <version>^8.0(.([0-9]|[1-9][0-9]))?$</version>
+         <arch>aarch64</arch>
+       </treeinfo>
+     </tree>
+@@ -89,7 +89,7 @@
+     <tree arch="ppc64le">
+       <treeinfo>
+         <family>Red Hat Enterprise Linux</family>
+-        <version>^8.0$</version>
++        <version>^8.0(.([0-9]|[1-9][0-9]))?$</version>
+         <arch>ppc64le</arch>
+       </treeinfo>
+     </tree>
+@@ -97,7 +97,7 @@
+     <tree arch="s390x">
+       <treeinfo>
+         <family>Red Hat Enterprise Linux</family>
+-        <version>^8.0$</version>
++        <version>^8.0(.([0-9]|[1-9][0-9]))?$</version>
+         <arch>s390x</arch>
+       </treeinfo>
+     </tree>
+@@ -105,7 +105,7 @@
+     <tree arch="x86_64">
+       <treeinfo>
+         <family>Red Hat Enterprise Linux</family>
+-        <version>^8.0$</version>
++        <version>^8.0(.([0-9]|[1-9][0-9]))?$</version>
+         <arch>x86_64</arch>
+       </treeinfo>
+     </tree>
+@@ -113,7 +113,7 @@
+     <tree arch="aarch64">
+       <treeinfo>
+         <family>Red Hat Enterprise Linux</family>
+-        <version>^8.0$</version>
++        <version>^8.0(.([0-9]|[1-9][0-9]))?$</version>
+         <arch>aarch64</arch>
+       </treeinfo>
+     </tree>
+@@ -148,4 +148,4 @@
+       </recommended>
+     </resources>
+   </os>
+-</libosinfo>
+\ No newline at end of file
++</libosinfo>
+-- 
+2.20.1
+

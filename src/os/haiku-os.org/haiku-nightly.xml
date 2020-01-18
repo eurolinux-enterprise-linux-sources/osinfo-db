@@ -5,7 +5,7 @@
     <name>Haiku Nightly</name>
     <version>nightly</version>
     <vendor>Haiku, Inc.</vendor>
-    <family>beos</family>
+    <family>haiku</family>
     <distro>haiku</distro>
     <upgrades id="http://haiku-os.org/haiku/r1alpha4.1"/>
     <derives-from id="http://haiku-os.org/haiku/r1alpha4.1"/>
@@ -17,8 +17,13 @@
 
     <media live="true" arch="i686">
       <iso>
-        <volume-id>bootimg</volume-id>
-        <system-id>LINUX</system-id>
+        <volume-id>haiku-nightly-x86</volume-id>
+      </iso>
+    </media>
+
+    <media live="true" arch="x86_64">
+      <iso>
+        <volume-id>haiku-nightly-x86_64</volume-id>
       </iso>
     </media>
 

@@ -50,23 +50,23 @@
     </media>
 
     
-    <media live="true" arch="i686">
+    <media live="true" installer-script="false" arch="i686">
       <iso>
         <system-id>LINUX</system-id>
         <volume-id>CentOS-6.9-i386-LiveDVD</volume-id>
         <volume-size>2001133568</volume-size>
       </iso>
-      <kernel>isolinux/vmlinuz</kernel>
-      <initrd>isolinux/initrd.img</initrd>
+      <kernel>isolinux/vmlinuz0</kernel>
+      <initrd>isolinux/initrd0.img</initrd>
     </media>
-    <media live="true" arch="x86_64">
+    <media live="true" installer-script="false" arch="x86_64">
       <iso>
         <system-id>LINUX</system-id>
         <volume-id>CentOS-6.9-x86_64-LiveDVD</volume-id>
         <volume-size>2023274496</volume-size>
       </iso>
-      <kernel>isolinux/vmlinuz</kernel>
-      <initrd>isolinux/initrd.img</initrd>
+      <kernel>isolinux/vmlinuz0</kernel>
+      <initrd>isolinux/initrd0.img</initrd>
     </media>
 
     
@@ -109,6 +109,23 @@
       <initrd>isolinux/initrd.img</initrd>
     </media>
 
+    <tree arch="x86_64">
+      <url>http://vault.centos.org/6.9/os/x86_64/</url>
+      <treeinfo>
+        <family>CentOS</family>
+        <version>6.9</version>
+        <arch>x86_64</arch>
+      </treeinfo>
+    </tree>
+    <tree arch="i686">
+      <url>http://vault.centos.org/6.9/os/i386/</url>
+      <treeinfo>
+        <family>CentOS</family>
+        <version>6.9</version>
+        <arch>i386</arch>
+      </treeinfo>
+    </tree>
+
     <resources arch="all">
       <minimum>
         <n-cpus>1</n-cpus>
@@ -123,8 +140,8 @@
     </resources>
 
     <installer>
-      <script id='http://redhat.com/rhel/kickstart/jeos'/>
-      <script id='http://redhat.com/rhel/kickstart/desktop'/>
+      <script id='http://centos.org/centos/kickstart/jeos'/>
+      <script id='http://centos.org/centos/kickstart/desktop'/>
     </installer>
   </os>
 </libosinfo>

@@ -13,7 +13,7 @@
 
       
       <param policy="required" name="user-login"/>
-      <param policy="optional" name="user-fullname"/>
+      <param policy="optional" name="user-realname"/>
       <param policy="optional" name="user-password"/>
       <param policy="optional" name="admin-password"/>
 
@@ -70,8 +70,8 @@
 
         <xsl:template name="user-fullname">
           <xsl:choose>
-            <xsl:when test="config/user-fullname != ''">
-              <xsl:value-of select="config/user-fullname"/>
+            <xsl:when test="config/user-realname != ''">
+              <xsl:value-of select="config/user-realname"/>
             </xsl:when>
             <xsl:otherwise>
               <xsl:value-of select="config/user-login"/>

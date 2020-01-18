@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libosinfo version="0.0.1">
+
+  <os id="http://centos.org/centos/5.0">
+    <short-id>centos5.0</short-id>
+    <name>CentOS 5.0</name>
+    <version>5.0</version>
+    <vendor>CentOS</vendor>
+    <vendor xml:lang="ca">CentOS</vendor>
+    <vendor xml:lang="de">CentOS</vendor>
+    <vendor xml:lang="es">CentOS</vendor>
+    <vendor xml:lang="fr">CentOS</vendor>
+    <vendor xml:lang="id">CentOS</vendor>
+    <vendor xml:lang="it">CentOS</vendor>
+    <vendor xml:lang="ja">CentOS</vendor>
+    <vendor xml:lang="pl">CentOS</vendor>
+    <vendor xml:lang="pt_BR">CentOS</vendor>
+    <vendor xml:lang="uk">CentOS</vendor>
+    <family>linux</family>
+    <distro>centos</distro>
+    <clones id="http://redhat.com/rhel/5.0"/>
+
+    <release-date>2007-04-12</release-date>
+    <eol-date>2017-03-31</eol-date>
+
+    <tree arch="x86_64">
+      <url>http://vault.centos.org/5.0/os/x86_64/</url>
+      <kernel>images/pxeboot/vmlinuz</kernel>
+      <initrd>images/pxeboot/initrd.img</initrd>
+    </tree>
+    <tree arch="i686">
+      <url>http://vault.centos.org/5.0/os/i386/</url>
+      <kernel>images/pxeboot/vmlinuz</kernel>
+      <initrd>images/pxeboot/initrd.img</initrd>
+    </tree>
+  </os>
+</libosinfo>
