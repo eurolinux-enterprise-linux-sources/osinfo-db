@@ -9,6 +9,7 @@
     <name xml:lang="es">Microsoft Windows Server 2008</name>
     <name xml:lang="fr">Microsoft Windows Server 2008</name>
     <name xml:lang="id">Microsoft Windows Server 2008</name>
+    <name xml:lang="it">Microsoft Windows Server 2008</name>
     <name xml:lang="ja">Microsoft Windows Server 2008</name>
     <name xml:lang="pl">Microsoft Windows Server 2008</name>
     <name xml:lang="pt_BR">Microsoft Windows Server 2008</name>
@@ -20,6 +21,7 @@
     <vendor xml:lang="es">Microsoft Corporation</vendor>
     <vendor xml:lang="fr">Microsoft Corporation</vendor>
     <vendor xml:lang="id">Microsoft Corporation</vendor>
+    <vendor xml:lang="it">Microsoft Corporation</vendor>
     <vendor xml:lang="ja">Microsoft Corporation</vendor>
     <vendor xml:lang="pl">Microsoft Corporation</vendor>
     <vendor xml:lang="pt_BR">Microsoft Corporation</vendor>
@@ -31,6 +33,10 @@
 
     <release-date>2008-02-27</release-date>
     <eol-date>2013-07-09</eol-date>
+
+    <devices>
+      <device id="http://pcisig.com/pci/8086/2668"/> 
+    </devices>
 
     <media arch="i686">
       <iso>

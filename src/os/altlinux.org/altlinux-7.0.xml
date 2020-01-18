@@ -8,6 +8,7 @@
     <name xml:lang="es">ALT Linux 7.0</name>
     <name xml:lang="fr">ALT Linux 7.0</name>
     <name xml:lang="id">ALT Linux 7.0</name>
+    <name xml:lang="it">ALT Linux 7.0</name>
     <name xml:lang="pl">ALT Linux 7.0</name>
     <name xml:lang="uk">ALT Linux 7.0</name>
     <version>7.0</version>
@@ -16,6 +17,7 @@
     <vendor xml:lang="es">ALTLinux</vendor>
     <vendor xml:lang="fr">ALTLinux</vendor>
     <vendor xml:lang="id">ALTLinux</vendor>
+    <vendor xml:lang="it">ALTLinux</vendor>
     <vendor xml:lang="pl">ALT Linux</vendor>
     <vendor xml:lang="pt_BR">ALTLinux</vendor>
     <vendor xml:lang="uk">ALTLinux</vendor>
@@ -24,7 +26,9 @@
     <codename>Centaurus</codename>
     <upgrades id="http://altlinux.org/altlinux/6.0"/>
     <derives-from id="http://altlinux.org/altlinux/6.0"/>
+
     <release-date>2012-10-01</release-date>
+    <eol-date>2015-08-30</eol-date>
 
     <media arch="i686">
       <url>http://ftp.altlinux.org/pub/distributions/ALTLinux/p7/images/centaurus/altlinux-7.0.5-centaurus-i586-ru-install-dvd5.iso</url>

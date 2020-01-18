@@ -4,7 +4,7 @@
 
 Summary: osinfo database files
 Name: osinfo-db
-Version: 20180531
+Version: 20181214
 Release: 1%{?dist}
 License: LGPLv2+
 Source0: https://releases.pagure.org/libosinfo/%{name}-%{version}.tar.xz
@@ -15,8 +15,6 @@ BuildRequires: osinfo-db-tools
 BuildArch: noarch
 Requires: hwdata
 
-Patch0: add-rhel7.6-data.patch
-
 %description
 The osinfo database provides information about operating systems and
 hypervisor platforms to facilitate the automated configuration and
@@ -24,7 +22,6 @@ provisioning of new virtual machines
 
 %prep
 %setup -q
-%patch0 -p1 -b .add-rhel7.6-data
 
 # For us to be able to apply patches on top of a rebase,
 # we:
@@ -50,6 +47,12 @@ osinfo-db-import  --root %{buildroot} --dir %{_datadir}/osinfo %{PatchedSource}
 %{_datadir}/osinfo/schema
 
 %changelog
+* Thu Dec 14 2018 Fabiano Fidêncio <fidencio@redhat.com> - 20181214-1
+- Resolves: rhbz#1652088 - Rebase to the latest upstream release
+
+* Thu Dec 06 2018 Fabiano Fidêncio <fidencio@redhat.com> - 20181203-1
+- Resolves: rhbz#1652088 - Rebase to the latest upstream release
+
 * Mon Jun 11 2018 Felipe Borges <feborges@redhat.com> - 20180531-1
 - Rebase to 20180531
 - Add RHEL 7.6

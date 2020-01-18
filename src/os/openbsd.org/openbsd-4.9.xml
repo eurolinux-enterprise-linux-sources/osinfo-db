@@ -9,6 +9,7 @@
     <name xml:lang="es">OpenBSD 4.9</name>
     <name xml:lang="fr">OpenBSD 4.9</name>
     <name xml:lang="id">OpenBSD 4.9</name>
+    <name xml:lang="it">OpenBSD 4.9</name>
     <name xml:lang="ja">OpenBSD 4.9</name>
     <name xml:lang="pl">OpenBSD 4.9</name>
     <name xml:lang="pt_BR">OpenBSD 4.9</name>
@@ -22,6 +23,7 @@
     <vendor xml:lang="es">OpenBSD Project</vendor>
     <vendor xml:lang="fr">OpenBSD Project</vendor>
     <vendor xml:lang="id">Proyek OpenBSD</vendor>
+    <vendor xml:lang="it">Progetto OpenBSD</vendor>
     <vendor xml:lang="ja">OpenBSD プロジェクト</vendor>
     <vendor xml:lang="pl">Projekt OpenBSD</vendor>
     <vendor xml:lang="pt_BR">OpenBSD Project</vendor>
@@ -33,21 +35,21 @@
     <eol-date>2012-05-01</eol-date>
 
     <devices>
-      <device id="http://pcisig.com/pci/1022/2000"/>
+      <device id="http://pcisig.com/pci/1022/2000"/> 
     </devices>
 
-    <media arch='i686'>
+    <media arch="i686">
       <iso>
-	<publisher-id>The OpenBSD project</publisher-id>
+	<publisher-id>Copyright \(c\) 2011 Theo de Raadt, The OpenBSD project</publisher-id>
 	<system-id>OpenBSD</system-id>
 	<volume-id>OpenBSD/i386    4.9 Install CD</volume-id>
 	<application-id>OpenBSD 4.9 i386 Install CD</application-id>
       </iso>
     </media>
 
-    <media arch='x86_64'>
+    <media arch="x86_64">
       <iso>
-	<publisher-id>The OpenBSD project</publisher-id>
+	<publisher-id>Copyright \(c\) 2011 Theo de Raadt, The OpenBSD project</publisher-id>
 	<system-id>OpenBSD</system-id>
 	<volume-id>OpenBSD/amd64   4.9 Install CD</volume-id>
 	<application-id>OpenBSD 4.9 amd64 Install CD</application-id>

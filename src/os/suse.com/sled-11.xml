@@ -8,6 +8,7 @@
     <name xml:lang="es">SUSE Linux Enterprise Desktop 11</name>
     <name xml:lang="fr">SUSE Linux Enterprise Desktop 11</name>
     <name xml:lang="id">SUSE Linux Enterprise Desktop 11</name>
+    <name xml:lang="it">SUSE Linux Enterprise Desktop 11</name>
     <name xml:lang="pl">SUSE Linux Enterprise Desktop 11</name>
     <name xml:lang="uk">SUSE Linux Enterprise Desktop 11</name>
     <version>11</version>
@@ -16,6 +17,7 @@
     <vendor xml:lang="es">SUSE</vendor>
     <vendor xml:lang="fr">SUSE</vendor>
     <vendor xml:lang="id">SUSE</vendor>
+    <vendor xml:lang="it">SUSE</vendor>
     <vendor xml:lang="pl">SUSE</vendor>
     <vendor xml:lang="uk">SUSE</vendor>
     <family>linux</family>
@@ -27,7 +29,8 @@
     <eol-date>2010-12-31</eol-date>
 
     <devices>
-      <device id="http://pcisig.com/pci/8086/2415"/>
+      <device id="http://pcisig.com/pci/8086/2415"/> 
+      <device id="http://pcisig.com/pci/8086/2668"/> 
     </devices>
 
     <resources arch="all">

@@ -8,6 +8,7 @@
     <name xml:lang="es">CentOS 6.5</name>
     <name xml:lang="fr">CentOS 6.5</name>
     <name xml:lang="id">CentOS 6.5</name>
+    <name xml:lang="it">CentOS 6.5</name>
     <name xml:lang="pl">CentOS 6.5</name>
     <name xml:lang="pt_BR">CentOS 6.5</name>
     <name xml:lang="uk">CentOS 6.5</name>
@@ -18,6 +19,7 @@
     <vendor xml:lang="es">CentOS</vendor>
     <vendor xml:lang="fr">CentOS</vendor>
     <vendor xml:lang="id">CentOS</vendor>
+    <vendor xml:lang="it">CentOS</vendor>
     <vendor xml:lang="ja">CentOS</vendor>
     <vendor xml:lang="pl">CentOS</vendor>
     <vendor xml:lang="pt_BR">CentOS</vendor>
@@ -28,7 +30,7 @@
     <clones id="http://redhat.com/rhel/6.5"/>
 
     <release-date>2013-12-01</release-date>
-    <eol-date>2020-11-30</eol-date>
+    <eol-date>2014-10-28</eol-date>
 
     <media arch="i686">
       <iso>

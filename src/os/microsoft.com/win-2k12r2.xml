@@ -8,6 +8,7 @@
     <name xml:lang="es">Microsoft Windows Server 2012 R2</name>
     <name xml:lang="fr">Microsoft Windows Server 2012 R2</name>
     <name xml:lang="id">Microsoft Windows Server 2012 R2</name>
+    <name xml:lang="it">Microsoft Windows Server 2012 R2</name>
     <name xml:lang="pl">Microsoft Windows Server 2012 R2</name>
     <name xml:lang="pt_BR">Microsoft Windows Server 2012 R2</name>
     <name xml:lang="uk">Microsoft Windows Server 2012 R2</name>
@@ -18,6 +19,7 @@
     <vendor xml:lang="es">Microsoft Corporation</vendor>
     <vendor xml:lang="fr">Microsoft Corporation</vendor>
     <vendor xml:lang="id">Microsoft Corporation</vendor>
+    <vendor xml:lang="it">Microsoft Corporation</vendor>
     <vendor xml:lang="ja">Microsoft Corporation</vendor>
     <vendor xml:lang="pl">Microsoft Corporation</vendor>
     <vendor xml:lang="pt_BR">Microsoft Corporation</vendor>
@@ -33,6 +35,7 @@
       <name xml:lang="es">Windows Server 2012 R2 Storage</name>
       <name xml:lang="fr">Windows Server 2012 R2 Storage</name>
       <name xml:lang="id">Windows Server 2012 R2 Storage</name>
+      <name xml:lang="it">Windows Server 2012 R2 Storage</name>
       <name xml:lang="pl">Windows Server 2012 R2 Storage</name>
       <name xml:lang="uk">Windows Server 2012 R2 Storage</name>
     </variant>
@@ -42,6 +45,7 @@
       <name xml:lang="es">Windows Server 2012 R2 para HyperV</name>
       <name xml:lang="fr">Windows Server 2012 R2 pour HyperV</name>
       <name xml:lang="id">Windows Server 2012 R2 untuk HyperV</name>
+      <name xml:lang="it">Windows Server 2012 R2 per HyperV</name>
       <name xml:lang="pl">Windows Server 2012 R2 dla Hyper-V</name>
       <name xml:lang="uk">Windows Server 2012 R2 для HyperV</name>
     </variant>
@@ -51,6 +55,7 @@
       <name xml:lang="es">Windows Server 2012 R2 Essentials</name>
       <name xml:lang="fr">Windows Server 2012 R2 Essentials</name>
       <name xml:lang="id">Windows Server 2012 R2 Essentials</name>
+      <name xml:lang="it">Windows Server 2012 R2 Essentials</name>
       <name xml:lang="pl">Windows Server 2012 R2 Essentials</name>
       <name xml:lang="uk">Windows Server 2012 R2 Essentials</name>
     </variant>
@@ -60,6 +65,7 @@
       <name xml:lang="es">Licencia por volumen Windows Server 2012 R2</name>
       <name xml:lang="fr">Windows Server 2012 R2 Volume License</name>
       <name xml:lang="id">Windows Server 2012 R2 Volume License</name>
+      <name xml:lang="it">Windows Server 2012 R2 Volume License</name>
       <name xml:lang="pl">Windows Server 2012 R2 (Licencja grupowa)</name>
       <name xml:lang="uk">Windows Server 2012 R2 Volume License</name>
     </variant>
@@ -68,7 +74,7 @@
 
     <media arch="x86_64">
       <iso>
-        <volume-id>(IRM_SSS_X64FRE|IRM_SSS_X64CHK|IR3_SSS_X64FRE|IR5_SSS_X64FRE)_</volume-id>
+        <volume-id>(IRM_SSS_X64FREE?|IRM_SSS_X64CHK|IR3_SSS_X64FREE?|IR5_SSS_X64FREE?)_</volume-id>
         <publisher-id>MICROSOFT CORPORATION</publisher-id>
         <l10n-language regex="true" l10n-language-map="http://microsoft.com/win/7/l10n-language">[[:upper:][:digit:]]*_([[:upper:]]*)</l10n-language>
       </iso>
@@ -76,7 +82,7 @@
     <media arch="x86_64">
       <variant id="essentials"/>
       <iso>
-        <volume-id>(IRM_SSSO_X64CHK|IR5_SSSO_X64FRE|IRM_SSSO_X64FRE)_</volume-id>
+        <volume-id>(IRM_SSSO_X64CHK|IR5_SSSO_X64FREE?|IRM_SSSO_X64FREE?)_</volume-id>
         <publisher-id>MICROSOFT CORPORATION</publisher-id>
         <l10n-language regex="true" l10n-language-map="http://microsoft.com/win/7/l10n-language">[[:upper:][:digit:]]*_([[:upper:]]*)</l10n-language>
       </iso>
@@ -84,7 +90,7 @@
     <media arch="x86_64">
       <variant id="hyperv"/>
       <iso>
-        <volume-id>(IRM_SHV_X64CHK|IRM_SHV_X64FRE)_</volume-id>
+        <volume-id>(IRM_SHV_X64CHK|IRM_SHV_X64FREE?)_</volume-id>
         <publisher-id>MICROSOFT CORPORATION</publisher-id>
         <l10n-language regex="true" l10n-language-map="http://microsoft.com/win/7/l10n-language">[[:upper:][:digit:]]*_([[:upper:]]*)</l10n-language>
       </iso>
@@ -92,7 +98,7 @@
     <media arch="x86_64">
       <variant id="volume-licence"/>
       <iso>
-        <volume-id>(IR5_SSS_X64FREV|IR2_SSS_X64FREV)_</volume-id>
+        <volume-id>(IR5_SSS_X64FREV|IR2_SSS_X64FREV|IR1_SSS_X64FREV)_</volume-id>
         <publisher-id>MICROSOFT CORPORATION</publisher-id>
         <l10n-language regex="true" l10n-language-map="http://microsoft.com/win/7/l10n-language">[[:upper:][:digit:]]*_([[:upper:]]*)</l10n-language>
       </iso>
@@ -105,5 +111,14 @@
         <l10n-language regex="true" l10n-language-map="http://microsoft.com/win/7/l10n-language">[[:upper:][:digit:]]*_([[:upper:]]*)</l10n-language>
       </iso>
     </media>
+
+    <resources arch="x86_64">
+      <minimum>
+        <cpu>1400000000</cpu>
+        <n-cpus>1</n-cpus>
+        <ram>536870912</ram>
+        <storage>34359738368</storage>
+      </minimum>
+    </resources>
   </os>
 </libosinfo>

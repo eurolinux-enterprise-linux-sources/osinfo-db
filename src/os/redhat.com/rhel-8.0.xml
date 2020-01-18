@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libosinfo version="0.0.1">
+
+  <os id="http://redhat.com/rhel/8.0">
+    <short-id>rhel8.0</short-id>
+    <name>Red Hat Enterprise Linux 8.0</name>
+    <version>8.0</version>
+    <vendor>Red Hat, Inc</vendor>
+    <vendor xml:lang="ca">Red Hat, Inc</vendor>
+    <vendor xml:lang="de">Red Hat, Inc</vendor>
+    <vendor xml:lang="es">Red Hat, Inc</vendor>
+    <vendor xml:lang="fr">Red Hat, Inc</vendor>
+    <vendor xml:lang="id">Red Hat, Inc</vendor>
+    <vendor xml:lang="it">Red Hat, Inc</vendor>
+    <vendor xml:lang="ja">Red Hat, Inc</vendor>
+    <vendor xml:lang="pl">Red Hat, Inc</vendor>
+    <vendor xml:lang="pt_BR">Red Hat, Inc</vendor>
+    <vendor xml:lang="uk">Red Hat, Inc</vendor>
+    <family>linux</family>
+    <distro>rhel</distro>
+    <upgrades id="http://redhat.com/rhel/7.6"/>
+
+    <release-status>prerelease</release-status>
+
+    <devices>
+      <device id="http://pcisig.com/pci/1b36/0100"/> 
+      <device id="http://pcisig.com/pci/8086/2415"/> 
+      <device id="http://usb.org/usb/80ee/0021"/> 
+      <device id="http://pcisig.com/pci/1af4/1001"/> 
+      <device id="http://pcisig.com/pci/1af4/1000"/> 
+      <device id="http://pcisig.com/pci/1af4/1003"/> 
+      <device id="http://pcisig.com/pci/1af4/1005"/> 
+      <device id="http://pcisig.com/pci/1033/0194"/> 
+      <device id="http://pcisig.com/pci/1b36/0004"/> 
+      <device id="http://pcisig.com/pci/1af4/1041"/> 
+      <device id="http://pcisig.com/pci/1af4/1042"/> 
+      <device id="http://pcisig.com/pci/1af4/1043"/> 
+      <device id="http://pcisig.com/pci/1af4/1044"/> 
+      <device id="http://pcisig.com/pci/1af4/1045"/> 
+      <device id="http://pcisig.com/pci/1af4/1048"/> 
+      <device id="http://pcisig.com/pci/1af4/1049"/> 
+      <device id="http://pcisig.com/pci/1af4/1052"/> 
+      <device id="http://qemu.org/chipset/x86/q35"/> 
+      <device id="http://pcisig.com/pci/8086/10d3"/> 
+      <device id="http://pcisig.com/pci/8086/293e"/> 
+    </devices>
+
+    <media arch="x86_64">
+      <iso>
+        <system-id>LINUX</system-id>
+        <volume-id>RHEL-8-0-BaseOS-x86_64</volume-id>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+
+    <media arch="ppc64le">
+      <iso>
+        <system-id>PPC</system-id>
+        <volume-id>RHEL[_-]8[_-]0[_-]BaseOS[_-]ppc64le</volume-id>
+      </iso>
+      <kernel>ppc/ppc64/vmlinuz</kernel>
+      <initrd>ppc/ppc64/initrd.img</initrd>
+    </media>
+
+    <media arch="aarch64">
+      <iso>
+        <system-id>LINUX</system-id>
+        <volume-id>RHEL-8-0-BaseOS-aarch64</volume-id>
+      </iso>
+    </media>
+
+    <media arch="s390x">
+      <iso>
+        <system-id>LINUX</system-id>
+        <volume-id>RHEL-8-0-BaseOS-s390x</volume-id>
+      </iso>
+    </media>
+
+    <resources arch="ppc64">
+      <minimum>
+        <n-cpus>1</n-cpus>
+        <cpu>1000000000</cpu>
+        <ram>2147483648</ram>
+        <storage>10737418240</storage>
+      </minimum>
+
+      <recommended>
+        <cpu>4000000000</cpu>
+        <ram>2147483648</ram>
+        <storage>21474836480</storage>
+      </recommended>
+    </resources>
+
+    <resources arch="all">
+      <minimum>
+        <n-cpus>1</n-cpus>
+        <cpu>1000000000</cpu>
+        <ram>1073741824</ram>
+        <storage>10737418240</storage>
+      </minimum>
+
+      <recommended>
+        <cpu>1000000000</cpu>
+        <ram>1073741824</ram>
+        <storage>10737418240</storage>
+      </recommended>
+    </resources>
+  </os>
+</libosinfo>

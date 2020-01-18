@@ -8,6 +8,7 @@
     <name xml:lang="es">ALT Linux 2.2</name>
     <name xml:lang="fr">ALT Linux 2.2</name>
     <name xml:lang="id">ALT Linux 2.2</name>
+    <name xml:lang="it">ALT Linux 2.2</name>
     <name xml:lang="pl">ALT Linux 2.2</name>
     <name xml:lang="pt_BR">ALT Linux 2.2</name>
     <name xml:lang="uk">ALT Linux 2.2</name>
@@ -17,6 +18,7 @@
     <vendor xml:lang="es">ALTLinux</vendor>
     <vendor xml:lang="fr">ALTLinux</vendor>
     <vendor xml:lang="id">ALTLinux</vendor>
+    <vendor xml:lang="it">ALTLinux</vendor>
     <vendor xml:lang="pl">ALT Linux</vendor>
     <vendor xml:lang="pt_BR">ALTLinux</vendor>
     <vendor xml:lang="uk">ALTLinux</vendor>
@@ -24,6 +26,8 @@
     <distro>altlinux</distro>
     <upgrades id="http://altlinux.org/altlinux/2.0"/>
     <derives-from id="http://altlinux.org/altlinux/2.0"/>
+
     <release-date>2003-03-01</release-date>
+    <eol-date>2005-08-30</eol-date>
   </os>
 </libosinfo>

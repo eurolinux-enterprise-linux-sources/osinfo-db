@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libosinfo version="0.0.1">
+
+  <os id="http://altlinux.org/alt/8.0">
+    <short-id>alt8.0</short-id>
+    <name>ALT 8 Education</name>
+    <version>8.0</version>
+    <vendor>BaseALT</vendor>
+    <family>linux</family>
+    <distro>alt</distro>
+    <codename>Hypericum</codename>
+    <upgrades id="http://altlinux.org/altlinux/7.0"/>
+    <derives-from id="http://altlinux.org/altlinux/7.0"/>
+
+    <release-date>2016-06-01</release-date>
+    <eol-date>2019-12-16</eol-date>
+
+    <devices>
+      <device id="http://pcisig.com/pci/1af4/1041"/> 
+      <device id="http://pcisig.com/pci/1af4/1042"/> 
+      <device id="http://pcisig.com/pci/1af4/1043"/> 
+      <device id="http://pcisig.com/pci/1af4/1044"/> 
+      <device id="http://pcisig.com/pci/1af4/1045"/> 
+      <device id="http://pcisig.com/pci/1af4/1048"/> 
+      <device id="http://pcisig.com/pci/1af4/1049"/> 
+      <device id="http://pcisig.com/pci/1af4/1052"/> 
+      <device id="http://qemu.org/chipset/x86/q35"/> 
+      <device id="http://pcisig.com/pci/8086/10d3"/> 
+      <device id="http://pcisig.com/pci/8086/293e"/> 
+    </devices>
+
+    
+    <media arch="i686">
+      <url>http://ftp.altlinux.org/pub/distributions/ALTLinux/p8/images/education/alt-education-8.2-i586.iso</url>
+      <iso>
+        <system-id>LINUX</system-id>
+        <volume-id>ALT education/i586</volume-id>
+        <publisher-id>ALT LINUX TEAM</publisher-id>
+        <application-id>EDUCATION</application-id>
+      </iso>
+      <kernel>syslinux/alt0/vmlinuz</kernel>
+      <initrd>syslinux/alt0/full.cz</initrd>
+    </media>
+    <media arch="x86_64">
+      <url>http://ftp.altlinux.org/pub/distributions/ALTLinux/p8/images/education/alt-education-8.2-x86_64.iso</url>
+      <iso>
+        <system-id>LINUX</system-id>
+        <volume-id>ALT education/x86_64</volume-id>
+        <publisher-id>ALT LINUX TEAM</publisher-id>
+        <application-id>EDUCATION</application-id>
+      </iso>
+      <kernel>syslinux/alt0/vmlinuz</kernel>
+      <initrd>syslinux/alt0/full.cz</initrd>
+    </media>
+
+    <resources arch="all">
+      <minimum>
+        <n-cpus>1</n-cpus>
+        <cpu>1000000000</cpu>
+        <ram>536870912</ram>
+        <storage>10737418240</storage>
+      </minimum>
+      <recommended>
+        <ram>2147483648</ram>
+        <storage>21474836480</storage>
+      </recommended>
+    </resources>
+
+  </os>
+</libosinfo>

@@ -9,6 +9,7 @@
     <name xml:lang="es">Microsoft Windows 7</name>
     <name xml:lang="fr">Microsoft Windows 7</name>
     <name xml:lang="id">Microsoft Windows 7</name>
+    <name xml:lang="it">Microsoft Windows 7</name>
     <name xml:lang="ja">Microsoft Windows 7</name>
     <name xml:lang="pl">Microsoft Windows 7</name>
     <name xml:lang="pt_BR">Microsoft Windows 7</name>
@@ -20,6 +21,7 @@
     <vendor xml:lang="es">Microsoft Corporation</vendor>
     <vendor xml:lang="fr">Microsoft Corporation</vendor>
     <vendor xml:lang="id">Microsoft Corporation</vendor>
+    <vendor xml:lang="it">Microsoft Corporation</vendor>
     <vendor xml:lang="ja">Microsoft Corporation</vendor>
     <vendor xml:lang="pl">Microsoft Corporation</vendor>
     <vendor xml:lang="pt_BR">Microsoft Corporation</vendor>
@@ -38,6 +40,7 @@
       <name xml:lang="es">Microsoft Windows 7 Debug Checked Build</name>
       <name xml:lang="fr">Microsoft Windows 7 Debug Checked Build</name>
       <name xml:lang="id">Microsoft Windows 7 Debug Checked Build</name>
+      <name xml:lang="it">Microsoft Windows 7 Debug Checked Build</name>
       <name xml:lang="pl">Microsoft Windows 7 Debug Checked Build</name>
       <name xml:lang="uk">Microsoft Windows 7 Debug Checked Build</name>
     </variant>
@@ -47,6 +50,7 @@
       <name xml:lang="es">Microsoft Windows 7 Starter</name>
       <name xml:lang="fr">Microsoft Windows 7 Starter</name>
       <name xml:lang="id">Microsoft Windows 7 Starter</name>
+      <name xml:lang="it">Microsoft Windows 7 Starter</name>
       <name xml:lang="pl">Microsoft Windows 7 Starter</name>
       <name xml:lang="pt_BR">Microsoft Windows 7 Starter</name>
       <name xml:lang="uk">Microsoft Windows 7 Starter</name>
@@ -57,6 +61,7 @@
       <name xml:lang="es">Microsoft Windows 7 Home Basic</name>
       <name xml:lang="fr">Microsoft Windows 7 Édition Familiale Basique</name>
       <name xml:lang="id">Microsoft Windows 7 Home Basic</name>
+      <name xml:lang="it">Microsoft Windows 7 Home Basic</name>
       <name xml:lang="pl">Microsoft Windows 7 Home Basic</name>
       <name xml:lang="pt_BR">Microsoft Windows 7 Home Basic</name>
       <name xml:lang="uk">Microsoft Windows 7 Home Basic</name>
@@ -67,6 +72,7 @@
       <name xml:lang="es">Microsoft Windows 7 Home Premium</name>
       <name xml:lang="fr">Microsoft Windows 7 Édition Familiale Premium</name>
       <name xml:lang="id">Microsoft Windows 7 Home Premium</name>
+      <name xml:lang="it">Microsoft Windows 7 Home Premium</name>
       <name xml:lang="pl">Microsoft Windows 7 Home Premium</name>
       <name xml:lang="pt_BR">Microsoft Windows 7 Home Premium</name>
       <name xml:lang="uk">Microsoft Windows 7 Home Premium</name>
@@ -77,6 +83,7 @@
       <name xml:lang="es">Microsoft Windows 7 Professional</name>
       <name xml:lang="fr">Microsoft Windows 7 Professionnel</name>
       <name xml:lang="id">Microsoft Windows 7 Professional</name>
+      <name xml:lang="it">Microsoft Windows 7 Professional</name>
       <name xml:lang="pl">Microsoft Windows 7 Professional</name>
       <name xml:lang="pt_BR">Microsoft Windows 7 Professional</name>
       <name xml:lang="uk">Microsoft Windows 7 Professional</name>
@@ -87,6 +94,7 @@
       <name xml:lang="es">Microsoft Windows 7 Enterprise</name>
       <name xml:lang="fr">Microsoft Windows 7 Entreprise</name>
       <name xml:lang="id">Microsoft Windows 7 Enterprise</name>
+      <name xml:lang="it">Microsoft Windows 7 Enterprise</name>
       <name xml:lang="pl">Microsoft Windows 7 Enterprise</name>
       <name xml:lang="pt_BR">Microsoft Windows 7 Enterprise</name>
       <name xml:lang="uk">Microsoft Windows 7 Enterprise</name>
@@ -97,6 +105,7 @@
       <name xml:lang="es">Microsoft Windows 7 Ultimate</name>
       <name xml:lang="fr">Microsoft Windows 7 Édition Intégrale</name>
       <name xml:lang="id">Microsoft Windows 7 Ultimate</name>
+      <name xml:lang="it">Microsoft Windows 7 Ultimate</name>
       <name xml:lang="pl">Microsoft Windows 7 Ultimate</name>
       <name xml:lang="pt_BR">Microsoft Windows 7 Ultimate</name>
       <name xml:lang="uk">Microsoft Windows 7 Ultimate</name>
@@ -248,6 +257,9 @@
 
     <devices>
       <device id="http://pcisig.com/pci/8086/2668"/> 
+      <device id="http://qemu.org/chipset/x86/q35"/> 
+      <device id="http://pcisig.com/pci/8086/10d3"/> 
+      <device id="http://pcisig.com/pci/8086/293e"/> 
     </devices>
 
     <installer>
@@ -261,14 +273,14 @@
       <file>viostor.cat</file>
       <file>viostor.inf</file>
       <file>viostor.sys</file>
-      <device id="http://pcisig.com/pci/1af4/1001"/>
+      <device id="http://pcisig.com/pci/1af4/1001"/> 
     </driver>
 
     <driver signed="false" pre-installable="true" location="https://zeenix.fedorapeople.org/drivers/win-tools-1/preinst/win7/amd64" arch="x86_64">
       <file>viostor.cat</file>
       <file>viostor.inf</file>
       <file>viostor.sys</file>
-      <device id="http://pcisig.com/pci/1af4/1001"/>
+      <device id="http://pcisig.com/pci/1af4/1001"/> 
     </driver>
 
     
@@ -277,11 +289,11 @@
       <file>spice-guest-tools-0.65.cmd</file>
       <file>redhat09.cer</file>
       <file>redhat10.cer</file>
-      <device id="http://pcisig.com/pci/1af4/1000"/>
-      <device id="http://pcisig.com/pci/1af4/1001"/>
-      <device id="http://pcisig.com/pci/1af4/1002"/>
-      <device id="http://pcisig.com/pci/1af4/1003"/>
-      <device id="http://pcisig.com/pci/1b36/0100"/>
+      <device id="http://pcisig.com/pci/1af4/1000"/> 
+      <device id="http://pcisig.com/pci/1af4/1001"/> 
+      <device id="http://pcisig.com/pci/1af4/1002"/> 
+      <device id="http://pcisig.com/pci/1af4/1003"/> 
+      <device id="http://pcisig.com/pci/1b36/0100"/> 
     </driver>
 
     <driver signed="false" location="https://zeenix.fedorapeople.org/drivers/win-tools/postinst" arch="x86_64">
@@ -289,11 +301,11 @@
       <file>spice-guest-tools-0.65.cmd</file>
       <file>redhat09.cer</file>
       <file>redhat10.cer</file>
-      <device id="http://pcisig.com/pci/1af4/1000"/>
-      <device id="http://pcisig.com/pci/1af4/1001"/>
-      <device id="http://pcisig.com/pci/1af4/1002"/>
-      <device id="http://pcisig.com/pci/1af4/1003"/>
-      <device id="http://pcisig.com/pci/1b36/0100"/>
+      <device id="http://pcisig.com/pci/1af4/1000"/> 
+      <device id="http://pcisig.com/pci/1af4/1001"/> 
+      <device id="http://pcisig.com/pci/1af4/1002"/> 
+      <device id="http://pcisig.com/pci/1af4/1003"/> 
+      <device id="http://pcisig.com/pci/1b36/0100"/> 
     </driver>
   </os>
 </libosinfo>

@@ -9,6 +9,7 @@
     <name xml:lang="es">Ubuntu 12.04 LTS</name>
     <name xml:lang="fr">Ubuntu 12.04 LTS</name>
     <name xml:lang="id">Ubuntu 12.04 LTS</name>
+    <name xml:lang="it">Ubuntu 12.04 LTS</name>
     <name xml:lang="pl">Ubuntu 12.04 LTS</name>
     <name xml:lang="uk">Ubuntu 12.04 LTS</name>
     <version>12.04</version>
@@ -18,6 +19,7 @@
     <vendor xml:lang="es">Canonical Ltd</vendor>
     <vendor xml:lang="fr">Canonical Ltd</vendor>
     <vendor xml:lang="id">Canonical Ltd</vendor>
+    <vendor xml:lang="it">Canonical Ltd</vendor>
     <vendor xml:lang="ja">Canonical Ltd</vendor>
     <vendor xml:lang="pl">Canonical Ltd</vendor>
     <vendor xml:lang="pt_BR">Canonical Ltd</vendor>
@@ -29,7 +31,7 @@
     <derives-from id="http://ubuntu.com/ubuntu/11.10"/>
 
     <release-date>2012-04-26</release-date>
-    <eol-date>2017-04-26</eol-date>
+    <eol-date>2017-04-28</eol-date>
 
     <resources arch="all">
       <minimum>

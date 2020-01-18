@@ -8,6 +8,7 @@
     <name xml:lang="es">CentOS 7.0</name>
     <name xml:lang="fr">CentOS 7.0</name>
     <name xml:lang="id">CentOS 7.0</name>
+    <name xml:lang="it">CentOS 7.0</name>
     <name xml:lang="pl">CentOS 7.0</name>
     <name xml:lang="pt_BR">CentOS 7.0</name>
     <name xml:lang="uk">CentOS 7.0</name>
@@ -18,6 +19,7 @@
     <vendor xml:lang="es">CentOS</vendor>
     <vendor xml:lang="fr">CentOS</vendor>
     <vendor xml:lang="id">CentOS</vendor>
+    <vendor xml:lang="it">CentOS</vendor>
     <vendor xml:lang="ja">CentOS</vendor>
     <vendor xml:lang="pl">CentOS</vendor>
     <vendor xml:lang="pt_BR">CentOS</vendor>
@@ -25,18 +27,57 @@
     <family>linux</family>
     <distro>centos</distro>
     <upgrades id="http://centos.org/centos/6.5"/>
-    <clones id="http://redhat.com/rhel/7.0"/>
+    <clones id="http://redhat.com/rhel/7.5"/>
 
     <release-date>2014-07-07</release-date>
 
+    <variant id="live-gnome">
+      <name>CentOS 7.0 (GNOME)</name>
+    </variant>
+    <variant id="live-kde">
+      <name>CentOS 7.0 (KDE)</name>
+    </variant>
+
     <media arch="x86_64">
+      <url>https://buildlogs.centos.org/rolling/7/isos/x86_64/CentOS-7-x86_64-DVD.iso</url>
       <iso>
         <system-id>LINUX</system-id>
-        <volume-id>.*CentOS 7 x86_64.*</volume-id>
+        <volume-id>CentOS 7 x86_64</volume-id>
       </iso>
       <kernel>isolinux/vmlinuz</kernel>
       <initrd>isolinux/initrd.img</initrd>
     </media>
+
+    <media live="true" arch="x86_64">
+      <variant id="live-gnome"/>
+      <url>https://buildlogs.centos.org/rolling/7/isos/x86_64/CentOS-7-x86_64-LiveGNOME.iso</url>
+      <iso>
+        <system-id>LINUX</system-id>
+        <volume-id>CentOS-7-x86_64-LiveGNOME*</volume-id>
+      </iso>
+      <kernel>isolinux/vmlinuz0</kernel>
+      <initrd>isolinux/initrd0.img</initrd>
+    </media>
+
+    <media live="true" arch="x86_64">
+      <variant id="live-kde"/>
+      <url>https://buildlogs.centos.org/rolling/7/isos/x86_64/CentOS-7-x86_64-LiveKDE.iso</url>
+      <iso>
+        <system-id>LINUX</system-id>
+        <volume-id>CentOS-7-x86_64-LiveKDE*</volume-id>
+      </iso>
+      <kernel>isolinux/vmlinuz0</kernel>
+      <initrd>isolinux/initrd0.img</initrd>
+    </media>
+
+    <tree arch="x86_64">
+      <url>http://mirror.centos.org/centos-7/7/os/x86_64/</url>
+      <treeinfo>
+        <family>CentOS</family>
+        <version>7.0</version>
+        <arch>x86_64</arch>
+      </treeinfo>
+    </tree>
 
     <resources arch="all">
       <minimum>

@@ -8,6 +8,7 @@
     <name xml:lang="es">FreeBSD 10.1</name>
     <name xml:lang="fr">FreeBSD 10.1</name>
     <name xml:lang="id">FreeBSD 10.1</name>
+    <name xml:lang="it">FreeBSD 10.1</name>
     <name xml:lang="pl">FreeBSD 10.1</name>
     <name xml:lang="uk">FreeBSD 10.1</name>
     <version>10.1</version>
@@ -17,6 +18,7 @@
     <vendor xml:lang="es">FreeBSD Project</vendor>
     <vendor xml:lang="fr">FreeBSD Project</vendor>
     <vendor xml:lang="id">Proyek FreeBSD</vendor>
+    <vendor xml:lang="it">Progetto FreeBSD</vendor>
     <vendor xml:lang="ja">FreeBSD プロジェクト</vendor>
     <vendor xml:lang="pl">Projekt FreeBSD</vendor>
     <vendor xml:lang="pt_BR">Projeto FreeBSD</vendor>
@@ -28,11 +30,6 @@
 
     <release-date>2014-11-14</release-date>
     <eol-date>2016-12-31</eol-date>
-
-    <devices>
-      <device id="http://pcisig.com/pci/1af4/1000"/> 
-      <device id="http://pcisig.com/pci/1af4/1001"/> 
-    </devices>
 
     <media arch="x86_64">
       <iso>

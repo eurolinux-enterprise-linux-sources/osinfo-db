@@ -8,6 +8,7 @@
     <name xml:lang="es">Microsoft Windows 10</name>
     <name xml:lang="fr">Microsoft Windows 10</name>
     <name xml:lang="id">Microsoft Windows 10</name>
+    <name xml:lang="it">Microsoft Windows 10</name>
     <name xml:lang="pl">Microsoft Windows 10</name>
     <name xml:lang="uk">Microsoft Windows 10</name>
     <version>10.0</version>
@@ -17,6 +18,7 @@
     <vendor xml:lang="es">Microsoft Corporation</vendor>
     <vendor xml:lang="fr">Microsoft Corporation</vendor>
     <vendor xml:lang="id">Microsoft Corporation</vendor>
+    <vendor xml:lang="it">Microsoft Corporation</vendor>
     <vendor xml:lang="ja">Microsoft Corporation</vendor>
     <vendor xml:lang="pl">Microsoft Corporation</vendor>
     <vendor xml:lang="pt_BR">Microsoft Corporation</vendor>
@@ -34,6 +36,7 @@
       <name xml:lang="es">Microsoft Windows 10 Education</name>
       <name xml:lang="fr">Microsoft Windows 10 Éducation</name>
       <name xml:lang="id">Microsoft Windows 10 Education</name>
+      <name xml:lang="it">Microsoft Windows 10 Education</name>
       <name xml:lang="pl">Microsoft Windows 10 Education</name>
       <name xml:lang="uk">Microsoft Windows 10 Education</name>
     </variant>
@@ -43,6 +46,7 @@
       <name xml:lang="es">Microsoft Windows 10 Enterprise</name>
       <name xml:lang="fr">Microsoft Windows 10 Entreprise</name>
       <name xml:lang="id">Microsoft Windows 10 Enterprise</name>
+      <name xml:lang="it">Microsoft Windows 10 Enterprise</name>
       <name xml:lang="pl">Microsoft Windows 10 Enterprise</name>
       <name xml:lang="uk">Microsoft Windows 10 Enterprise</name>
     </variant>
@@ -52,8 +56,12 @@
       <name xml:lang="es">Microsoft Windows 10 Enterprise (Long Term Servicing Branch)</name>
       <name xml:lang="fr">Microsoft Windows 10 Enterprise (Long Term Servicing Branch)</name>
       <name xml:lang="id">Microsoft Windows 10 Enterprise (Long Term Servicing Branch)</name>
+      <name xml:lang="it">Microsoft Windows 10 Enterprise (Long Term Servicing Branch)</name>
       <name xml:lang="pl">Microsoft Windows 10 Enterprise (Long Term Servicing Branch)</name>
       <name xml:lang="uk">Microsoft Windows 10 Enterprise (Long Term Servicing Branch)</name>
+    </variant>
+    <variant id="enterprise-ltsb-eval">
+      <name>Microsoft Windows 10 Enterprise (Long Term Servicing Branch) Evaluation</name>
     </variant>
 
     
@@ -68,7 +76,7 @@
     <media arch="x86_64">
       <variant id="education"/>
       <iso>
-        <volume-id>(J_)?CEDN?A_X64FRE_</volume-id>
+        <volume-id>(J_)?CEDN?A_X64FREE?_</volume-id>
         <publisher-id>MICROSOFT CORPORATION</publisher-id>
         <l10n-language regex="true" l10n-language-map="http://microsoft.com/win/8/l10n-language">[[:upper:][:digit:]_]*_([[:upper:]]*-[[:upper:]]*)</l10n-language>
       </iso>
@@ -78,7 +86,7 @@
     <media arch="i686">
       <variant id="enterprise"/>
       <iso>
-        <volume-id>(J_)?CEN?A_X86FREV_</volume-id>
+        <volume-id>^(J_)?CEN?A_X86FREV_</volume-id>
         <publisher-id>MICROSOFT CORPORATION</publisher-id>
         <l10n-language regex="true" l10n-language-map="http://microsoft.com/win/8/l10n-language">[[:upper:][:digit:]_]*_([[:upper:]]*-[[:upper:]]*)</l10n-language>
       </iso>
@@ -86,7 +94,7 @@
     <media arch="x86_64">
       <variant id="enterprise"/>
       <iso>
-        <volume-id>(J_)?CENN?A_X64FREV_</volume-id>
+        <volume-id>^(J_)?CENN?A_X64FREV_</volume-id>
         <publisher-id>MICROSOFT CORPORATION</publisher-id>
         <l10n-language regex="true" l10n-language-map="http://microsoft.com/win/8/l10n-language">[[:upper:][:digit:]_]*_([[:upper:]]*-[[:upper:]]*)</l10n-language>
       </iso>
@@ -112,15 +120,33 @@
 
     
     <media arch="i686">
+      <variant id="enterprise-ltsb-eval"/>
       <iso>
-        <volume-id>(J_)?CCSN?A_X86FRE_</volume-id>
+        <volume-id>CESE_X86FREE_</volume-id>
+        <publisher-id>MICROSOFT CORPORATION</publisher-id>
+        <l10n-language regex="true" l10n-language-map="http://microsoft.com/win/8/l10n-language">[[:upper:][:digit:]_]*_([[:upper:]]*-[[:upper:]]*)</l10n-language>
+      </iso>
+    </media>
+    <media arch="x86_64">
+      <variant id="enterprise-ltsb-eval"/>
+      <iso>
+        <volume-id>CESE_X64FREE_</volume-id>
+        <publisher-id>MICROSOFT CORPORATION</publisher-id>
+        <l10n-language regex="true" l10n-language-map="http://microsoft.com/win/8/l10n-language">[[:upper:][:digit:]_]*_([[:upper:]]*-[[:upper:]]*)</l10n-language>
+      </iso>
+    </media>
+
+    
+    <media arch="i686">
+      <iso>
+        <volume-id>^(J_)?CCSN?A_X86FRE_</volume-id>
         <publisher-id>MICROSOFT CORPORATION</publisher-id>
         <l10n-language regex="true" l10n-language-map="http://microsoft.com/win/8/l10n-language">[[:upper:][:digit:]_]*_([[:upper:]]*-[[:upper:]]*)</l10n-language>
       </iso>
     </media>
     <media arch="x86_64">
       <iso>
-        <volume-id>(J_)?(CCSN?A|CCOMA)_X64FRE_</volume-id>
+        <volume-id>^(J_)?(CCSN?A|C?CCOMA)_X64FREE?_</volume-id>
         <publisher-id>MICROSOFT CORPORATION</publisher-id>
         <l10n-language regex="true" l10n-language-map="http://microsoft.com/win/8/l10n-language">[[:upper:][:digit:]_]*_([[:upper:]]*-[[:upper:]]*)</l10n-language>
       </iso>
@@ -143,10 +169,6 @@
         <storage>21474836480</storage>
       </minimum>
     </resources>
-
-    <devices>
-      <device id="http://pcisig.com/pci/8086/2668"/> 
-    </devices>
 
     <installer>
       <script id='http://microsoft.com/windows/unattend/jeos'/>

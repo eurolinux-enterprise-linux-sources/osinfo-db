@@ -8,6 +8,7 @@
     <name xml:lang="es">openSUSE 13.2</name>
     <name xml:lang="fr">openSUSE 13.2</name>
     <name xml:lang="id">openSUSE 13.2</name>
+    <name xml:lang="it">openSUSE 13.2</name>
     <name xml:lang="pl">openSUSE 13.2</name>
     <name xml:lang="uk">openSUSE 13.2</name>
     <version>13.2</version>
@@ -17,6 +18,7 @@
     <vendor xml:lang="es">openSUSE</vendor>
     <vendor xml:lang="fr">openSUSE</vendor>
     <vendor xml:lang="id">openSUSE</vendor>
+    <vendor xml:lang="it">openSUSE</vendor>
     <vendor xml:lang="ja">openSUSE</vendor>
     <vendor xml:lang="pl">openSUSE</vendor>
     <vendor xml:lang="pt_BR">openSUSE</vendor>

@@ -8,6 +8,7 @@
     <name xml:lang="es">openSUSE Leap 42.1</name>
     <name xml:lang="fr">openSUSE Leap 42.1</name>
     <name xml:lang="id">openSUSE Leap 42.1</name>
+    <name xml:lang="it">openSUSE Leap 42.1</name>
     <name xml:lang="pl">openSUSE Leap 42.1</name>
     <name xml:lang="uk">openSUSE Leap 42.1</name>
     <version>42.1</version>
@@ -17,6 +18,7 @@
     <vendor xml:lang="es">openSUSE</vendor>
     <vendor xml:lang="fr">openSUSE</vendor>
     <vendor xml:lang="id">openSUSE</vendor>
+    <vendor xml:lang="it">openSUSE</vendor>
     <vendor xml:lang="ja">openSUSE</vendor>
     <vendor xml:lang="pl">openSUSE</vendor>
     <vendor xml:lang="pt_BR">openSUSE</vendor>

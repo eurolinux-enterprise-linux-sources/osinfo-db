@@ -8,6 +8,7 @@
     <name xml:lang="es">ALT Linux 3.0</name>
     <name xml:lang="fr">ALT Linux 3.0</name>
     <name xml:lang="id">ALT Linux 3.0</name>
+    <name xml:lang="it">ALT Linux 3.0</name>
     <name xml:lang="pl">ALT Linux 3.0</name>
     <name xml:lang="pt_BR">ALT Linux 3.0</name>
     <name xml:lang="uk">ALT Linux 3.0</name>
@@ -17,6 +18,7 @@
     <vendor xml:lang="es">ALTLinux</vendor>
     <vendor xml:lang="fr">ALTLinux</vendor>
     <vendor xml:lang="id">ALTLinux</vendor>
+    <vendor xml:lang="it">ALTLinux</vendor>
     <vendor xml:lang="pl">ALT Linux</vendor>
     <vendor xml:lang="pt_BR">ALTLinux</vendor>
     <vendor xml:lang="uk">ALTLinux</vendor>
@@ -25,7 +27,9 @@
     <codename>caprifoil</codename>
     <upgrades id="http://altlinux.org/altlinux/2.4"/>
     <derives-from id="http://altlinux.org/altlinux/2.4"/>
+
     <release-date>2005-03-22</release-date>
+    <eol-date>2007-08-30</eol-date>
 
     <media arch="i686">
       <url>http://ftp.altlinux.org/pub/distributions/ALTLinux/3.0/iso/compact-3.0.4.iso</url>

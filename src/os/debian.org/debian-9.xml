@@ -5,6 +5,11 @@
     <short-id>debian9</short-id>
     <short-id>debianstretch</short-id>
     <name>Debian Stretch</name>
+    <name xml:lang="ca">Debian Stretch</name>
+    <name xml:lang="es">Debian Stretch</name>
+    <name xml:lang="it">Debian Stretch</name>
+    <name xml:lang="pl">Debian Stretch</name>
+    <name xml:lang="uk">Debian Stretch</name>
     <version>9</version>
     <vendor>Debian Project</vendor>
     <vendor xml:lang="ca">Projecte Debian</vendor>
@@ -12,6 +17,7 @@
     <vendor xml:lang="es">Debian Project</vendor>
     <vendor xml:lang="fr">Debian Project</vendor>
     <vendor xml:lang="id">Proyek Debian</vendor>
+    <vendor xml:lang="it">Progetto Debian</vendor>
     <vendor xml:lang="ja">Debian プロジェクト</vendor>
     <vendor xml:lang="pl">Projekt Debian</vendor>
     <vendor xml:lang="pt_BR">Projeto Debian</vendor>
@@ -24,14 +30,17 @@
     <release-date>2017-06-17</release-date>
 
     <devices>
-      <device id="http://pcisig.com/pci/1af4/1041"/>
-      <device id="http://pcisig.com/pci/1af4/1042"/>
-      <device id="http://pcisig.com/pci/1af4/1043"/>
-      <device id="http://pcisig.com/pci/1af4/1044"/>
-      <device id="http://pcisig.com/pci/1af4/1045"/>
-      <device id="http://pcisig.com/pci/1af4/1048"/>
-      <device id="http://pcisig.com/pci/1af4/1049"/>
-      <device id="http://pcisig.com/pci/1af4/1052"/>
+      <device id="http://pcisig.com/pci/1af4/1041"/> 
+      <device id="http://pcisig.com/pci/1af4/1042"/> 
+      <device id="http://pcisig.com/pci/1af4/1043"/> 
+      <device id="http://pcisig.com/pci/1af4/1044"/> 
+      <device id="http://pcisig.com/pci/1af4/1045"/> 
+      <device id="http://pcisig.com/pci/1af4/1048"/> 
+      <device id="http://pcisig.com/pci/1af4/1049"/> 
+      <device id="http://pcisig.com/pci/1af4/1052"/> 
+      <device id="http://qemu.org/chipset/x86/q35"/> 
+      <device id="http://pcisig.com/pci/8086/10d3"/> 
+      <device id="http://pcisig.com/pci/8086/293e"/> 
     </devices>
 
     <resources arch="all">
@@ -50,15 +59,25 @@
 
     <variant id="universal">
       <name>Debian 9</name>
+      <name xml:lang="ca">Debian 9</name>
+      <name xml:lang="es">Debian 9</name>
+      <name xml:lang="it">Debian 9</name>
+      <name xml:lang="pl">Debian 9</name>
+      <name xml:lang="uk">Debian 9</name>
     </variant>
     <variant id="universal-netinst">
       <name>Debian 9</name>
+      <name xml:lang="ca">Debian 9</name>
+      <name xml:lang="es">Debian 9</name>
+      <name xml:lang="it">Debian 9</name>
+      <name xml:lang="pl">Debian 9</name>
+      <name xml:lang="uk">Debian 9</name>
     </variant>
 
     
     <media arch="i686">
       <variant id="universal-netinst"/>
-      <url>http://cdimage.debian.org/cdimage/archive/9.2.1/i386/iso-cd/debian-9.2.1-i386-netinst.iso</url>
+      <url>http://cdimage.debian.org/cdimage/release/9.6.0/i386/iso-cd/debian-9.6.0-i386-netinst.iso</url>
       <iso>
         <volume-id>Debian 9.(\d)+.(\d)+ i386 n</volume-id>
       </iso>
@@ -67,7 +86,7 @@
     </media>
     <media arch="x86_64">
       <variant id="universal-netinst"/>
-      <url>http://cdimage.debian.org/cdimage/archive/9.2.1/amd64/iso-cd/debian-9.2.1-amd64-netinst.iso</url>
+      <url>http://cdimage.debian.org/cdimage/release/9.6.0/amd64/iso-cd/debian-9.6.0-amd64-netinst.iso</url>
       <iso>
 	<volume-id>Debian 9.(\d)+.(\d)+ amd64 n</volume-id>
       </iso>
@@ -76,7 +95,7 @@
     </media>
     <media arch="aarch64">
       <variant id="universal-netinst"/>
-      <url>http://cdimage.debian.org/cdimage/archive/9.2.1/arm64/iso-cd/debian-9.2.1-arm64-netinst.iso</url>
+      <url>http://cdimage.debian.org/cdimage/release/9.6.0/arm64/iso-cd/debian-9.6.0-arm64-netinst.iso</url>
       <iso>
 	<volume-id>Debian 9.(\d)+.(\d)+ arm64 n</volume-id>
       </iso>
@@ -85,7 +104,7 @@
     </media>
     <media arch="armv7l">
       <variant id="universal-netinst"/>
-      <url>http://cdimage.debian.org/cdimage/archive/9.2.1/armhf/iso-cd/debian-9.2.1-armhf-netinst.iso</url>
+      <url>http://cdimage.debian.org/cdimage/release/9.6.0/armhf/iso-cd/debian-9.6.0-armhf-netinst.iso</url>
       <iso>
 	<volume-id>Debian 9.(\d)+.(\d)+ armhf n</volume-id>
       </iso>
@@ -96,7 +115,7 @@
     
     <media arch="i686">
       <variant id="universal"/>
-      <url>http://cdimage.debian.org/cdimage/archive/9.2.1/i386/iso-dvd/debian-9.2.1-i386-DVD-1.iso</url>
+      <url>http://cdimage.debian.org/cdimage/release/9.6.0/i386/iso-dvd/debian-9.6.0-i386-DVD-1.iso</url>
       <iso>
         <volume-id>Debian 9.(\d)+.(\d)+ i386 1</volume-id>
       </iso>
@@ -105,7 +124,7 @@
     </media>
     <media arch="x86_64">
       <variant id="universal"/>
-      <url>http://cdimage.debian.org/cdimage/archive/9.2.1/amd64/iso-dvd/debian-9.2.1-amd64-DVD-1.iso</url>
+      <url>http://cdimage.debian.org/cdimage/release/9.6.0/amd64/iso-dvd/debian-9.6.0-amd64-DVD-1.iso</url>
       <iso>
 	<volume-id>Debian 9.(\d)+.(\d)+ amd64 1</volume-id>
       </iso>
@@ -114,7 +133,7 @@
     </media>
     <media arch="aarch64">
       <variant id="universal"/>
-      <url>http://cdimage.debian.org/cdimage/archive/9.2.1/arm64/iso-dvd/debian-9.2.1-arm64-DVD-1.iso</url>
+      <url>http://cdimage.debian.org/cdimage/release/9.6.0/arm64/iso-dvd/debian-9.6.0-arm64-DVD-1.iso</url>
       <iso>
 	<volume-id>Debian 9.(\d)+.(\d)+ arm64 1</volume-id>
       </iso>
@@ -123,13 +142,34 @@
     </media>
     <media arch="armv7l">
       <variant id="universal"/>
-      <url>http://cdimage.debian.org/cdimage/archive/9.2.1/armhf/iso-dvd/debian-9.2.1-armhf-DVD-1.iso</url>
+      <url>http://cdimage.debian.org/cdimage/release/9.6.0/armhf/iso-dvd/debian-9.6.0-armhf-DVD-1.iso</url>
       <iso>
 	<volume-id>Debian 9.(\d)+.(\d)+ armhf 1</volume-id>
       </iso>
       <kernel>install.armhf/vmlinuz</kernel>
       <initrd>install.armhf/initrd.gz</initrd>
     </media>
+
+    <tree arch="i686">
+      <url>http://deb.debian.org/debian/dists/stretch/main/installer-i386</url>
+      <kernel>current/images/netboot/debian-installer/i386/linux</kernel>
+      <initrd>current/images/netboot/debian-installer/i386/initrd.gz</initrd>
+    </tree>
+    <tree arch="x86_64">
+      <url>http://deb.debian.org/debian/dists/stretch/main/installer-amd64</url>
+      <kernel>current/images/netboot/debian-installer/amd64/linux</kernel>
+      <initrd>current/images/netboot/debian-installer/amd64/initrd.gz</initrd>
+    </tree>
+    <tree arch="aarch64">
+      <url>http://deb.debian.org/debian/dists/stretch/main/installer-arm64</url>
+      <kernel>current/images/netboot/debian-installer/arm64/linux</kernel>
+      <initrd>current/images/netboot/debian-installer/arm64/initrd.gz</initrd>
+    </tree>
+    <tree arch="armv7l">
+      <url>http://deb.debian.org/debian/dists/stretch/main/installer-armhf</url>
+      <kernel>current/images/netboot/debian-installer/armhf/linux</kernel>
+      <initrd>current/images/netboot/debian-installer/armhf/initrd.gz</initrd>
+    </tree>
 
     <installer>
       <script id='http://debian.org/debian/preseed/jeos'/>

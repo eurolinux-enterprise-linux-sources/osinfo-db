@@ -8,6 +8,7 @@
     <name xml:lang="es">OpenSolaris 2009.06</name>
     <name xml:lang="fr">OpenSolaris 2009.06</name>
     <name xml:lang="id">OpenSolaris 2009.06</name>
+    <name xml:lang="it">OpenSolaris 2009.06</name>
     <name xml:lang="pl">OpenSolaris 2009.06</name>
     <name xml:lang="uk">OpenSolaris 2009.06</name>
     <version>2009.06</version>
@@ -17,6 +18,7 @@
     <vendor xml:lang="es">Sun</vendor>
     <vendor xml:lang="fr">Sun</vendor>
     <vendor xml:lang="id">Sun</vendor>
+    <vendor xml:lang="it">Sun</vendor>
     <vendor xml:lang="ja">Sun</vendor>
     <vendor xml:lang="pl">Sun</vendor>
     <vendor xml:lang="pt_BR">Sun</vendor>
@@ -27,7 +29,7 @@
     <release-date>2009-06-01</release-date>
 
     <devices>
-      <device id="http://usb.org/usb/80ee/0021"/>
+      <device id="http://usb.org/usb/80ee/0021"/> 
     </devices>
   </os>
 </libosinfo>

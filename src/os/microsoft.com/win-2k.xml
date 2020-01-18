@@ -9,6 +9,7 @@
     <name xml:lang="es">Microsoft Windows 2000</name>
     <name xml:lang="fr">Microsoft Windows 2000</name>
     <name xml:lang="id">Microsoft Windows 2000</name>
+    <name xml:lang="it">Microsoft Windows 2000</name>
     <name xml:lang="ja">Microsoft Windows 2000</name>
     <name xml:lang="pl">Microsoft Windows 2000</name>
     <name xml:lang="pt_BR">Microsoft Windows 2000</name>
@@ -20,6 +21,7 @@
     <vendor xml:lang="es">Microsoft Corporation</vendor>
     <vendor xml:lang="fr">Microsoft Corporation</vendor>
     <vendor xml:lang="id">Microsoft Corporation</vendor>
+    <vendor xml:lang="it">Microsoft Corporation</vendor>
     <vendor xml:lang="ja">Microsoft Corporation</vendor>
     <vendor xml:lang="pl">Microsoft Corporation</vendor>
     <vendor xml:lang="pt_BR">Microsoft Corporation</vendor>
@@ -31,12 +33,6 @@
     <release-date>2000-02-17</release-date>
     <eol-date>2010-07-13</eol-date>
 
-    <devices>
-      <device id="http://pcisig.com/pci/1b36/0100"/> 
-      <device id="http://pcisig.com/pci/1234/1111"/> 
-      <device id="http://usb.org/usb/80ee/0021"/> 
-      <device id="http://pcisig.com/pci/8086/2415"/> 
-    </devices>
 
     <media arch="i686">
       <iso>

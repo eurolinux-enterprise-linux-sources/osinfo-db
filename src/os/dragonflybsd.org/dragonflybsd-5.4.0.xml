@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libosinfo version="0.0.1">
+
+  <os id="http://dragonflybsd.org/dragonflybsd/5.4.0">
+    <short-id>dragonflybsd5.4.0</short-id>
+    <name>DragonFlyBSD 5.4.0</name>
+    <version>5.4.0</version>
+    <family>dragonflybsd</family>
+    <distro>dragonflybsd</distro>
+    <vendor>DragonFlyBSD Project</vendor>
+    <upgrades id="http://dragonflybsd.org/dragonflybsd/5.4.0"/>
+
+    <release-date>2018-12-02</release-date>
+
+    <media arch="x86_64">
+      <url>http://mirror-master.dragonflybsd.org/iso-images/dfly-x86_64-5.4.0_REL.iso</url>
+      <iso>
+        <system-id>DragonFly</system-id>
+        <volume-id>DragonFly v5.4.0</volume-id>
+        <volume-size>1037078528</volume-size>
+      </iso>
+    </media>
+  </os>
+</libosinfo>

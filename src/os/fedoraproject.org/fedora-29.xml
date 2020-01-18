@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libosinfo version="0.0.1">
+
+  <os id="http://fedoraproject.org/fedora/29">
+    <short-id>fedora29</short-id>
+    <name>Fedora 29</name>
+    <version>29</version>
+    <vendor>Fedora Project</vendor>
+    <vendor xml:lang="ca">Projecte Fedora</vendor>
+    <vendor xml:lang="de">Fedora-Projekt</vendor>
+    <vendor xml:lang="es">Fedora Project</vendor>
+    <vendor xml:lang="fr">Fedora Project</vendor>
+    <vendor xml:lang="id">Proyek Fedora</vendor>
+    <vendor xml:lang="it">Progetto Fedora</vendor>
+    <vendor xml:lang="ja">Fedora Project</vendor>
+    <vendor xml:lang="pl">Projekt Fedora</vendor>
+    <vendor xml:lang="pt">Projecto Fedora </vendor>
+    <vendor xml:lang="pt_BR">Projeto Fedora</vendor>
+    <vendor xml:lang="uk">Проект Fedora</vendor>
+    <family>linux</family>
+    <distro>fedora</distro>
+    <upgrades id="http://fedoraproject.org/fedora/28"/>
+    <derives-from id="http://fedoraproject.org/fedora/28"/>
+
+    <release-date>2018-10-30</release-date>
+
+    <variant id="workstation">
+      <name>Fedora 29 Workstation</name>
+    </variant>
+    <variant id="workstation-netinst">
+      <name>Fedora 29 Workstation</name>
+    </variant>
+    <variant id="server">
+      <name>Fedora 29 Server</name>
+    </variant>
+    <variant id="server-netinst">
+      <name>Fedora 29 Server</name>
+    </variant>
+    <variant id="everything-netinst">
+      <name>Fedora 29 Everything</name>
+    </variant>
+
+    
+
+    
+    <media live="true" arch="x86_64">
+      <variant id="workstation"/>
+      <url>https://download.fedoraproject.org/pub/fedora/linux/releases/29/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-29-1.2.iso</url>
+      <iso>
+        <volume-id>Fedora-WS-Live-29.*</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+
+    
+    <media arch="x86_64">
+      <variant id="workstation-netinst"/>
+      <url>https://download.fedoraproject.org/pub/fedora/linux/releases/29/Workstation/x86_64/iso/Fedora-Workstation-netinst-x86_64-29-1.2.iso</url>
+      <iso>
+        <volume-id>Fedora-WS-dvd-x86_64-29</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+
+    
+
+    
+    <media arch="x86_64">
+      <variant id="server"/>
+      <url>https://download.fedoraproject.org/pub/fedora/linux/releases/29/Server/x86_64/iso/Fedora-Server-dvd-x86_64-29-1.2.iso</url>
+      <iso>
+        <volume-id>Fedora-S-dvd-x86_64-29</volume-id>
+        <system-id>LINUX</system-id>
+        <volume-size>3122104320</volume-size>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+
+    
+    <media arch="x86_64">
+      <variant id="server-netinst"/>
+      <url>https://download.fedoraproject.org/pub/fedora/linux/releases/29/Server/x86_64/iso/Fedora-Server-netinst-x86_64-29-1.2.iso</url>
+      <iso>
+        <volume-id>Fedora-S-dvd-x86_64-29</volume-id>
+        <system-id>LINUX</system-id>
+        <volume-size>621264896</volume-size>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+
+    
+    <media arch="x86_64">
+      <variant id="everything-netinst"/>
+      <url>https://download.fedoraproject.org/pub/fedora/linux/releases/29/Everything/x86_64/iso/Fedora-Everything-netinst-x86_64-29-1.2.iso</url>
+      <iso>
+        <volume-id>Fedora-E-dvd-x86_64-29</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+
+    <tree arch="x86_64">
+      <url>https://download.fedoraproject.org/pub/fedora/linux/releases/29/Workstation/x86_64/os</url>
+      <variant id="workstation"/>
+      <treeinfo>
+        <family>Fedora</family>
+        <version>29</version>
+        <arch>x86_64</arch>
+      </treeinfo>
+    </tree>
+
+    <tree arch="x86_64">
+      <url>https://download.fedoraproject.org/pub/fedora/linux/releases/29/Server/x86_64/os</url>
+      <variant id="server"/>
+      <treeinfo>
+        <family>Fedora</family>
+        <version>29</version>
+        <arch>x86_64</arch>
+      </treeinfo>
+    </tree>
+
+    
+
+    <resources arch="all">
+      <minimum>
+        <n-cpus>1</n-cpus>
+        <cpu>1000000000</cpu>
+        <ram>1073741824</ram>
+        <storage>10737418240</storage>
+      </minimum>
+
+      <recommended>
+        <ram>2147483648</ram>
+        <storage>21474836480</storage>
+      </recommended>
+    </resources>
+
+    <installer>
+      <script id='http://fedoraproject.org/fedora/kickstart/jeos'/>
+      <script id='http://fedoraproject.org/fedora/kickstart/desktop'/>
+    </installer>
+  </os>
+</libosinfo>

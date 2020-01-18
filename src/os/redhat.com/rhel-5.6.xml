@@ -9,6 +9,7 @@
     <name xml:lang="es">Red Hat Enterprise Linux 5.6</name>
     <name xml:lang="fr">Red Hat Enterprise Linux 5.6</name>
     <name xml:lang="id">Red Hat Enterprise Linux 5.6</name>
+    <name xml:lang="it">Red Hat Enterprise Linux 5.6</name>
     <name xml:lang="ja">Red Hat Enterprise Linux 5.6</name>
     <name xml:lang="pl">Red Hat Enterprise Linux 5.6</name>
     <name xml:lang="pt_BR">Red Hat Enterprise Linux 5.6</name>
@@ -20,6 +21,7 @@
     <vendor xml:lang="es">Red Hat, Inc</vendor>
     <vendor xml:lang="fr">Red Hat, Inc</vendor>
     <vendor xml:lang="id">Red Hat, Inc</vendor>
+    <vendor xml:lang="it">Red Hat, Inc</vendor>
     <vendor xml:lang="ja">Red Hat, Inc</vendor>
     <vendor xml:lang="pl">Red Hat, Inc</vendor>
     <vendor xml:lang="pt_BR">Red Hat, Inc</vendor>
@@ -34,8 +36,9 @@
     <eol-date>2020-03-31</eol-date>
 
     <devices>
-      <device id="http://pcisig.com/pci/1af4/1000"/>
-      <device id="http://pcisig.com/pci/1af4/1001"/>
+      <device id="http://pcisig.com/pci/8086/2668"/> 
+      <device id="http://pcisig.com/pci/1af4/1000"/> 
+      <device id="http://pcisig.com/pci/1af4/1001"/> 
     </devices>
 
     <media arch="i686">

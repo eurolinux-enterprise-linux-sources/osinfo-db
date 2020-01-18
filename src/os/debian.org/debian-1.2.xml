@@ -10,6 +10,7 @@
     <name xml:lang="es">Debian Rex</name>
     <name xml:lang="fr">Debian Rex</name>
     <name xml:lang="id">Debian Rex</name>
+    <name xml:lang="it">Debian Rex</name>
     <name xml:lang="ja">Debian Rex</name>
     <name xml:lang="pl">Debian Rex</name>
     <name xml:lang="pt_BR">Debian Rex</name>
@@ -21,6 +22,7 @@
     <vendor xml:lang="es">Debian Project</vendor>
     <vendor xml:lang="fr">Debian Project</vendor>
     <vendor xml:lang="id">Proyek Debian</vendor>
+    <vendor xml:lang="it">Progetto Debian</vendor>
     <vendor xml:lang="ja">Debian プロジェクト</vendor>
     <vendor xml:lang="pl">Projekt Debian</vendor>
     <vendor xml:lang="pt_BR">Projeto Debian</vendor>

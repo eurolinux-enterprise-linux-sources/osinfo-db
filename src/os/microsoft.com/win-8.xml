@@ -9,6 +9,7 @@
     <name xml:lang="es">Microsoft Windows 8</name>
     <name xml:lang="fr">Microsoft Windows 8</name>
     <name xml:lang="id">Microsoft Windows 8</name>
+    <name xml:lang="it">Microsoft Windows 8</name>
     <name xml:lang="ja">Microsoft Windows 8</name>
     <name xml:lang="pl">Microsoft Windows 8</name>
     <name xml:lang="pt_BR">Microsoft Windows 8</name>
@@ -20,6 +21,7 @@
     <vendor xml:lang="es">Microsoft Corporation</vendor>
     <vendor xml:lang="fr">Microsoft Corporation</vendor>
     <vendor xml:lang="id">Microsoft Corporation</vendor>
+    <vendor xml:lang="it">Microsoft Corporation</vendor>
     <vendor xml:lang="ja">Microsoft Corporation</vendor>
     <vendor xml:lang="pl">Microsoft Corporation</vendor>
     <vendor xml:lang="pt_BR">Microsoft Corporation</vendor>
@@ -37,6 +39,7 @@
       <name xml:lang="es">Microsoft Windows 8 Debug Check Build</name>
       <name xml:lang="fr">Microsoft Windows 8 Debug Check Build</name>
       <name xml:lang="id">Microsoft Windows 8 Debug Check Build</name>
+      <name xml:lang="it">Microsoft Windows 8 Debug Check Build</name>
       <name xml:lang="pl">Microsoft Windows 8 Debug Check Build</name>
       <name xml:lang="uk">Microsoft Windows 8 Debug Check Build</name>
     </variant>
@@ -46,6 +49,7 @@
       <name xml:lang="es">Microsoft Windows 8 Enterprise</name>
       <name xml:lang="fr">Microsoft Windows 8 Enterprise</name>
       <name xml:lang="id">Microsoft Windows 8 Enterprise</name>
+      <name xml:lang="it">Microsoft Windows 8 Enterprise</name>
       <name xml:lang="pl">Microsoft Windows 8 Enterprise</name>
       <name xml:lang="uk">Microsoft Windows 8 Enterprise</name>
     </variant>
@@ -55,6 +59,7 @@
       <name xml:lang="es">Microsoft Windows 8 Enterprise Debug Check Build</name>
       <name xml:lang="fr">Microsoft Windows 8 Enterprise Debug Check Build</name>
       <name xml:lang="id">Microsoft Windows 8 Enterprise Debug Check Build</name>
+      <name xml:lang="it">Microsoft Windows 8 Enterprise Debug Check Build</name>
       <name xml:lang="pl">Microsoft Windows 8 Enterprise Debug Check Build</name>
       <name xml:lang="uk">Microsoft Windows 8 Enterprise Debug Check Build</name>
     </variant>
@@ -64,6 +69,7 @@
       <name xml:lang="es">Microsoft Windows 8 Professional</name>
       <name xml:lang="fr">Microsoft Windows 8 Professional</name>
       <name xml:lang="id">Microsoft Windows 8 Professional</name>
+      <name xml:lang="it">Microsoft Windows 8 Professional</name>
       <name xml:lang="pl">Microsoft Windows 8 Professional</name>
       <name xml:lang="uk">Microsoft Windows 8 Professional</name>
     </variant>
@@ -78,7 +84,7 @@
     </media>
     <media installer-reboots="2" arch="x86_64">
       <iso>
-        <volume-id>(HB1_CCPA_X64FRE|HRM_CCSN?A_X64FRE)_</volume-id>
+        <volume-id>(HB1_CCPA_X64FREE?|HRM_CCSN?A_X64FREE?)_</volume-id>
         <publisher-id>MICROSOFT CORPORATION</publisher-id>
         <l10n-language regex="true" l10n-language-map="http://microsoft.com/win/8/l10n-language">[[:upper:][:digit:]_]*_([[:upper:]]*-[[:upper:]]*)</l10n-language>
       </iso>
@@ -175,7 +181,8 @@
     </resources>
 
     <devices>
-      <device id="http://pcisig.com/pci/8086/2668"/> 
+      <device id="http://pcisig.com/pci/1033/0194"/> 
+      <device id="http://pcisig.com/pci/1b36/0004"/> 
     </devices>
 
     <installer>

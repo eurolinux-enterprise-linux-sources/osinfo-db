@@ -9,6 +9,7 @@
     <name xml:lang="es">Microsoft Windows XP</name>
     <name xml:lang="fr">Microsoft Windows XP</name>
     <name xml:lang="id">Microsoft Windows XP</name>
+    <name xml:lang="it">Microsoft Windows XP</name>
     <name xml:lang="ja">Microsoft Windows XP</name>
     <name xml:lang="pl">Microsoft Windows XP</name>
     <name xml:lang="pt_BR">Microsoft Windows XP</name>
@@ -20,6 +21,7 @@
     <vendor xml:lang="es">Microsoft Corporation</vendor>
     <vendor xml:lang="fr">Microsoft Corporation</vendor>
     <vendor xml:lang="id">Microsoft Corporation</vendor>
+    <vendor xml:lang="it">Microsoft Corporation</vendor>
     <vendor xml:lang="ja">Microsoft Corporation</vendor>
     <vendor xml:lang="pl">Microsoft Corporation</vendor>
     <vendor xml:lang="pt_BR">Microsoft Corporation</vendor>
@@ -32,6 +34,10 @@
 
     <release-date>2001-10-25</release-date>
     <eol-date>2009-04-19</eol-date>
+
+    <devices>
+      <device id="http://pcisig.com/pci/8086/100e"/> 
+    </devices>
 
     <media installer-reboots="2" arch="i686">
       <iso>
@@ -93,7 +99,7 @@
       <file>viostor.sys</file>
       
       <file>txtsetup.oem</file>
-      <device id="http://pcisig.com/pci/1af4/1001"/>
+      <device id="http://pcisig.com/pci/1af4/1001"/> 
     </driver>
 
     <driver signed="false" pre-installable="true" location="https://zeenix.fedorapeople.org/drivers/win-tools-1/preinst/winxp/amd64" arch="x86_64">
@@ -102,7 +108,7 @@
       <file>viostor.sys</file>
       
       <file>txtsetup.oem</file>
-      <device id="http://pcisig.com/pci/1af4/1001"/>
+      <device id="http://pcisig.com/pci/1af4/1001"/> 
     </driver>
 
     
@@ -111,11 +117,11 @@
       <file>spice-guest-tools-0.65.cmd</file>
       <file>redhat09.cer</file>
       <file>redhat10.cer</file>
-      <device id="http://pcisig.com/pci/1af4/1000"/>
-      <device id="http://pcisig.com/pci/1af4/1001"/>
-      <device id="http://pcisig.com/pci/1af4/1002"/>
-      <device id="http://pcisig.com/pci/1af4/1003"/>
-      <device id="http://pcisig.com/pci/1b36/0100"/>
+      <device id="http://pcisig.com/pci/1af4/1000"/> 
+      <device id="http://pcisig.com/pci/1af4/1001"/> 
+      <device id="http://pcisig.com/pci/1af4/1002"/> 
+      <device id="http://pcisig.com/pci/1af4/1003"/> 
+      <device id="http://pcisig.com/pci/1b36/0100"/> 
     </driver>
 
     <driver signed="false" location="https://zeenix.fedorapeople.org/drivers/win-tools/postinst" arch="x86_64">
@@ -123,11 +129,11 @@
       <file>spice-guest-tools-0.65.cmd</file>
       <file>redhat09.cer</file>
       <file>redhat10.cer</file>
-      <device id="http://pcisig.com/pci/1af4/1000"/>
-      <device id="http://pcisig.com/pci/1af4/1001"/>
-      <device id="http://pcisig.com/pci/1af4/1002"/>
-      <device id="http://pcisig.com/pci/1af4/1003"/>
-      <device id="http://pcisig.com/pci/1b36/0100"/>
+      <device id="http://pcisig.com/pci/1af4/1000"/> 
+      <device id="http://pcisig.com/pci/1af4/1001"/> 
+      <device id="http://pcisig.com/pci/1af4/1002"/> 
+      <device id="http://pcisig.com/pci/1af4/1003"/> 
+      <device id="http://pcisig.com/pci/1b36/0100"/> 
     </driver>
   </os>
 </libosinfo>

@@ -8,6 +8,7 @@
     <name xml:lang="es">QEMU 2.2.1</name>
     <name xml:lang="fr">QEMU 2.2.1</name>
     <name xml:lang="id">QEMU 2.2.1</name>
+    <name xml:lang="it">QEMU 2.2.1</name>
     <name xml:lang="pl">QEMU 2.2.1</name>
     <name xml:lang="uk">QEMU 2.2.1</name>
     <vendor>qemu.org</vendor>
@@ -15,6 +16,7 @@
     <vendor xml:lang="es">qemu.org</vendor>
     <vendor xml:lang="fr">qemu.org</vendor>
     <vendor xml:lang="id">qemu.org</vendor>
+    <vendor xml:lang="it">qemu.org</vendor>
     <vendor xml:lang="pl">qemu.org</vendor>
     <vendor xml:lang="pt_BR">qemu.org</vendor>
     <vendor xml:lang="uk">qemu.org</vendor>

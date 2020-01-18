@@ -10,6 +10,7 @@
     <name xml:lang="es">Debian Bo</name>
     <name xml:lang="fr">Debian Bo</name>
     <name xml:lang="id">Debian Bo</name>
+    <name xml:lang="it">Debian Bo</name>
     <name xml:lang="ja">Debian Bo</name>
     <name xml:lang="pl">Debian Bo</name>
     <name xml:lang="pt_BR">Debian Bo</name>
@@ -21,6 +22,7 @@
     <vendor xml:lang="es">Debian Project</vendor>
     <vendor xml:lang="fr">Debian Project</vendor>
     <vendor xml:lang="id">Proyek Debian</vendor>
+    <vendor xml:lang="it">Progetto Debian</vendor>
     <vendor xml:lang="ja">Debian プロジェクト</vendor>
     <vendor xml:lang="pl">Projekt Debian</vendor>
     <vendor xml:lang="pt_BR">Projeto Debian</vendor>

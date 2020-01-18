@@ -1,5 +1,5 @@
 <grammar xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
-  <!-- Schema distributed with osinfo-db-20180531 -->
+  <!-- Schema distributed with osinfo-db-20181214 -->
 
   <start>
     <ref name='libosinfo'/>
@@ -77,6 +77,8 @@
               <value>audio</value>
               <value>block</value>
               <value>console</value>
+              <value>chipset</value>
+              <value>controller.usb</value>
               <value>filesystem</value>
               <value>input</value>
               <value>memory.balloon</value>
@@ -246,6 +248,11 @@
             <ref name='url'/>
           </attribute>
           <optional>
+            <attribute name='supported'>
+              <ref name='bool'/>
+            </attribute>
+          </optional>
+          <optional>
             <element name='driver'>
               <text/>
             </element>
@@ -285,6 +292,11 @@
       <attribute name='arch'>
         <ref name='archnamesorwildcard'/>
       </attribute>
+      <optional>
+        <attribute name='inherit'>
+          <ref name='bool'/>
+        </attribute>
+      </optional>
       <interleave>
         <optional>
           <element name='minimum'>
@@ -293,6 +305,11 @@
         </optional>
         <optional>
           <element name='recommended'>
+            <ref name='resource-attr'/>
+          </element>
+        </optional>
+        <optional>
+          <element name='maximum'>
             <ref name='resource-attr'/>
           </element>
         </optional>
@@ -347,6 +364,11 @@
       </optional>
       <optional>
         <attribute name="installer">
+          <ref name='bool'/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name='installer-script'>
           <ref name='bool'/>
         </attribute>
       </optional>
@@ -471,6 +493,35 @@
     </element>
   </define>
 
+  <define name='image'>
+    <element name='image'>
+      <attribute name='arch'>
+        <ref name='archnames'/>
+      </attribute>
+      <attribute name='format'>
+        <ref name='imageformats'/>
+      </attribute>
+      <optional>
+        <attribute name='cloud-init'>
+          <ref name='bool'/>
+        </attribute>
+      </optional>
+      <interleave>
+        <optional>
+          <element name='variant'>
+            <attribute name='id'>
+            </attribute>
+          </element>
+        </optional>
+        <optional>
+          <element name='url'>
+            <ref name='url'/>
+          </element>
+        </optional>
+      </interleave>
+    </element>
+  </define>
+
   <define name='installer'>
     <element name='installer'>
       <zeroOrMore>
@@ -540,6 +591,9 @@
         </zeroOrMore>
         <zeroOrMore>
           <ref name='tree'/>
+        </zeroOrMore>
+        <zeroOrMore>
+          <ref name='image'/>
         </zeroOrMore>
         <zeroOrMore>
           <ref name='installer'/>
@@ -749,6 +803,15 @@
       <value>x86_64</value>
       <value>xtensa</value>
       <value>xtensaeb</value>
+    </choice>
+  </define>
+
+  <define name='imageformats'>
+    <choice>
+      <value>qcow2</value>
+      <value>raw</value>
+      <value>vhdx</value>
+      <value>vmdk</value>
     </choice>
   </define>
 

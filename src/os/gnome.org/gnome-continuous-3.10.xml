@@ -8,6 +8,7 @@
     <name xml:lang="es">GNOME 3.10</name>
     <name xml:lang="fr">GNOME 3.10</name>
     <name xml:lang="id">GNOME 3.10</name>
+    <name xml:lang="it">GNOME 3.10</name>
     <name xml:lang="pl">GNOME 3.10</name>
     <name xml:lang="pt_BR">GNOME 3.10</name>
     <name xml:lang="uk">GNOME 3.10</name>
@@ -18,6 +19,7 @@
     <vendor xml:lang="es">GNOME Project</vendor>
     <vendor xml:lang="fr">GNOME Project</vendor>
     <vendor xml:lang="id">Proyek GNOME</vendor>
+    <vendor xml:lang="it">Progetto GNOME</vendor>
     <vendor xml:lang="ja">GNOME プロジェクト</vendor>
     <vendor xml:lang="pl">Projekt GNOME</vendor>
     <vendor xml:lang="pt_BR">Projeto Gnome</vendor>
@@ -31,6 +33,7 @@
     <devices>
       <device id="http://pcisig.com/pci/1b36/0100"/> 
       <device id="http://pcisig.com/pci/8086/2415"/> 
+      <device id="http://pcisig.com/pci/8086/2668"/> 
       <device id="http://pcisig.com/pci/1af4/1000"/> 
       <device id="http://pcisig.com/pci/1af4/1001"/> 
       <device id="http://usb.org/usb/80ee/0021"/> 

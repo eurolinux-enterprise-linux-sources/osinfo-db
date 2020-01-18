@@ -8,6 +8,7 @@
     <name xml:lang="es">Red Hat Enterprise Linux 6.7</name>
     <name xml:lang="fr">Red Hat Enterprise Linux 6.7</name>
     <name xml:lang="id">Red Hat Enterprise Linux 6.7</name>
+    <name xml:lang="it">Red Hat Enterprise Linux 6.7</name>
     <name xml:lang="pl">Red Hat Enterprise Linux 6.7</name>
     <name xml:lang="uk">Red Hat Enterprise Linux 6.7</name>
     <version>6.7</version>
@@ -17,6 +18,7 @@
     <vendor xml:lang="es">Red Hat, Inc</vendor>
     <vendor xml:lang="fr">Red Hat, Inc</vendor>
     <vendor xml:lang="id">Red Hat, Inc</vendor>
+    <vendor xml:lang="it">Red Hat, Inc</vendor>
     <vendor xml:lang="ja">Red Hat, Inc</vendor>
     <vendor xml:lang="pl">Red Hat, Inc</vendor>
     <vendor xml:lang="pt_BR">Red Hat, Inc</vendor>

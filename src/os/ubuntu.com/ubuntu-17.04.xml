@@ -5,6 +5,11 @@
     <short-id>ubuntu17.04</short-id>
     <short-id>ubuntutzesty</short-id>
     <name>Ubuntu 17.04</name>
+    <name xml:lang="ca">Ubuntu 17.04</name>
+    <name xml:lang="es">Ubuntu 17.04</name>
+    <name xml:lang="it">Ubuntu 17.04</name>
+    <name xml:lang="pl">Ubuntu 17.04</name>
+    <name xml:lang="uk">Ubuntu 17.04</name>
     <version>17.04</version>
     <vendor>Canonical Ltd</vendor>
     <vendor xml:lang="ca">Canonical Ltd</vendor>
@@ -12,6 +17,7 @@
     <vendor xml:lang="es">Canonical Ltd</vendor>
     <vendor xml:lang="fr">Canonical Ltd</vendor>
     <vendor xml:lang="id">Canonical Ltd</vendor>
+    <vendor xml:lang="it">Canonical Ltd</vendor>
     <vendor xml:lang="ja">Canonical Ltd</vendor>
     <vendor xml:lang="pl">Canonical Ltd</vendor>
     <vendor xml:lang="pt_BR">Canonical Ltd</vendor>
@@ -23,6 +29,21 @@
     <derives-from id="http://ubuntu.com/ubuntu/16.10"/>
 
     <release-date>2017-04-13</release-date>
+    <eol-date>2018-01-13</eol-date>
+
+    <devices>
+      <device id="http://pcisig.com/pci/1af4/1041"/> 
+      <device id="http://pcisig.com/pci/1af4/1042"/> 
+      <device id="http://pcisig.com/pci/1af4/1043"/> 
+      <device id="http://pcisig.com/pci/1af4/1044"/> 
+      <device id="http://pcisig.com/pci/1af4/1045"/> 
+      <device id="http://pcisig.com/pci/1af4/1048"/> 
+      <device id="http://pcisig.com/pci/1af4/1049"/> 
+      <device id="http://pcisig.com/pci/1af4/1052"/> 
+      <device id="http://qemu.org/chipset/x86/q35"/> 
+      <device id="http://pcisig.com/pci/8086/10d3"/> 
+      <device id="http://pcisig.com/pci/8086/293e"/> 
+    </devices>
 
     <resources arch="all">
       <minimum>

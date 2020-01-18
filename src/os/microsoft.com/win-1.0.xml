@@ -9,6 +9,7 @@
     <name xml:lang="es">Microsoft Windows 1.0</name>
     <name xml:lang="fr">Microsoft Windows 1.0</name>
     <name xml:lang="id">Microsoft Windows 1.0</name>
+    <name xml:lang="it">Microsoft Windows 1.0</name>
     <name xml:lang="ja">Microsoft Windows 1.0</name>
     <name xml:lang="pl">Microsoft Windows 1.0</name>
     <name xml:lang="pt_BR">Microsoft Windows 1.0</name>
@@ -19,6 +20,7 @@
     <vendor xml:lang="es">Microsoft Corporation</vendor>
     <vendor xml:lang="fr">Microsoft Corporation</vendor>
     <vendor xml:lang="id">Microsoft Corporation</vendor>
+    <vendor xml:lang="it">Microsoft Corporation</vendor>
     <vendor xml:lang="ja">Microsoft Corporation</vendor>
     <vendor xml:lang="pl">Microsoft Corporation</vendor>
     <vendor xml:lang="pt_BR">Microsoft Corporation</vendor>

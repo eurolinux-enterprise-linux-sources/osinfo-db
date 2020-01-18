@@ -8,6 +8,7 @@
     <name xml:lang="es">SUSE Linux Enterprise Desktop 11 SP3</name>
     <name xml:lang="fr">SUSE Linux Enterprise Desktop 11 SP3</name>
     <name xml:lang="id">SUSE Linux Enterprise Desktop 11 SP3</name>
+    <name xml:lang="it">SUSE Linux Enterprise Desktop 11 SP3</name>
     <name xml:lang="pl">SUSE Linux Enterprise Desktop 11 SP3</name>
     <name xml:lang="uk">SUSE Linux Enterprise Desktop 11 SP3</name>
     <version>11.3</version>
@@ -16,6 +17,7 @@
     <vendor xml:lang="es">SUSE</vendor>
     <vendor xml:lang="fr">SUSE</vendor>
     <vendor xml:lang="id">SUSE</vendor>
+    <vendor xml:lang="it">SUSE</vendor>
     <vendor xml:lang="pl">SUSE</vendor>
     <vendor xml:lang="uk">SUSE</vendor>
     <family>linux</family>
@@ -27,14 +29,14 @@
     <eol-date>2016-01-31</eol-date>
 
     <devices>
-      <device id="http://pcisig.com/pci/1b36/0100"/>
-      <device id="http://pcisig.com/pci/1af4/1000"/>
-      <device id="http://pcisig.com/pci/1af4/1001"/>
-      <device id="http://pcisig.com/pci/1af4/1002"/>
-      <device id="http://pcisig.com/pci/1af4/1003"/>
-      <device id="http://pcisig.com/pci/1af4/1004"/>
-      <device id="http://pcisig.com/pci/1af4/1005"/>
-      <device id="http://pcisig.com/pci/1af4/1009"/>
+      <device id="http://pcisig.com/pci/1b36/0100"/> 
+      <device id="http://pcisig.com/pci/1af4/1000"/> 
+      <device id="http://pcisig.com/pci/1af4/1001"/> 
+      <device id="http://pcisig.com/pci/1af4/1002"/> 
+      <device id="http://pcisig.com/pci/1af4/1003"/> 
+      <device id="http://pcisig.com/pci/1af4/1004"/> 
+      <device id="http://pcisig.com/pci/1af4/1005"/> 
+      <device id="http://pcisig.com/pci/1af4/1009"/> 
     </devices>
 
     <media arch="i686">

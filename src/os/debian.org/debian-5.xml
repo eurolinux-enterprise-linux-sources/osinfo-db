@@ -10,6 +10,7 @@
     <name xml:lang="es">Debian Lenny</name>
     <name xml:lang="fr">Debian Lenny</name>
     <name xml:lang="id">Debian Lenny</name>
+    <name xml:lang="it">Debian Lenny</name>
     <name xml:lang="ja">Debian Lenny</name>
     <name xml:lang="pl">Debian Lenny</name>
     <name xml:lang="pt_BR">Debian Lenny</name>
@@ -21,6 +22,7 @@
     <vendor xml:lang="es">Debian Project</vendor>
     <vendor xml:lang="fr">Debian Project</vendor>
     <vendor xml:lang="id">Proyek Debian</vendor>
+    <vendor xml:lang="it">Progetto Debian</vendor>
     <vendor xml:lang="ja">Debian プロジェクト</vendor>
     <vendor xml:lang="pl">Projekt Debian</vendor>
     <vendor xml:lang="pt_BR">Projeto Debian</vendor>
@@ -34,8 +36,8 @@
     <eol-date>2012-02-06</eol-date>
 
     <devices>
-      <device id="http://pcisig.com/pci/1af4/1000"/>
-      <device id="http://pcisig.com/pci/1af4/1001"/>
+      <device id="http://pcisig.com/pci/1af4/1000"/> 
+      <device id="http://pcisig.com/pci/1af4/1001"/> 
     </devices>
 
     <resources arch="all">

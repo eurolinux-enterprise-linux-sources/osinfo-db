@@ -8,6 +8,7 @@
     <name xml:lang="es">CentOS 6.6</name>
     <name xml:lang="fr">CentOS 6.6</name>
     <name xml:lang="id">CentOS 6.6</name>
+    <name xml:lang="it">CentOS 6.6</name>
     <name xml:lang="pl">CentOS 6.6</name>
     <name xml:lang="uk">CentOS 6.6</name>
     <version>6.6</version>
@@ -17,6 +18,7 @@
     <vendor xml:lang="es">CentOS</vendor>
     <vendor xml:lang="fr">CentOS</vendor>
     <vendor xml:lang="id">CentOS</vendor>
+    <vendor xml:lang="it">CentOS</vendor>
     <vendor xml:lang="ja">CentOS</vendor>
     <vendor xml:lang="pl">CentOS</vendor>
     <vendor xml:lang="pt_BR">CentOS</vendor>
@@ -27,11 +29,10 @@
     <clones id="http://redhat.com/rhel/6.6"/>
 
     <release-date>2014-10-28</release-date>
-    <eol-date>2020-11-30</eol-date>
+    <eol-date>2015-08-07</eol-date>
 
     
     <media arch="i686">
-      <url>http://vault.centos.org/6.6/isos/i386/CentOS-6.6-i386-bin-DVD1.iso</url>
       <iso>
         <system-id>LINUX</system-id>
         <volume-id>CentOS_6.6_Final</volume-id>
@@ -41,7 +42,6 @@
       <initrd>isolinux/initrd.img</initrd>
     </media>
     <media arch="x86_64">
-      <url>http://vault.centos.org/6.6/isos/x86_64/CentOS-6.6-x86_64-bin-DVD1.iso</url>
       <iso>
         <system-id>LINUX</system-id>
         <volume-id>CentOS_6.6_Final</volume-id>
@@ -53,7 +53,6 @@
 
     
     <media arch="i686">
-      <url>http://vault.centos.org/6.6/isos/i386/CentOS-6.6-i386-minimal.iso</url>
       <iso>
         <system-id>LINUX</system-id>
         <volume-id>CentOS_6.6_Final</volume-id>
@@ -63,7 +62,6 @@
       <initrd>isolinux/initrd.img</initrd>
     </media>
     <media arch="x86_64">
-      <url>http://vault.centos.org/6.6/isos/x86_64/CentOS-6.6-x86_64-minimal.iso</url>
       <iso>
         <system-id>LINUX</system-id>
         <volume-id>CentOS_6.6_Final</volume-id>
@@ -75,7 +73,6 @@
 
     
     <media arch="i686">
-      <url>http://vault.centos.org/6.6/isos/i386/CentOS-6.6-i386-netinstall.iso</url>
       <iso>
         <system-id>LINUX</system-id>
         <volume-id>CentOS</volume-id>
@@ -85,7 +82,6 @@
       <initrd>isolinux/initrd.img</initrd>
     </media>
     <media arch="x86_64">
-      <url>http://vault.centos.org/6.6/isos/x86_64/CentOS-6.6-x86_64-netinstall.iso</url>
       <iso>
         <system-id>LINUX</system-id>
         <volume-id>CentOS</volume-id>
@@ -94,23 +90,6 @@
       <kernel>isolinux/vmlinuz</kernel>
       <initrd>isolinux/initrd.img</initrd>
     </media>
-
-    <tree arch="i686">
-      <url>http://vault.centos.org/6.6/os/i386</url>
-      <treeinfo>
-        <family>CentOS</family>
-        <version>6.6</version>
-        <arch>i386</arch>
-      </treeinfo>
-    </tree>
-    <tree arch="x86_64">
-      <url>http://vault.centos.org/6.6/os/x86_64</url>
-      <treeinfo>
-        <family>CentOS</family>
-        <version>6.6</version>
-        <arch>x86_64</arch>
-      </treeinfo>
-    </tree>
 
     <resources arch="all">
       <minimum>

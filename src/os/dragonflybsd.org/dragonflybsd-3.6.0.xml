@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libosinfo version="0.0.1">
+
+  <os id="http://dragonflybsd.org/dragonflybsd/3.6.0">
+    <short-id>dragonflybsd3.6.0</short-id>
+    <name>DragonFlyBSD 3.6.0</name>
+    <version>3.6.0</version>
+    <family>dragonflybsd</family>
+    <distro>dragonflybsd</distro>
+    <vendor>DragonFlyBSD Project</vendor>
+    <upgrades id="http://dragonflybsd.org/dragonflybsd/3.4.3"/>
+
+    <release-date>2013-11-25</release-date>
+  </os>
+</libosinfo>

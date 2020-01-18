@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libosinfo version="0.0.1">
+
+  <os id="http://dragonflybsd.org/dragonflybsd/4.6.0">
+    <short-id>dragonflybsd4.6.0</short-id>
+    <name>DragonFlyBSD 4.6.0</name>
+    <version>4.6.0</version>
+    <family>dragonflybsd</family>
+    <distro>dragonflybsd</distro>
+    <vendor>DragonFlyBSD Project</vendor>
+    <upgrades id="http://dragonflybsd.org/dragonflybsd/4.4.3"/>
+
+    <release-date>2017-08-02</release-date>
+  </os>
+</libosinfo>

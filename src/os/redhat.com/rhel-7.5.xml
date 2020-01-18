@@ -11,6 +11,7 @@
     <vendor xml:lang="es">Red Hat, Inc</vendor>
     <vendor xml:lang="fr">Red Hat, Inc</vendor>
     <vendor xml:lang="id">Red Hat, Inc</vendor>
+    <vendor xml:lang="it">Red Hat, Inc</vendor>
     <vendor xml:lang="ja">Red Hat, Inc</vendor>
     <vendor xml:lang="pl">Red Hat, Inc</vendor>
     <vendor xml:lang="pt_BR">Red Hat, Inc</vendor>
@@ -69,7 +70,7 @@
       </minimum>
 
       <recommended>
-        <cpu>400000000</cpu>
+        <cpu>4000000000</cpu>
         <ram>2147483648</ram>
         <storage>21474836480</storage>
       </recommended>

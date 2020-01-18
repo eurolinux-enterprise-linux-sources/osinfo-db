@@ -4,6 +4,11 @@
   <os id="http://openbsd.org/openbsd/6.2">
     <short-id>openbsd6.2</short-id>
     <name>OpenBSD 6.2</name>
+    <name xml:lang="ca">OpenBSD 6.2</name>
+    <name xml:lang="es">OpenBSD 6.2</name>
+    <name xml:lang="it">OpenBSD 6.2</name>
+    <name xml:lang="pl">OpenBSD 6.2</name>
+    <name xml:lang="uk">OpenBSD 6.2</name>
     <version>6.2</version>
     <family>openbsd</family>
     <distro>openbsd</distro>
@@ -13,6 +18,7 @@
     <vendor xml:lang="es">OpenBSD Project</vendor>
     <vendor xml:lang="fr">OpenBSD Project</vendor>
     <vendor xml:lang="id">Proyek OpenBSD</vendor>
+    <vendor xml:lang="it">Progetto OpenBSD</vendor>
     <vendor xml:lang="ja">OpenBSD プロジェクト</vendor>
     <vendor xml:lang="pl">Projekt OpenBSD</vendor>
     <vendor xml:lang="pt_BR">OpenBSD Project</vendor>
@@ -21,20 +27,20 @@
 
     <release-date>2017-10-09</release-date>
 
-    <media arch='i686'>
+    <media arch="i686">
       <url>https://fastly.cdn.openbsd.org/pub/OpenBSD/6.2/i386/install62.iso</url>
       <iso>
-	<publisher-id>The OpenBSD project</publisher-id>
+	<publisher-id>Copyright \(c\) 2017 Theo de Raadt, The OpenBSD project</publisher-id>
 	<system-id>OpenBSD</system-id>
 	<volume-id>OpenBSD/i386    6.2 Install CD</volume-id>
 	<application-id>OpenBSD 6.2 i386 Install CD</application-id>
       </iso>
     </media>
 
-    <media arch='x86_64'>
+    <media arch="x86_64">
       <url>https://fastly.cdn.openbsd.org/pub/OpenBSD/6.2/amd64/install62.iso</url>
       <iso>
-	<publisher-id>The OpenBSD project</publisher-id>
+	<publisher-id>Copyright \(c\) 2017 Theo de Raadt, The OpenBSD project</publisher-id>
 	<system-id>OpenBSD</system-id>
 	<volume-id>OpenBSD/amd64   6.2 Install CD</volume-id>
 	<application-id>OpenBSD 6.2 amd64 Install CD</application-id>

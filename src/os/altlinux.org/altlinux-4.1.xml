@@ -8,6 +8,7 @@
     <name xml:lang="es">ALT Linux 4.1</name>
     <name xml:lang="fr">ALT Linux 4.1</name>
     <name xml:lang="id">ALT Linux 4.1</name>
+    <name xml:lang="it">ALT Linux 4.1</name>
     <name xml:lang="pl">ALT Linux 4.1</name>
     <name xml:lang="pt_BR">ALT Linux 4.1</name>
     <name xml:lang="uk">ALT Linux 4.1</name>
@@ -17,6 +18,7 @@
     <vendor xml:lang="es">ALTLinux</vendor>
     <vendor xml:lang="fr">ALTLinux</vendor>
     <vendor xml:lang="id">ALTLinux</vendor>
+    <vendor xml:lang="it">ALTLinux</vendor>
     <vendor xml:lang="pl">ALT Linux</vendor>
     <vendor xml:lang="pt_BR">ALTLinux</vendor>
     <vendor xml:lang="uk">ALTLinux</vendor>
@@ -24,13 +26,15 @@
     <distro>altlinux</distro>
     <upgrades id="http://altlinux.org/altlinux/4.0"/>
     <derives-from id="http://altlinux.org/altlinux/4.0"/>
+
     <release-date>2008-12-07</release-date>
+    <eol-date>2010-08-30</eol-date>
 
     <media arch="i686">
       <url>http://ftp.altlinux.org/pub/distributions/ALTLinux/4.1/Desktop/current/iso/altlinux-4.1.1-desktop-i586-install-dvd5.iso</url>
       <iso>
         <volume-id>^"Desktop"$</volume-id>
-        <publisher-id>ALT Linux Team</publisher-id>
+        <publisher-id>"ALT Linux Team"</publisher-id>
       </iso>
       <kernel>isolinux/alt0/vmlinuz</kernel>
       <initrd>isolinux/alt0/full.cz</initrd>
@@ -39,7 +43,7 @@
       <url>http://ftp.altlinux.org/pub/distributions/ALTLinux/4.1/Desktop/current/iso/altlinux-4.1.1-desktop-x86_64-install-dvd5.iso</url>
       <iso>
         <volume-id>^"Desktop"$</volume-id>
-        <publisher-id>ALT Linux Team</publisher-id>
+        <publisher-id>"ALT Linux Team"</publisher-id>
       </iso>
       <kernel>isolinux/alt0/vmlinuz</kernel>
       <initrd>isolinux/alt0/full.cz</initrd>

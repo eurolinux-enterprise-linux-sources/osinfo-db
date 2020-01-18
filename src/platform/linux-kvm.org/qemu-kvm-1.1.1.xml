@@ -8,6 +8,7 @@
     <name xml:lang="es">QEMU-KVM 1.1.1</name>
     <name xml:lang="fr">QEMU-KVM 1.1.1</name>
     <name xml:lang="id">QEMU-KVM 1.1.1</name>
+    <name xml:lang="it">QEMU-KVM 1.1.1</name>
     <name xml:lang="pl">QEMU-KVM 1.1.1</name>
     <name xml:lang="pt_BR">QEMU-KVM 1.1.1</name>
     <name xml:lang="uk">QEMU-KVM 1.1.1</name>
@@ -16,6 +17,7 @@
     <vendor xml:lang="es">linux-kvm.org</vendor>
     <vendor xml:lang="fr">linux-kvm.org</vendor>
     <vendor xml:lang="id">linux-kvm.org</vendor>
+    <vendor xml:lang="it">linux-kvm.org</vendor>
     <vendor xml:lang="pl">linux-kvm.org</vendor>
     <vendor xml:lang="pt_BR">linux-kvm.org</vendor>
     <vendor xml:lang="uk">linux-kvm.org</vendor>

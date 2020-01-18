@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libosinfo version="0.0.1">
+
+  <os id="http://dragonflybsd.org/dragonflybsd/2.10.1">
+    <short-id>dragonflybsd2.10.1</short-id>
+    <name>DragonFlyBSD 2.10.1</name>
+    <version>2.10.1</version>
+    <family>dragonflybsd</family>
+    <distro>dragonflybsd</distro>
+    <vendor>DragonFlyBSD Project</vendor>
+    <upgrades id="http://dragonflybsd.org/dragonflybsd/2.8.2"/>
+
+    <release-date>2011-04-26</release-date>
+  </os>
+</libosinfo>

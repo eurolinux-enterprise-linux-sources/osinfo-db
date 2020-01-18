@@ -5,6 +5,11 @@
     <short-id>ubuntu17.10</short-id>
     <short-id>ubuntuartful</short-id>
     <name>Ubuntu 17.10</name>
+    <name xml:lang="ca">Ubuntu 17.10</name>
+    <name xml:lang="es">Ubuntu 17.10</name>
+    <name xml:lang="it">Ubuntu 17.10</name>
+    <name xml:lang="pl">Ubuntu 17.10</name>
+    <name xml:lang="uk">Ubuntu 17.10</name>
     <version>17.10</version>
     <vendor>Canonical Ltd</vendor>
     <vendor xml:lang="ca">Canonical Ltd</vendor>
@@ -12,6 +17,7 @@
     <vendor xml:lang="es">Canonical Ltd</vendor>
     <vendor xml:lang="fr">Canonical Ltd</vendor>
     <vendor xml:lang="id">Canonical Ltd</vendor>
+    <vendor xml:lang="it">Canonical Ltd</vendor>
     <vendor xml:lang="ja">Canonical Ltd</vendor>
     <vendor xml:lang="pl">Canonical Ltd</vendor>
     <vendor xml:lang="pt_BR">Canonical Ltd</vendor>
@@ -23,6 +29,7 @@
     <derives-from id="http://ubuntu.com/ubuntu/17.04"/>
 
     <release-date>2017-10-19</release-date>
+    <eol-date>2018-07-19</eol-date>
 
     <resources arch="all">
       <minimum>
@@ -39,7 +46,7 @@
     </resources>
 
     <media arch="i686">
-      <url>http://releases.ubuntu.com/releases/artful/ubuntu-17.10.1-server-i386.iso</url>
+      <url>http://old-releases.ubuntu.com/releases/artful/ubuntu-17.10.1-server-i386.iso</url>
       <iso>
         <volume-id>Ubuntu-Server 17.10(.\d)? i386</volume-id>
       </iso>
@@ -47,7 +54,7 @@
       <initrd>install/initrd.gz</initrd>
     </media>
     <media arch="x86_64">
-      <url>http://releases.ubuntu.com/releases/artful/ubuntu-17.10.1-server-amd64.iso</url>
+      <url>http://old-releases.ubuntu.com/releases/artful/ubuntu-17.10.1-server-amd64.iso</url>
       <iso>
         <volume-id>Ubuntu-Server 17.10(.\d)? amd64</volume-id>
       </iso>
@@ -55,7 +62,7 @@
       <initrd>install/initrd.gz</initrd>
     </media>
     <media live="true" arch="x86_64">
-      <url>http://releases.ubuntu.com/releases/artful/ubuntu-17.10.1-desktop-amd64.iso</url>
+      <url>http://old-releases.ubuntu.com/releases/artful/ubuntu-17.10.1-desktop-amd64.iso</url>
       <iso>
         <volume-id>Ubuntu 17.10(.\d)? amd64</volume-id>
       </iso>
@@ -63,19 +70,19 @@
       <initrd>casper/initrd.lz</initrd>
     </media>
     <media arch="aarch64">
-      <url>http://cdimage.ubuntu.com/releases/artful/release/ubuntu-17.10-server-arm64.iso</url>
+      <url>http://old-releases.ubuntu.com/releases/artful/ubuntu-17.10-server-arm64.iso</url>
       <iso>
         <volume-id>Ubuntu-Server 17.10(.\d)? arm64</volume-id>
       </iso>
     </media>
     <media arch="ppc64le">
-      <url>http://cdimage.ubuntu.com/releases/artful/release/ubuntu-17.10-server-ppc64el.iso</url>
+      <url>http://old-releases.ubuntu.com/releases/artful/ubuntu-17.10-server-ppc64el.iso</url>
       <iso>
         <volume-id>Ubuntu-Server 17.10(.\d)? ppc64</volume-id>
       </iso>
     </media>
     <media arch="s390x">
-      <url>http://cdimage.ubuntu.com/releases/artful/release/ubuntu-17.10-server-s390x.iso</url>
+      <url>http://old-releases.ubuntu.com/releases/artful/ubuntu-17.10-server-s390x.iso</url>
       <iso>
         <volume-id>Ubuntu-Server 17.10(.\d)? s390x</volume-id>
       </iso>

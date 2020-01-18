@@ -9,6 +9,7 @@
     <name xml:lang="es">Red Hat Linux 6.1</name>
     <name xml:lang="fr">Red Hat Linux 6.1</name>
     <name xml:lang="id">Red Hat Linux 6.1</name>
+    <name xml:lang="it">Red Hat Linux 6.1</name>
     <name xml:lang="ja">Red Hat Linux 6.1</name>
     <name xml:lang="pl">Red Hat Linux 6.1</name>
     <name xml:lang="pt_BR">Red Hat Linux 6.1</name>
@@ -20,6 +21,7 @@
     <vendor xml:lang="es">Red Hat, Inc</vendor>
     <vendor xml:lang="fr">Red Hat, Inc</vendor>
     <vendor xml:lang="id">Red Hat, Inc</vendor>
+    <vendor xml:lang="it">Red Hat, Inc</vendor>
     <vendor xml:lang="ja">Red Hat, Inc</vendor>
     <vendor xml:lang="pl">Red Hat, Inc</vendor>
     <vendor xml:lang="pt_BR">Red Hat, Inc</vendor>

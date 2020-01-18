@@ -10,6 +10,7 @@
     <name xml:lang="es">Debian Squeeze</name>
     <name xml:lang="fr">Debian Squeeze</name>
     <name xml:lang="id">Debian Squeeze</name>
+    <name xml:lang="it">Debian Squeeze</name>
     <name xml:lang="ja">Debian Squeeze</name>
     <name xml:lang="pl">Debian Squeeze</name>
     <name xml:lang="pt_BR">Debian Squeeze</name>
@@ -21,6 +22,7 @@
     <vendor xml:lang="es">Debian Project</vendor>
     <vendor xml:lang="fr">Debian Project</vendor>
     <vendor xml:lang="id">Proyek Debian</vendor>
+    <vendor xml:lang="it">Progetto Debian</vendor>
     <vendor xml:lang="ja">Debian プロジェクト</vendor>
     <vendor xml:lang="pl">Projekt Debian</vendor>
     <vendor xml:lang="pt_BR">Projeto Debian</vendor>
@@ -34,7 +36,7 @@
     <eol-date>2016-02-29</eol-date>
 
     <devices>
-      <device id="http://usb.org/usb/80ee/0021"/>
+      <device id="http://usb.org/usb/80ee/0021"/> 
     </devices>
 
     <resources arch="all">

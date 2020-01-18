@@ -5,6 +5,11 @@
     <short-id>ubuntu16.10</short-id>
     <short-id>ubuntutyakkety</short-id>
     <name>Ubuntu 16.10</name>
+    <name xml:lang="ca">Ubuntu 16.10</name>
+    <name xml:lang="es">Ubuntu 16.10</name>
+    <name xml:lang="it">Ubuntu 16.10</name>
+    <name xml:lang="pl">Ubuntu 16.10</name>
+    <name xml:lang="uk">Ubuntu 16.10</name>
     <version>16.10</version>
     <vendor>Canonical Ltd</vendor>
     <vendor xml:lang="ca">Canonical Ltd</vendor>
@@ -12,6 +17,7 @@
     <vendor xml:lang="es">Canonical Ltd</vendor>
     <vendor xml:lang="fr">Canonical Ltd</vendor>
     <vendor xml:lang="id">Canonical Ltd</vendor>
+    <vendor xml:lang="it">Canonical Ltd</vendor>
     <vendor xml:lang="ja">Canonical Ltd</vendor>
     <vendor xml:lang="pl">Canonical Ltd</vendor>
     <vendor xml:lang="pt_BR">Canonical Ltd</vendor>

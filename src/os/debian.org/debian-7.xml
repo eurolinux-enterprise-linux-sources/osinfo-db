@@ -9,6 +9,7 @@
     <name xml:lang="es">Debian Wheezy</name>
     <name xml:lang="fr">Debian Wheezy</name>
     <name xml:lang="id">Debian Wheezy</name>
+    <name xml:lang="it">Debian Wheezy</name>
     <name xml:lang="pl">Debian Wheezy</name>
     <name xml:lang="pt_BR">Debian Wheezy</name>
     <name xml:lang="uk">Debian Wheezy</name>
@@ -19,6 +20,7 @@
     <vendor xml:lang="es">Debian Project</vendor>
     <vendor xml:lang="fr">Debian Project</vendor>
     <vendor xml:lang="id">Proyek Debian</vendor>
+    <vendor xml:lang="it">Progetto Debian</vendor>
     <vendor xml:lang="ja">Debian プロジェクト</vendor>
     <vendor xml:lang="pl">Projekt Debian</vendor>
     <vendor xml:lang="pt_BR">Projeto Debian</vendor>
@@ -33,11 +35,14 @@
 
     <devices>
       <device id="http://pcisig.com/pci/8086/2415"/> 
+      <device id="http://pcisig.com/pci/8086/2668"/> 
       <device id="http://pcisig.com/pci/1af4/1002"/> 
       <device id="http://pcisig.com/pci/1af4/1003"/> 
       <device id="http://pcisig.com/pci/1af4/1004"/> 
       <device id="http://pcisig.com/pci/1af4/1009"/> 
       <device id="http://pcisig.com/pci/1b36/0100"/> 
+      <device id="http://pcisig.com/pci/1033/0194"/> 
+      <device id="http://pcisig.com/pci/1b36/0004"/> 
     </devices>
 
     <resources arch="all">

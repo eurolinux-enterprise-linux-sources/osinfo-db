@@ -11,6 +11,7 @@
     <vendor xml:lang="es">Fedora Project</vendor>
     <vendor xml:lang="fr">Fedora Project</vendor>
     <vendor xml:lang="id">Proyek Fedora</vendor>
+    <vendor xml:lang="it">Progetto Fedora</vendor>
     <vendor xml:lang="ja">Fedora Project</vendor>
     <vendor xml:lang="pl">Projekt Fedora</vendor>
     <vendor xml:lang="pt">Projecto Fedora </vendor>
@@ -29,9 +30,6 @@
     <variant id="workstation-netinst">
       <name>Fedora 28 Workstation</name>
     </variant>
-    <variant id="workstation-atomic">
-      <name>Fedora 28 Workstation</name>
-    </variant>
     <variant id="server">
       <name>Fedora 28 Server</name>
     </variant>
@@ -47,18 +45,6 @@
       <url>https://download.fedoraproject.org/pub/fedora/linux/releases/28/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-28-1.1.iso</url>
       <iso>
         <volume-id>Fedora-WS-Live-28.*</volume-id>
-        <system-id>LINUX</system-id>
-      </iso>
-      <kernel>isolinux/vmlinuz</kernel>
-      <initrd>isolinux/initrd.img</initrd>
-    </media>
-
-    
-    <media arch="x86_64">
-      <variant id="workstation-atomic"/>
-      <url>https://download.fedoraproject.org/pub/fedora/linux/releases/28/AtomicWorkstation/x86_64/iso/Fedora-AtomicWorkstation-ostree-x86_64-28-1.1.iso</url>
-      <iso>
-        <volume-id>Fedora-AW-ostree-x86_64-28</volume-id>
         <system-id>LINUX</system-id>
       </iso>
       <kernel>isolinux/vmlinuz</kernel>

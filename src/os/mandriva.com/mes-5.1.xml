@@ -9,6 +9,7 @@
     <name xml:lang="es">Mandriva Enterprise Server 5.1</name>
     <name xml:lang="fr">Mandriva Enterprise Server 5.1</name>
     <name xml:lang="id">Mandriva Enterprise Server 5.1</name>
+    <name xml:lang="it">Mandriva Enterprise Server 5.1</name>
     <name xml:lang="ja">Mandriva Enterprise Server 5.1</name>
     <name xml:lang="pl">Mandriva Enterprise Server 5.1</name>
     <name xml:lang="pt_BR">Mandriva Enterprise Server 5.1</name>
@@ -20,6 +21,7 @@
     <vendor xml:lang="es">Mandriva</vendor>
     <vendor xml:lang="fr">Mandriva</vendor>
     <vendor xml:lang="id">Mandriva</vendor>
+    <vendor xml:lang="it">Mandriva</vendor>
     <vendor xml:lang="ja">Mandriva</vendor>
     <vendor xml:lang="pl">Mandriva</vendor>
     <vendor xml:lang="pt_BR">Mandriva</vendor>
@@ -33,8 +35,8 @@
     <eol-date>2014-06-16</eol-date>
 
     <devices>
-      <device id="http://pcisig.com/pci/1af4/1000"/>
-      <device id="http://pcisig.com/pci/1af4/1001"/>
+      <device id="http://pcisig.com/pci/1af4/1000"/> 
+      <device id="http://pcisig.com/pci/1af4/1001"/> 
     </devices>
   </os>
 </libosinfo>

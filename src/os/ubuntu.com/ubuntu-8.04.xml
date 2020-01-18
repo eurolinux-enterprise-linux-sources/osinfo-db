@@ -9,6 +9,7 @@
     <name xml:lang="es">Ubuntu 8.04 LTS</name>
     <name xml:lang="fr">Ubuntu 8.04 LTS</name>
     <name xml:lang="id">Ubuntu 8.04 LTS</name>
+    <name xml:lang="it">Ubuntu 8.04 LTS</name>
     <name xml:lang="pl">Ubuntu 8.04 LTS</name>
     <name xml:lang="uk">Ubuntu 8.04 LTS</name>
     <version>8.04</version>
@@ -18,6 +19,7 @@
     <vendor xml:lang="es">Canonical Ltd</vendor>
     <vendor xml:lang="fr">Canonical Ltd</vendor>
     <vendor xml:lang="id">Canonical Ltd</vendor>
+    <vendor xml:lang="it">Canonical Ltd</vendor>
     <vendor xml:lang="ja">Canonical Ltd</vendor>
     <vendor xml:lang="pl">Canonical Ltd</vendor>
     <vendor xml:lang="pt_BR">Canonical Ltd</vendor>
@@ -32,7 +34,7 @@
     <eol-date>2013-05-09</eol-date>
 
     <devices>
-      <device id="http://pcisig.com/pci/1af4/1000"/>
+      <device id="http://pcisig.com/pci/1af4/1000"/> 
     </devices>
 
     <media arch="i686">

@@ -8,6 +8,7 @@
     <name xml:lang="es">Fedora</name>
     <name xml:lang="fr">Fedora</name>
     <name xml:lang="id">Fedora</name>
+    <name xml:lang="it">Fedora</name>
     <name xml:lang="pl">Fedora</name>
     <name xml:lang="pt">Fedora </name>
     <name xml:lang="pt_BR">Fedora</name>
@@ -19,6 +20,7 @@
     <vendor xml:lang="es">Fedora Project</vendor>
     <vendor xml:lang="fr">Fedora Project</vendor>
     <vendor xml:lang="id">Proyek Fedora</vendor>
+    <vendor xml:lang="it">Progetto Fedora</vendor>
     <vendor xml:lang="ja">Fedora Project</vendor>
     <vendor xml:lang="pl">Projekt Fedora</vendor>
     <vendor xml:lang="pt">Projecto Fedora </vendor>
@@ -26,13 +28,13 @@
     <vendor xml:lang="uk">Проект Fedora</vendor>
     <family>linux</family>
     <distro>fedora</distro>
-    <upgrades id="http://fedoraproject.org/fedora/28"/>
-    <derives-from id="http://fedoraproject.org/fedora/28"/>
+    <upgrades id="http://fedoraproject.org/fedora/29"/>
+    <derives-from id="http://fedoraproject.org/fedora/29"/>
     <release-status>prerelease</release-status>
 
     <media arch="x86_64">
       <iso>
-        <volume-id>Fedora-.*-dvd-x86_64-(29|[3-9][0-9]|rawh)</volume-id>
+        <volume-id>Fedora-.*-dvd-x86_64-([3-9][0-9]|rawh)</volume-id>
         <system-id>LINUX</system-id>
       </iso>
       <kernel>isolinux/vmlinuz</kernel>
@@ -41,7 +43,7 @@
 
     <media live="true" arch="x86_64">
       <iso>
-        <volume-id>Fedora-.*-Live-(29|[3-9][0-9]|Rawhide).*</volume-id>
+        <volume-id>Fedora-.*-Live-([3-9][0-9]|Rawhide).*</volume-id>
         <system-id>LINUX</system-id>
       </iso>
     </media>

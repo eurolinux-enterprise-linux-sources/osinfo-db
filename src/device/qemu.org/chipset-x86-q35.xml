@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libosinfo version="0.0.1">
+
+  <device id="http://qemu.org/chipset/x86/q35">
+    <name>qemu-x86-q35</name>
+    <class>chipset</class>
+  </device>
+</libosinfo>

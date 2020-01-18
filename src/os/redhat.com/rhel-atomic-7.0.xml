@@ -8,6 +8,7 @@
     <name xml:lang="es">Red Hat Enterprise Linux Atomic Host 7.0</name>
     <name xml:lang="fr">Red Hat Enterprise Linux Atomic Host 7.0</name>
     <name xml:lang="id">Red Hat Enterprise Linux Atomic Host 7.0</name>
+    <name xml:lang="it">Red Hat Enterprise Linux Atomic Host 7.0</name>
     <name xml:lang="pl">Red Hat Enterprise Linux Atomic Host 7.0</name>
     <name xml:lang="pt_BR">Red Hat Enterprise Linux Atomic Host 7.0</name>
     <name xml:lang="uk">Red Hat Enterprise Linux Atomic Host 7.0</name>
@@ -18,6 +19,7 @@
     <vendor xml:lang="es">Red Hat, Inc</vendor>
     <vendor xml:lang="fr">Red Hat, Inc</vendor>
     <vendor xml:lang="id">Red Hat, Inc</vendor>
+    <vendor xml:lang="it">Red Hat, Inc</vendor>
     <vendor xml:lang="ja">Red Hat, Inc</vendor>
     <vendor xml:lang="pl">Red Hat, Inc</vendor>
     <vendor xml:lang="pt_BR">Red Hat, Inc</vendor>
@@ -27,14 +29,6 @@
     <derives-from id="http://redhat.com/rhel/7.0"/>
 
     <release-date>2014-06-10</release-date>
-
-    <devices>
-      <device id="http://pcisig.com/pci/1b36/0100"/> 
-      <device id="http://pcisig.com/pci/8086/2415"/> 
-      <device id="http://usb.org/usb/80ee/0021"/> 
-      <device id="http://pcisig.com/pci/1af4/1001"/> 
-      <device id="http://pcisig.com/pci/1af4/1000"/> 
-    </devices>
 
     <media arch="x86_64">
       <iso>
@@ -50,13 +44,13 @@
       <minimum>
         <n-cpus>1</n-cpus>
         <cpu>1000000000</cpu>
-        <ram>1073741824</ram>
+        <ram>2147483648</ram>
         <storage>10737418240</storage>
       </minimum>
 
       <recommended>
         <cpu>1000000000</cpu>
-        <ram>1073741824</ram>
+        <ram>2147483648</ram>
         <storage>10737418240</storage>
       </recommended>
     </resources>

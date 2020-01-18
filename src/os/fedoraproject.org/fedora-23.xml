@@ -8,6 +8,7 @@
     <name xml:lang="es">Fedora 23</name>
     <name xml:lang="fr">Fedora 23</name>
     <name xml:lang="id">Fedora 23</name>
+    <name xml:lang="it">Fedora 23</name>
     <name xml:lang="pl">Fedora 23</name>
     <name xml:lang="pt">Fedora 23 </name>
     <name xml:lang="uk">Fedora 23</name>
@@ -18,6 +19,7 @@
     <vendor xml:lang="es">Fedora Project</vendor>
     <vendor xml:lang="fr">Fedora Project</vendor>
     <vendor xml:lang="id">Proyek Fedora</vendor>
+    <vendor xml:lang="it">Progetto Fedora</vendor>
     <vendor xml:lang="ja">Fedora Project</vendor>
     <vendor xml:lang="pl">Projekt Fedora</vendor>
     <vendor xml:lang="pt">Projecto Fedora </vendor>
@@ -37,6 +39,7 @@
       <name xml:lang="es">Fedora 23 Workstation</name>
       <name xml:lang="fr">Fedora 23 Workstation</name>
       <name xml:lang="id">Fedora 23 Workstation</name>
+      <name xml:lang="it">Fedora 23 Workstation</name>
       <name xml:lang="pl">Fedora 23 Workstation</name>
       <name xml:lang="pt">Fedora 23 Workstation </name>
       <name xml:lang="uk">Fedora 23 Workstation</name>
@@ -47,6 +50,7 @@
       <name xml:lang="es">Fedora 23 Workstation</name>
       <name xml:lang="fr">Fedora 23 Workstation</name>
       <name xml:lang="id">Fedora 23 Workstation</name>
+      <name xml:lang="it">Fedora 23 Workstation</name>
       <name xml:lang="pl">Fedora 23 Workstation</name>
       <name xml:lang="pt">Fedora 23 Workstation </name>
       <name xml:lang="uk">Fedora 23 Workstation</name>
@@ -57,6 +61,7 @@
       <name xml:lang="es">Fedora 23 Server</name>
       <name xml:lang="fr">Fedora 23 Server</name>
       <name xml:lang="id">Fedora 23 Server</name>
+      <name xml:lang="it">Fedora 23 Server</name>
       <name xml:lang="pl">Fedora 23 Server</name>
       <name xml:lang="pt">Fedora 23 Server </name>
       <name xml:lang="uk">Fedora 23 Server</name>
@@ -67,6 +72,7 @@
       <name xml:lang="es">Fedora 23 Server</name>
       <name xml:lang="fr">Fedora 23 Server</name>
       <name xml:lang="id">Fedora 23 Server</name>
+      <name xml:lang="it">Fedora 23 Server</name>
       <name xml:lang="pl">Fedora 23 Server</name>
       <name xml:lang="pt">Fedora 23 Server </name>
       <name xml:lang="uk">Fedora 23 Server</name>
@@ -82,6 +88,9 @@
       <device id="http://pcisig.com/pci/1af4/1049"/> 
       <device id="http://pcisig.com/pci/1af4/1052"/> 
       
+      <device id="http://qemu.org/chipset/x86/q35"/> 
+      <device id="http://pcisig.com/pci/8086/10d3"/> 
+      <device id="http://pcisig.com/pci/8086/293e"/> 
     </devices>
 
     

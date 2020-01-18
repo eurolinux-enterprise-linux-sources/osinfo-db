@@ -8,6 +8,7 @@
     <name xml:lang="es">SUSE Linux Enterprise Desktop 11 SP1</name>
     <name xml:lang="fr">SUSE Linux Enterprise Desktop 11 SP1</name>
     <name xml:lang="id">SUSE Linux Enterprise Desktop 11 SP1</name>
+    <name xml:lang="it">SUSE Linux Enterprise Desktop 11 SP1</name>
     <name xml:lang="pl">SUSE Linux Enterprise Desktop 11 SP1</name>
     <name xml:lang="uk">SUSE Linux Enterprise Desktop 11 SP1</name>
     <version>11.1</version>
@@ -16,6 +17,7 @@
     <vendor xml:lang="es">SUSE</vendor>
     <vendor xml:lang="fr">SUSE</vendor>
     <vendor xml:lang="id">SUSE</vendor>
+    <vendor xml:lang="it">SUSE</vendor>
     <vendor xml:lang="pl">SUSE</vendor>
     <vendor xml:lang="uk">SUSE</vendor>
     <family>linux</family>

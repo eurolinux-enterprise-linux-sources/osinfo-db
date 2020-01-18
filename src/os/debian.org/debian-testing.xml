@@ -8,6 +8,7 @@
     <name xml:lang="es">Debian Testing</name>
     <name xml:lang="fr">Debian Testing</name>
     <name xml:lang="id">Debian Testing</name>
+    <name xml:lang="it">Debian Testing</name>
     <name xml:lang="pl">Debian Testing</name>
     <name xml:lang="uk">Debian Testing</name>
     <version>testing</version>
@@ -17,14 +18,15 @@
     <vendor xml:lang="es">Debian Project</vendor>
     <vendor xml:lang="fr">Debian Project</vendor>
     <vendor xml:lang="id">Proyek Debian</vendor>
+    <vendor xml:lang="it">Progetto Debian</vendor>
     <vendor xml:lang="ja">Debian プロジェクト</vendor>
     <vendor xml:lang="pl">Projekt Debian</vendor>
     <vendor xml:lang="pt_BR">Projeto Debian</vendor>
     <vendor xml:lang="uk">Проект Debian</vendor>
     <family>linux</family>
     <distro>debian</distro>
-    <upgrades id="http://debian.org/debian/8"/>
-    <derives-from id="http://debian.org/debian/8"/>
+    <upgrades id="http://debian.org/debian/9"/>
+    <derives-from id="http://debian.org/debian/9"/>
 
     <resources arch="all">
       <minimum>
@@ -56,6 +58,17 @@
       <kernel>install.amd/vmlinuz</kernel>
       <initrd>install.amd/initrd.gz</initrd>
     </media>
+
+    <tree arch="i686">
+      <url>http://deb.debian.org/debian/dists/testing/main/installer-i386</url>
+      <kernel>current/images/netboot/debian-installer/i386/linux</kernel>
+      <initrd>current/images/netboot/debian-installer/i386/initrd.gz</initrd>
+    </tree>
+    <tree arch="x86_64">
+      <url>http://deb.debian.org/debian/dists/testing/main/installer-amd64</url>
+      <kernel>current/images/netboot/debian-installer/amd64/linux</kernel>
+      <initrd>current/images/netboot/debian-installer/amd64/initrd.gz</initrd>
+    </tree>
 
     <installer>
       <script id='http://debian.org/debian/preseed/jeos'/>

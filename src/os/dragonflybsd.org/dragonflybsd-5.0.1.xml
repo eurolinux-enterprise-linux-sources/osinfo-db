@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libosinfo version="0.0.1">
+
+  <os id="http://dragonflybsd.org/dragonflybsd/5.0.1">
+    <short-id>dragonflybsd5.0.1</short-id>
+    <name>DragonFlyBSD 5.0.1</name>
+    <version>5.0.1</version>
+    <family>dragonflybsd</family>
+    <distro>dragonflybsd</distro>
+    <vendor>DragonFlyBSD Project</vendor>
+    <upgrades id="http://dragonflybsd.org/dragonflybsd/5.0.0"/>
+
+    <release-date>2017-11-06</release-date>
+
+    <media arch="x86_64">
+      
+      <iso>
+        <system-id>DragonFly</system-id>
+        <volume-id>DragonFly v5.0.1</volume-id>
+        <volume-size>791875584</volume-size>
+      </iso>
+    </media>
+  </os>
+</libosinfo>

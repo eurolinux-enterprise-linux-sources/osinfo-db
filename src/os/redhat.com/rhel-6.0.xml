@@ -9,6 +9,7 @@
     <name xml:lang="es">Red Hat Enterprise Linux 6.0</name>
     <name xml:lang="fr">Red Hat Enterprise Linux 6.0</name>
     <name xml:lang="id">Red Hat Enterprise Linux 6.0</name>
+    <name xml:lang="it">Red Hat Enterprise Linux 6.0</name>
     <name xml:lang="ja">Red Hat Enterprise Linux 6.0</name>
     <name xml:lang="pl">Red Hat Enterprise Linux 6.0</name>
     <name xml:lang="pt_BR">Red Hat Enterprise Linux 6.0</name>
@@ -20,6 +21,7 @@
     <vendor xml:lang="es">Red Hat, Inc</vendor>
     <vendor xml:lang="fr">Red Hat, Inc</vendor>
     <vendor xml:lang="id">Red Hat, Inc</vendor>
+    <vendor xml:lang="it">Red Hat, Inc</vendor>
     <vendor xml:lang="ja">Red Hat, Inc</vendor>
     <vendor xml:lang="pl">Red Hat, Inc</vendor>
     <vendor xml:lang="pt_BR">Red Hat, Inc</vendor>
@@ -32,9 +34,15 @@
     <eol-date>2023-11-30</eol-date>
 
     <devices>
-      <device id="http://pcisig.com/pci/1af4/1000"/>
-      <device id="http://pcisig.com/pci/1af4/1001"/>
-      <device id="http://usb.org/usb/80ee/0021"/>
+      <device id="http://pcisig.com/pci/1af4/1000"/> 
+      <device id="http://pcisig.com/pci/1af4/1001"/> 
+      <device id="http://pcisig.com/pci/1af4/1003"/> 
+      <device id="http://usb.org/usb/80ee/0021"/> 
+
+      
+      <device id="http://qemu.org/chipset/x86/q35"/> 
+      <device id="http://pcisig.com/pci/8086/10d3"/> 
+      <device id="http://pcisig.com/pci/8086/293e"/> 
     </devices>
 
     <media arch="i686">

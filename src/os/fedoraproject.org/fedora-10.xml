@@ -9,6 +9,7 @@
     <name xml:lang="es">Fedora 10</name>
     <name xml:lang="fr">Fedora 10</name>
     <name xml:lang="id">Fedora 10</name>
+    <name xml:lang="it">Fedora 10</name>
     <name xml:lang="ja">Fedora 10</name>
     <name xml:lang="pl">Fedora 10</name>
     <name xml:lang="pt">Fedora 10 </name>
@@ -21,6 +22,7 @@
     <vendor xml:lang="es">Fedora Project</vendor>
     <vendor xml:lang="fr">Fedora Project</vendor>
     <vendor xml:lang="id">Proyek Fedora</vendor>
+    <vendor xml:lang="it">Progetto Fedora</vendor>
     <vendor xml:lang="ja">Fedora Project</vendor>
     <vendor xml:lang="pl">Projekt Fedora</vendor>
     <vendor xml:lang="pt">Projecto Fedora </vendor>
@@ -36,6 +38,7 @@
     <eol-date>2009-12-17</eol-date>
 
     <devices>
+      <device id="http://pcisig.com/pci/8086/2668"/> 
       <device id="http://pcisig.com/pci/1af4/1001"/> 
       <device id="http://pcisig.com/pci/1af4/1005"/> 
     </devices>

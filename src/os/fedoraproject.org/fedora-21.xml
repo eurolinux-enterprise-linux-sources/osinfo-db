@@ -8,6 +8,7 @@
     <name xml:lang="es">Fedora 21</name>
     <name xml:lang="fr">Fedora 21</name>
     <name xml:lang="id">Fedora 21</name>
+    <name xml:lang="it">Fedora 21</name>
     <name xml:lang="pl">Fedora 21</name>
     <name xml:lang="pt">Fedora 21 </name>
     <name xml:lang="pt_BR">Fedora 21</name>
@@ -19,6 +20,7 @@
     <vendor xml:lang="es">Fedora Project</vendor>
     <vendor xml:lang="fr">Fedora Project</vendor>
     <vendor xml:lang="id">Proyek Fedora</vendor>
+    <vendor xml:lang="it">Progetto Fedora</vendor>
     <vendor xml:lang="ja">Fedora Project</vendor>
     <vendor xml:lang="pl">Projekt Fedora</vendor>
     <vendor xml:lang="pt">Projecto Fedora </vendor>
@@ -38,6 +40,7 @@
       <name xml:lang="es">Fedora 21 Workstation</name>
       <name xml:lang="fr">Fedora 21 Workstation</name>
       <name xml:lang="id">Fedora 21 Workstation</name>
+      <name xml:lang="it">Fedora 21 Workstation</name>
       <name xml:lang="pl">Fedora 21 Workstation</name>
       <name xml:lang="pt">Fedora 21 Workstation </name>
       <name xml:lang="pt_BR">Fedora 21 Workstation</name>
@@ -49,6 +52,7 @@
       <name xml:lang="es">Fedora 21 Server</name>
       <name xml:lang="fr">Fedora 21 Server</name>
       <name xml:lang="id">Fedora 21 Server</name>
+      <name xml:lang="it">Fedora 21 Server</name>
       <name xml:lang="pl">Fedora 21 Server</name>
       <name xml:lang="pt">Fedora 21 Server </name>
       <name xml:lang="pt_BR">Fedora 21 Server</name>
@@ -60,6 +64,7 @@
       <name xml:lang="es">Fedora 21</name>
       <name xml:lang="fr">Fedora 21</name>
       <name xml:lang="id">Fedora 21</name>
+      <name xml:lang="it">Fedora 21</name>
       <name xml:lang="pl">Fedora 21</name>
       <name xml:lang="pt">Fedora 21 </name>
       <name xml:lang="pt_BR">Fedora 21</name>
@@ -71,6 +76,7 @@
       <name xml:lang="es">Fedora 21 Cloud</name>
       <name xml:lang="fr">Fedora 21 Cloud</name>
       <name xml:lang="id">Fedora 21 Cloud</name>
+      <name xml:lang="it">Fedora 21 Cloud</name>
       <name xml:lang="pl">Fedora 21 Cloud</name>
       <name xml:lang="pt">Fedora 21 Cloud</name>
       <name xml:lang="pt_BR">Fedora 21 Cloud</name>

@@ -8,6 +8,7 @@
     <name xml:lang="es">Fedora 24</name>
     <name xml:lang="fr">Fedora 24</name>
     <name xml:lang="id">Fedora 24</name>
+    <name xml:lang="it">Fedora 24</name>
     <name xml:lang="pl">Fedora 24</name>
     <name xml:lang="uk">Fedora 24</name>
     <version>24</version>
@@ -17,6 +18,7 @@
     <vendor xml:lang="es">Fedora Project</vendor>
     <vendor xml:lang="fr">Fedora Project</vendor>
     <vendor xml:lang="id">Proyek Fedora</vendor>
+    <vendor xml:lang="it">Progetto Fedora</vendor>
     <vendor xml:lang="ja">Fedora Project</vendor>
     <vendor xml:lang="pl">Projekt Fedora</vendor>
     <vendor xml:lang="pt">Projecto Fedora </vendor>
@@ -40,6 +42,7 @@
       <name xml:lang="es">Fedora 24 Workstation</name>
       <name xml:lang="fr">Fedora 24 Workstation</name>
       <name xml:lang="id">Fedora 24 Workstation</name>
+      <name xml:lang="it">Fedora 24 Workstation</name>
       <name xml:lang="pl">Fedora 24 Workstation</name>
       <name xml:lang="uk">Fedora 24 Workstation</name>
     </variant>
@@ -49,6 +52,7 @@
       <name xml:lang="es">Fedora 24 Workstation</name>
       <name xml:lang="fr">Fedora 24 Workstation</name>
       <name xml:lang="id">Fedora 24 Workstation</name>
+      <name xml:lang="it">Fedora 24 Workstation</name>
       <name xml:lang="pl">Fedora 24 Workstation</name>
       <name xml:lang="uk">Fedora 24 Workstation</name>
     </variant>
@@ -58,6 +62,7 @@
       <name xml:lang="es">Fedora 24 Server</name>
       <name xml:lang="fr">Fedora 24 Server</name>
       <name xml:lang="id">Fedora 24 Server</name>
+      <name xml:lang="it">Fedora 24 Server</name>
       <name xml:lang="pl">Fedora 24 Server</name>
       <name xml:lang="uk">Fedora 24 Server</name>
     </variant>
@@ -67,6 +72,7 @@
       <name xml:lang="es">Fedora 24 Server</name>
       <name xml:lang="fr">Fedora 24 Server</name>
       <name xml:lang="id">Fedora 24 Server</name>
+      <name xml:lang="it">Fedora 24 Server</name>
       <name xml:lang="pl">Fedora 24 Server</name>
       <name xml:lang="uk">Fedora 24 Server</name>
     </variant>
