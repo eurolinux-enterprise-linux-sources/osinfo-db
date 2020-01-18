@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <libosinfo version="0.0.1">
 
-  <os id="http://mageia.org/mageia/5">
-    <short-id>mageia5</short-id>
-    <name>Mageia 5</name>
+  <os id="http://mageia.org/mageia/6">
+    <short-id>mageia6</short-id>
+    <name>Mageia 6</name>
     <vendor>Mageia</vendor>
     <vendor xml:lang="ca">Mageia</vendor>
     <vendor xml:lang="fr">Mageia</vendor>
@@ -12,29 +12,29 @@
     <vendor xml:lang="uk">Mageia</vendor>
     <family>linux</family>
     <distro>mageia</distro>
-    <version>5</version>
-    <derives-from id="http://mageia.org/mageia/4"/>
-    <release-date>2015-06-19</release-date>
-    <eol-date>2017-10-31</eol-date>
+    <version>6</version>
+    <derives-from id="http://mageia.org/mageia/5"/>
+    <release-date>2017-07-16</release-date>
+    <eol-date>2019-01-16</eol-date>
 
     <media arch="i686">
       <iso>
-        <volume-id>Mageia-5(.1)?(-i586)?</volume-id>
+        <volume-id>Mageia-6(.1)?(-i586)?</volume-id>
       </iso>
     </media>
     <media arch="x86_64">
       <iso>
-        <volume-id>Mageia-5(.1)?(-x86_64)?</volume-id>
+        <volume-id>Mageia-6(.1)?(-x86_64)?</volume-id>
       </iso>
     </media>
     <media live="true" arch="i686">
       <iso>
-        <volume-id>Mageia-5(.1)?-(GNOME|KDE4)-Live(CD|DVD)</volume-id>
+        <volume-id>Mageia-6(.1)?-(GNOME|Plasma|Xfce)-LiveDVD</volume-id>
       </iso>
     </media>
     <media live="true" arch="x86_64">
       <iso>
-        <volume-id>Mageia-5(.1)?-(GNOME|KDE4)-Live(CD|DVD)</volume-id>
+        <volume-id>Mageia-6(.1)?-(GNOME|Plasma|Xfce)-LiveDVD</volume-id>
       </iso>
     </media>
   </os>

@@ -4,18 +4,20 @@
 
 Summary: osinfo database files
 Name: osinfo-db
-Version: 20170423
-Release: 2%{?dist}
+Version: 20170813
+Release: 6%{?dist}
 License: LGPLv2+
-Source0: https://fedorahosted.org/releases/l/i/libosinfo/%{name}-%{version}.tar.xz
-Source1: https://fedorahosted.org/releases/l/i/libosinfo/%{name}-%{version}.tar.xz.asc
+Source0: https://releases.pagure.org/libosinfo/%{name}-%{version}.tar.xz
+Source1: /https://releases.pagure.org/libosinfo/%{name}-%{version}.tar.xz.asc
 URL: http://libosinfo.org/
 BuildRequires: intltool
 BuildRequires: osinfo-db-tools
 BuildArch: noarch
 Requires: hwdata
 
-Patch0: add-rhel7.4-data.patch
+Patch0: add-rhel7.5-data.patch
+Patch1: add-fedora-27-data.patch
+Patch2: add-opensuse-42.3-and-win2k16.patch
 
 %description
 The osinfo database provides information about operating systems and
@@ -24,7 +26,9 @@ provisioning of new virtual machines
 
 %prep
 %setup -q
-%patch0 -p1 -b .add-rhel7.4-data
+%patch0 -p1 -b .add-rhel7.5-data
+%patch1 -p1 -b .add-fedora-27-data
+%patch2 -p1 -b .add-opensuse-42.3-and-win2k16
 
 # For us to be able to apply patches on top of a rebase,
 # we:
@@ -50,6 +54,31 @@ osinfo-db-import  --root %{buildroot} --dir %{_datadir}/osinfo %{PatchedSource}
 %{_datadir}/osinfo/schema
 
 %changelog
+* Fri Feb 02 2018 Felipe Borges <feborges@redhat.com> - 20170813-6
+- Both files inserted in the previous release were not processed.
+
+* Fri Feb 02 2018 Felipe Borges <feborges@redhat.com> - 20170813-5
+- Add OpenSUSE Leap 42.3 data
+- Add Windows Server 2016 data
+- Resolves: rhbz#1496711, rhbz#1474751
+
+* Mon Jan 08 2018 Felipe Borges <feborges@redhat.com> - 20170813-4
+- Add Fedora 27
+
+* Wed Dec 06 2017 Felipe Borges <feborges@redhat.com> - 20170813-3
+- Fix data of RHEL 7.5
+- Resolves: rhbz#1511756
+
+* Thu Oct 26 2017 Felipe Borges <feborges@redhat.com> - 20170813-2
+- Add RHEL 7.5 data
+- Resolves: #rhbz#1504600
+
+* Mon Oct 16 2017 Felipe Borges <feborges@redhat.com> - 20170813-1
+ - Update source URL to Pagure
+ - Drop the rhel-7.4 data patch
+ - Update to new release
+ - Resolves: rhbz#1479731
+
 * Tue Jun 27 2017 Felipe Borges <feborges@redhat.com> - 20170423-2
 - Make this spec file patchable
 - Add RHEL 7.4 data

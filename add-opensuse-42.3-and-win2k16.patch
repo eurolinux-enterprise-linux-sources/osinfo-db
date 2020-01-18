@@ -1,0 +1,175 @@
+From 29f8f91a6a06e4cc0a04a36ecbe6db1ccafb1a0d Mon Sep 17 00:00:00 2001
+From: Felipe Borges <feborges@redhat.com>
+Date: Fri, 2 Feb 2018 14:04:38 +0100
+Subject: [PATCH] Add OpenSUSE Leap 42.3 and Windows Server 2016
+
+---
+ os/microsoft.com/win-2k16.xml     | 78 ++++++++++++++++++++++++++++++++++
+ os/opensuse.org/opensuse-42.3.xml | 68 +++++++++++++++++++++++++++++
+ 2 files changed, 146 insertions(+)
+ create mode 100644 os/microsoft.com/win-2k16.xml
+ create mode 100644 os/opensuse.org/opensuse-42.3.xml
+
+diff --git a/os/microsoft.com/win-2k16.xml b/os/microsoft.com/win-2k16.xml
+new file mode 100644
+index 0000000..3dface2
+--- /dev/null
++++ b/os/microsoft.com/win-2k16.xml
+@@ -0,0 +1,78 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<libosinfo version="0.0.1">
++
++  <os id="http://microsoft.com/win/2k16">
++    <short-id>win2k16</short-id>
++    <name>Microsoft Windows Server 2016</name>
++    <version>1709</version>
++    <vendor>Microsoft Corporation</vendor>
++    <vendor xml:lang="ca">Microsoft Corporation</vendor>
++    <vendor xml:lang="de">Microsoft Corporation</vendor>
++    <vendor xml:lang="es">Microsoft Corporation</vendor>
++    <vendor xml:lang="fr">Microsoft Corporation</vendor>
++    <vendor xml:lang="id">Microsoft Corporation</vendor>
++    <vendor xml:lang="ja">Microsoft Corporation</vendor>
++    <vendor xml:lang="pl">Microsoft Corporation</vendor>
++    <vendor xml:lang="pt_BR">Microsoft Corporation</vendor>
++    <vendor xml:lang="uk">Корпорація Microsoft</vendor>
++    <family>winnt</family>
++    <distro>win</distro>
++    <derives-from id="http://microsoft.com/win/2k12r2"/>
++    <upgrades id="http://microsoft.com/win/2k12r2"/>
++
++    <variant id="essentials">
++      <name>Windows Server 2012 R2 Essentials</name>
++      <name xml:lang="ca">Windows Server 2012 R2 Essentials</name>
++      <name xml:lang="es">Windows Server 2012 R2 Essentials</name>
++      <name xml:lang="fr">Windows Server 2012 R2 Essentials</name>
++      <name xml:lang="id">Windows Server 2012 R2 Essentials</name>
++      <name xml:lang="pl">Windows Server 2012 R2 Essentials</name>
++      <name xml:lang="uk">Windows Server 2012 R2 Essentials</name>
++    </variant>
++    <variant id="hyperv">
++      <name>Windows Server 2016 for HyperV</name>
++    </variant>
++
++    <release-date>2017-10-17</release-date>
++
++    <media arch="x86_64">
++      <iso>
++        <volume-id>(SSS_X64CHK|SSS_X64FRE|SSS_X64FREE)_</volume-id>
++        <publisher-id>MICROSOFT CORPORATION</publisher-id>
++        <l10n-language regex="true" l10n-language-map="http://microsoft.com/win/7/l10n-language">[[:upper:][:digit:]]*_([[:upper:]]*)</l10n-language>
++      </iso>
++    </media>
++    <media arch="x86_64">
++      <variant id="essentials"/>
++      <iso>
++        <volume-id>(SESS_X64FRE)_</volume-id>
++        <publisher-id>MICROSOFT CORPORATION</publisher-id>
++        <l10n-language regex="true" l10n-language-map="http://microsoft.com/win/7/l10n-language">[[:upper:][:digit:]]*_([[:upper:]]*)</l10n-language>
++      </iso>
++    </media>
++    <media arch="x86_64">
++      <variant id="hyperv"/>
++      <iso>
++        <volume-id>(SHV_X64CHK|SHV_X64FRE)_</volume-id>
++        <publisher-id>MICROSOFT CORPORATION</publisher-id>
++        <l10n-language regex="true" l10n-language-map="http://microsoft.com/win/7/l10n-language">[[:upper:][:digit:]]*_([[:upper:]]*)</l10n-language>
++      </iso>
++    </media>
++
++    <resources arch="x86_64">
++      <minimum>
++        <cpu>1400000000</cpu>
++        <n-cpus>1</n-cpus>
++        <ram>536870912</ram>
++        <storage>10737418240</storage>
++      </minimum>
++
++      <recommended>
++        <cpu>2000000000</cpu>
++        <ram>2147483648</ram>
++        <storage>42949672960</storage>
++      </recommended>
++    </resources>
++
++  </os>
++</libosinfo>
+\ No newline at end of file
+diff --git a/os/opensuse.org/opensuse-42.3.xml b/os/opensuse.org/opensuse-42.3.xml
+new file mode 100644
+index 0000000..68fb151
+--- /dev/null
++++ b/os/opensuse.org/opensuse-42.3.xml
+@@ -0,0 +1,68 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<libosinfo version="0.0.1">
++
++  <os id="http://opensuse.org/opensuse/42.3">
++    <short-id>opensuse42.3</short-id>
++    <name>openSUSE Leap 42.3</name>
++    <version>42.3</version>
++    <vendor>openSUSE</vendor>
++    <vendor xml:lang="ca">openSUSE</vendor>
++    <vendor xml:lang="de">openSUSE</vendor>
++    <vendor xml:lang="es">openSUSE</vendor>
++    <vendor xml:lang="fr">openSUSE</vendor>
++    <vendor xml:lang="id">openSUSE</vendor>
++    <vendor xml:lang="ja">openSUSE</vendor>
++    <vendor xml:lang="pl">openSUSE</vendor>
++    <vendor xml:lang="pt_BR">openSUSE</vendor>
++    <vendor xml:lang="uk">openSUSE</vendor>
++    <family>linux</family>
++    <distro>opensuse</distro>
++    <upgrades id="http://opensuse.org/opensuse/42.2"/>
++    <derives-from id="http://opensuse.org/opensuse/42.2"/>
++
++    <release-date>2017-07-26</release-date>
++    <eol-date>2019-01-31</eol-date>
++
++    <devices>
++      <device id="http://pcisig.com/pci/1af4/1041"/>
++      <device id="http://pcisig.com/pci/1af4/1042"/>
++      <device id="http://pcisig.com/pci/1af4/1043"/>
++      <device id="http://pcisig.com/pci/1af4/1044"/>
++      <device id="http://pcisig.com/pci/1af4/1045"/>
++      <device id="http://pcisig.com/pci/1af4/1048"/>
++      <device id="http://pcisig.com/pci/1af4/1049"/>
++      <device id="http://pcisig.com/pci/1af4/1052"/>
++      <device id="http://pcisig.com/pci/1af4/1050"/>
++    </devices>
++
++    <media arch="x86_64">
++      <url>http://download.opensuse.org/distribution/leap/42.3/iso/openSUSE-Leap-42.3-DVD-x86_64.iso</url>
++      <iso>
++        <volume-id>openSUSE-Leap-42.3-DVD-x86_64*</volume-id>
++        <system-id>LINUX</system-id>
++        <publisher-id>SUSE LINUX GmbH</publisher-id>
++      </iso>
++      <kernel>boot/x86_64/loader/linux</kernel>
++      <initrd>boot/x86_64/loader/initrd</initrd>
++    </media>
++
++    <installer>
++      <script id='http://opensuse.org/opensuse/autoyast/jeos'/>
++      <script id='http://opensuse.org/opensuse/autoyast/desktop'/>
++    </installer>
++
++    <resources arch="all">
++      <minimum>
++        <cpu>1600000000</cpu>
++        <n-cpus>1</n-cpus>
++        <ram>1073741824</ram>
++        <storage>3221225472</storage>
++      </minimum>
++      <recommended>
++        <cpu>2400000000</cpu>
++        <ram>2147483648</ram>
++        <storage>17179869184</storage>
++      </recommended>
++    </resources>
++  </os>
++</libosinfo>
+\ No newline at end of file
+-- 
+2.14.3
+

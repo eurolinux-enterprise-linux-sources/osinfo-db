@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <libosinfo version="0.0.1">
 
-  <os id="http://ubuntu.com/ubuntu/16.10">
-    <short-id>ubuntu16.10</short-id>
-    <short-id>ubuntutyakkety</short-id>
-    <name>Ubuntu 16.10</name>
-    <version>16.10</version>
+  <os id="http://ubuntu.com/ubuntu/17.04">
+    <short-id>ubuntu17.04</short-id>
+    <short-id>ubuntutzesty</short-id>
+    <name>Ubuntu 17.04</name>
+    <version>17.04</version>
     <vendor>Canonical Ltd</vendor>
     <vendor xml:lang="ca">Canonical Ltd</vendor>
     <vendor xml:lang="de">Canonical Ltd</vendor>
@@ -17,12 +17,11 @@
     <vendor xml:lang="uk">Canonical Ltd</vendor>
     <family>linux</family>
     <distro>ubuntu</distro>
-    <codename>Yakkety Yak</codename>
-    <upgrades id="http://ubuntu.com/ubuntu/16.04"/>
-    <derives-from id="http://ubuntu.com/ubuntu/16.04"/>
+    <codename>Zesty Zapus</codename>
+    <upgrades id="http://ubuntu.com/ubuntu/16.10"/>
+    <derives-from id="http://ubuntu.com/ubuntu/16.10"/>
 
-    <release-date>2016-10-13</release-date>
-    <eol-date>2017-07-20</eol-date>
+    <release-date>2017-04-13</release-date>
 
     <resources arch="all">
       <minimum>
@@ -39,59 +38,53 @@
     </resources>
 
     <media arch="i686">
-      <url>http://old-releases.ubuntu.com/releases/yakkety/ubuntu-16.10-server-i386.iso</url>
+      <url>http://releases.ubuntu.com/releases/zesty/ubuntu-17.04-server-i386.iso</url>
       <iso>
-        <volume-id>Ubuntu-Server 16.10(.\d)? i386</volume-id>
+        <volume-id>Ubuntu-Server 17.04(.\d)? i386</volume-id>
       </iso>
       <kernel>install/vmlinuz</kernel>
       <initrd>install/initrd.gz</initrd>
     </media>
     <media arch="x86_64">
-      <url>http://old-releases.ubuntu.com/releases/yakkety/ubuntu-16.10-server-amd64.iso</url>
+      <url>http://releases.ubuntu.com/releases/zesty/ubuntu-17.04-server-amd64.iso</url>
       <iso>
-        <volume-id>Ubuntu-Server 16.10(.\d)? amd64</volume-id>
+        <volume-id>Ubuntu-Server 17.04(.\d)? amd64</volume-id>
       </iso>
       <kernel>install/vmlinuz</kernel>
       <initrd>install/initrd.gz</initrd>
     </media>
     <media live="true" arch="i686">
-      <url>http://old-releases.ubuntu.com/releases/yakkety/ubuntu-16.10-desktop-i386.iso</url>
+      <url>http://releases.ubuntu.com/releases/zesty/ubuntu-17.04-desktop-i386.iso</url>
       <iso>
-        <volume-id>Ubuntu 16.10(.\d)? i386</volume-id>
+        <volume-id>Ubuntu 17.04(.\d)? i386</volume-id>
       </iso>
       <kernel>casper/vmlinuz</kernel>
       <initrd>casper/initrd.lz</initrd>
     </media>
     <media live="true" arch="x86_64">
-      <url>http://old-releases.ubuntu.com/releases/yakkety/ubuntu-16.10-desktop-amd64.iso</url>
+      <url>http://releases.ubuntu.com/releases/zesty/ubuntu-17.04-desktop-amd64.iso</url>
       <iso>
-        <volume-id>Ubuntu 16.10(.\d)? amd64</volume-id>
+        <volume-id>Ubuntu 17.04(.\d)? amd64</volume-id>
       </iso>
       <kernel>casper/vmlinuz</kernel>
       <initrd>casper/initrd.lz</initrd>
     </media>
     <media arch="aarch64">
-      <url>http://old-releases.ubuntu.com/releases/yakkety/ubuntu-16.10-server-arm64.iso</url>
+      <url>http://cdimage.ubuntu.com/releases/zesty/release/ubuntu-17.04-server-arm64.iso</url>
       <iso>
-        <volume-id>Ubuntu-Server 16.10(.\d)? arm64</volume-id>
-      </iso>
-    </media>
-    <media arch="ppc">
-      <url>http://old-releases.ubuntu.com/releases/yakkety/ubuntu-16.10-server-powerpc.iso</url>
-      <iso>
-        <volume-id>Ubuntu-Server 16.10(.\d)? ppc</volume-id>
+        <volume-id>Ubuntu-Server 17.04(.\d)? arm64</volume-id>
       </iso>
     </media>
     <media arch="ppc64le">
-      <url>http://old-releases.ubuntu.com/releases/yakkety/ubuntu-16.10-server-ppc64el.iso</url>
+      <url>http://cdimage.ubuntu.com/releases/zesty/release/ubuntu-17.04-server-ppc64el.iso</url>
       <iso>
-        <volume-id>Ubuntu-Server 16.10(.\d)? ppc64</volume-id>
+        <volume-id>Ubuntu-Server 17.04(.\d)? ppc64</volume-id>
       </iso>
     </media>
     <media arch="s390x">
-      <url>http://old-releases.ubuntu.com/releases/yakkety/ubuntu-16.10-server-s390x.iso</url>
+      <url>http://cdimage.ubuntu.com/releases/zesty/release/ubuntu-17.04-server-s390x.iso</url>
       <iso>
-        <volume-id>Ubuntu-Server 16.10(.\d)? s390x</volume-id>
+        <volume-id>Ubuntu-Server 17.04(.\d)? s390x</volume-id>
       </iso>
     </media>
 
